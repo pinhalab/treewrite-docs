@@ -459,3 +459,26 @@
 {"id":"01M3JAKJA3C8XY325H851HP9AV","deleted":true}
 {"id":"01M3JAKJA3NBQY99R5KC2B25H4","deleted":true}
 {"id":"01M3JAKJBDQE7XNZA1368HHVBN","deleted":true}
+{"id":"01M3DZYGXAGMKQ6ZE8G0HP9FKR","parent":"","index":"ZxS","type":"code","text":"const nextStep = \"Read the documentation below 👇\"; alkdsj lasj lgjsa lgdsa gja;s jgl\n\nconsole.log(nextStep);","filename":"whatNow.js","lang":"javascript","lineNumbers":true,"note":"We're only using a code bullet here to show how cool it is 😬"}
+{"id":"01M3DZYGXAGMKQ6ZE8G0HP9FKR","parent":"","index":"ZxS","type":"code","text":"const nextStep = \"Read the documentation below 👇\";\n\nconsole.log(nextStep);","filename":"whatNow.js","lang":"javascript","lineNumbers":true,"note":"We're only using a code bullet here to show how cool it is 😬"}
+{"id":"01M3DZYGXAGMKQ6ZE8G0HP9FKR","parent":"","index":"ZxS","type":"code","text":"const nextStep = \"Read the FAQ documentation below 👇\";\n\nconsole.log(nextStep);","filename":"whatNow.js","lang":"javascript","lineNumbers":true,"note":"We're only using a code bullet here to show how cool it is 😬"}
+{"id":"01M3DZYGXAGMKQ6ZE8G0HP9FKR","parent":"","index":"ZxS","type":"code","text":"const nextStep = \"Read the FAQ and documentation below 👇\";\n\nconsole.log(nextStep);","filename":"whatNow.js","lang":"javascript","lineNumbers":true,"note":"We're only using a code bullet here to show how cool it is 😬"}
+{"id":"01M3DZYGXAGMKQ6ZE8G0HP9FKR","parent":"","index":"ZxS","type":"code","text":"const nextStep = \"Read the FAQ and Documentation below 👇\";\n\nconsole.log(nextStep);","filename":"whatNow.js","lang":"javascript","lineNumbers":true,"note":"We're only using a code bullet here to show how cool it is 😬"}
+{"id":"01M3DZYGXAGMKQ6ZE8G0HP9FKR","parent":"","index":"ZxS","type":"code","text":"const nextSteps = \"Read the FAQ and Documentation below 👇\";\n\nconsole.log(nextStep);","filename":"whatNow.js","lang":"javascript","lineNumbers":true,"note":"We're only using a code bullet here to show how cool it is 😬"}
+{"id":"01M3DZYGXAGMKQ6ZE8G0HP9FKR","parent":"","index":"ZxS","type":"code","text":"const nextSteps = \"Read the FAQ and Documentation below 👇\";\n\nconsole.log(nextSteps);","filename":"whatNow.js","lang":"javascript","lineNumbers":true,"note":"We're only using a code bullet here to show how cool it is 😬"}
+{"id":"01M3HVS46CSA83JEM7GF3P8V69","parent":"","index":"ZxU","type":"title","text":"FAQ","level":1}
+{"id":"01M3HVS7ZDC0NXJXKVKN61SKVZ","parent":"","index":"ZxUV","type":"number","text":"How much does TreeWrite cost?","collapsed":true}
+{"id":"01M3CNK6ZRBGVM62Z4J03JPDZ7","parent":"","index":"ZxZ","type":"page","text":"Bullets","icon":"📚","background":"#4c6ef5","note":"What are bullets and what types of bullets are there","collapsed":true}
+{"id":"01M3HVYZZQ26X7HAH17EB7NYMV","parent":"","index":"ZxUl","type":"number","text":"Why use a custom file format instead of Markdown?","collapsed":true}
+{"id":"01M3HWXHGGDD8VFSECY39MTH6F","parent":"","index":"ZxUt","type":"number","text":"Is there a risk that TreeWrite will cease to exist and I will lose my bullets?","collapsed":true}
+{"id":"01M3HX3V6MEK90CX7ANF1W2FW5","parent":"","index":"ZxUx","type":"number","text":"Does TreeWrite have a mobile app?","collapsed":true}
+{"id":"01M3J5WW3S4MWAPSFN292W7MFJ","parent":"","index":"ZxUz","type":"number","text":"Does TreeWrite have folders?","collapsed":true}
+{"id":"01M3E0KTSVF96VS9F466Z0ESXG","parent":"","index":"ZxQ","type":"text","text":"**Want to be part of the community?** Access [ forum](https://google.com) on GitHub"}
+{"id":"01M3E0KTSVF96VS9F466Z0ESXG","parent":"","index":"ZxQ","type":"text","text":"**Want to be part of the community?** Access [forum](https://google.com) on GitHub"}
+{"id":"01M3E0KTSVF96VS9F466Z0ESXG","parent":"","index":"ZxQ","type":"text","text":"**Want to be part of the community?** Access our [forum](https://google.com) on GitHub"}
+{"id":"01M3E0KTSVF96VS9F466Z0ESXG","parent":"","index":"ZxQ","type":"text","text":"**Want to be part of the community?** Access our [forum](https://google.com) on GitHub or "}
+{"id":"01M3E0KTSVF96VS9F466Z0ESXG","parent":"","index":"ZxQ","type":"text","text":"**Want to be part of the community?** Access our [forum](https://google.com) on GitHub or our "}
+{"id":"01M3E0KTSVF96VS9F466Z0ESXG","parent":"","index":"ZxQ","type":"text","text":"**Want to be part of the community?** Access our [forum](https://google.com) on GitHub or our community on"}
+{"id":"01M3E0KTSVF96VS9F466Z0ESXG","parent":"","index":"ZxQ","type":"text","text":"**Want to be part of the community?** Access our [forum](https://google.com) on GitHub or our community on Reddit"}
+{"id":"01M3E0KTSVF96VS9F466Z0ESXG","parent":"","index":"ZxQ","type":"text","text":"**Want to be part of the community?** Access our [forum](https://google.com) on GitHub or our [community]( on Reddit"}
+{"id":"01M3E0KTSVF96VS9F466Z0ESXG","parent":"","index":"ZxQ","type":"text","text":"**Want to be part of the community?** Access our [forum](https://google.com) on GitHub or our [community](https://google.com) on Reddit"}
