@@ -348,3 +348,9 @@
 {"id":"01M3J516TYWQMNZTFY10E8GGF6","parent":"01M3DG9Z1NNFGR3K5HWFDC01GM","index":"a1","type":"page","text":"Callout"}
 {"id":"01M3DG9Z1NNFGR3K5HWFDC01GM","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"a0","type":"text","text":"List of bullet types","collapsed":true}
 {"id":"01M3DG9Z1NNFGR3K5HWFDC01GM","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"a0","type":"text","text":"List of bullet types"}
+{"id":"01M3CNK6ZRBGVM62Z4J03JPDZ7","parent":"","index":"ZxZ","type":"page","text":"About bullet","icon":"📚","background":"#4c6ef5","note":"What are bullets and what types of bullets are there"}
+{"id":"01M3CNK6ZRBGVM62Z4J03JPDZ7","parent":"","index":"ZxZ","type":"page","text":"About bullets","icon":"📚","background":"#4c6ef5","note":"What are bullets and what types of bullets are there"}
+{"id":"01M3CNK6ZRBGVM62Z4J03JPDZ7","parent":"","index":"ZxZ","type":"page","text":"ullets","icon":"📚","background":"#4c6ef5","note":"What are bullets and what types of bullets are there"}
+{"id":"01M3CNK6ZRBGVM62Z4J03JPDZ7","parent":"","index":"ZxZ","type":"page","text":"Bullets","icon":"📚","background":"#4c6ef5","note":"What are bullets and what types of bullets are there"}
+{"id":"01M3J4Z0ZT8Y7248FSMCQRP9B0","parent":"01M3DG9Z1NNFGR3K5HWFDC01GM","index":"a0","type":"page","text":"/Text"}
+{"id":"01M3J4Z0ZT8Y7248FSMCQRP9B0","parent":"01M3DG9Z1NNFGR3K5HWFDC01GM","index":"a0","type":"page","text":"Text"}
