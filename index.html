@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="./app/treewrite-Cb2WIEkH.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+		<title>TreeWrite</title>
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="TreeWrite" />
+		<meta property="og:site_name" content="TreeWrite" />
+		<meta property="og:url" content="https://treewrite.com/" />
+		<meta property="og:image" content="https://treewrite.com/preview.jpg" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<script type="module" crossorigin src="./app/index-CBdi5Pxd.js"></script>
+		<link rel="stylesheet" crossorigin href="./app/index-xk4SjBgO.css">
+	</head>
+	<body>
+		<div id="root"></div>
+		<!-- A page opened from a file cannot load what it is made of, as the browser keeps such a page from its
+		     own files. This part of it still runs, and says so -->
+		<p id="served-from-file" hidden style="margin: 32px; font-family: sans-serif">
+			This site has to be served over HTTP to be opened. From its folder, <code>npx serve</code> serves it.
+		</p>
+		<script>
+			if (location.protocol === "file:") document.getElementById("served-from-file").hidden = false;
+		</script>
+	</body>
+</html>
