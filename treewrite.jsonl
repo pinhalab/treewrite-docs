@@ -182,3 +182,5 @@
 {"id":"01M3Q2NBW6MWP9M2DXW5559921","parent":"01M3Q2J2YTB3XF7MNNFE9XF64D","index":"a8","type":"page","text":"Code","icon":"code.png"}
 {"id":"01M3Q2NGG81YTYQB3Y37RDAJG0","parent":"01M3Q2J2YTB3XF7MNNFE9XF64D","index":"a9","type":"page","text":"Math","icon":"math-function.png"}
 {"id":"01M3Q2NMH5GP7P18DD5HGZX6JR","parent":"01M3Q2J2YTB3XF7MNNFE9XF64D","index":"aA","type":"page","text":"Page","icon":"app-window.png"}
+{"id":"01M3Q2J2YTB3XF7MNNFE9XF64D","parent":"01M3PJCQZ75TFMC90YZQXP7N4S","index":"a2","type":"text","text":"Specific fields for each bullet type","collapsed":true}
+{"id":"01M3Q2J2YTB3XF7MNNFE9XF64D","parent":"01M3PJCQZ75TFMC90YZQXP7N4S","index":"a2","type":"text","text":"Specific fields for each bullet type"}
