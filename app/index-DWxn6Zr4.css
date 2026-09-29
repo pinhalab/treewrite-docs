@@ -12057,6 +12057,213 @@ fieldset:disabled .m_38aeed47:where(:not([data-inverted])),
 ._thumbnail_1i8ht_2:hover {
 	color: var(--mantine-color-text);
 }
+/* The sizes come from TableLook.tsx, which lays the row out around them */
+._block_1olms_2 {
+	/* The line height of a plain text, and not the taller one the row takes for the circle */
+	line-height: var(--table-line-height);
+}
+
+/* A table wider than the row scrolls on its own, with a bar only while it does not fit, as a formula does */
+._scroller_1olms_8 {
+	overflow-x: auto;
+	overflow-y: hidden;
+	scrollbar-width: thin;
+	scrollbar-color: rgba(0, 0, 0, 0.4) transparent;
+}
+[data-mantine-color-scheme='dark'] ._scroller_1olms_8 {
+	scrollbar-color: rgba(255, 255, 255, 0.4) transparent;
+}
+
+/* As wide as the table, which is as wide as what it holds up to the width of the row, and wider only when a
+   word does not fit or the columns were made wider. Below it is the room for what adds a row, see ADD_SIZE */
+._frame_1olms_17 {
+	position: relative;
+	display: grid;
+	grid-template-columns: minmax(min-content, max-content);
+	grid-template-rows: auto var(--table-add-size);
+	justify-content: start;
+}
+
+/* And to its right the room for what adds a column */
+._frame_1olms_17[data-editable] {
+	grid-template-columns: minmax(min-content, max-content) var(--table-add-size);
+}
+
+/* The borders are the ones of the cells, so the table is as wide as its columns add up to */
+._table_1olms_31 {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+._cell_1olms_36 {
+	position: relative;
+	box-sizing: border-box;
+	padding: var(--table-padding-y) var(--table-padding-x);
+	border-right: 1px solid var(--mantine-color-default-border);
+	border-bottom: 1px solid var(--mantine-color-default-border);
+	vertical-align: top;
+	text-align: start;
+	font-weight: inherit;
+}
+
+._table_1olms_31 tr:first-child > ._cell_1olms_36 {
+	border-top: 1px solid var(--mantine-color-default-border);
+}
+
+._table_1olms_31 tr > ._cell_1olms_36:first-child {
+	border-left: 1px solid var(--mantine-color-default-border);
+}
+
+th._cell_1olms_36 {
+	background: var(--table-header-bg);
+	font-weight: 700;
+}
+
+._table_1olms_31 tr:first-child > ._cell_1olms_36:first-child {
+	border-top-left-radius: var(--mantine-radius-sm);
+}
+
+._table_1olms_31 tr:first-child > ._cell_1olms_36:last-child {
+	border-top-right-radius: var(--mantine-radius-sm);
+}
+
+._table_1olms_31 tr:last-child > ._cell_1olms_36:first-child {
+	border-bottom-left-radius: var(--mantine-radius-sm);
+}
+
+._table_1olms_31 tr:last-child > ._cell_1olms_36:last-child {
+	border-bottom-right-radius: var(--mantine-radius-sm);
+}
+
+/* What a cell holds shares one cell of its grid, the way the text of a bullet does */
+._content_1olms_77 {
+	position: relative;
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	transform: translateY(var(--bullet-text-shift, 0px));
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+/* While each column is as wide as what it holds, an empty one still has room to be typed in */
+._table_1olms_31:not([data-fixed]) ._content_1olms_77 {
+	min-width: var(--table-auto-min-width);
+}
+
+._text_1olms_91,
+._mirror_1olms_92,
+._field_1olms_93 {
+	grid-area: 1 / 1;
+	min-width: 0;
+}
+
+._mirror_1olms_92 {
+	visibility: hidden;
+}
+
+._field_1olms_93 {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: none;
+	resize: none;
+	overflow: hidden;
+	background: transparent;
+	color: inherit;
+	font: inherit;
+}
+
+._addRow_1olms_115,
+._addColumn_1olms_116 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	border: 0;
+	border-radius: var(--mantine-radius-sm);
+	background: transparent;
+	color: var(--mantine-color-dimmed);
+	cursor: pointer;
+	opacity: 0;
+}
+
+._addRow_1olms_115 {
+	grid-row: 2;
+	grid-column: 1;
+}
+
+._addColumn_1olms_116 {
+	grid-row: 1;
+	grid-column: 2;
+}
+
+._frame_1olms_17:hover ._addRow_1olms_115,
+._frame_1olms_17:hover ._addColumn_1olms_116 {
+	opacity: 1;
+}
+
+._addRow_1olms_115:hover,
+._addColumn_1olms_116:hover {
+	background: var(--mantine-color-default-hover);
+	color: var(--mantine-color-text);
+}
+
+/* Over the right edge of a column, as tall as the table */
+._handle_1olms_151 {
+	position: absolute;
+	top: 0;
+	z-index: 2;
+	width: 7px;
+	margin-left: -4px;
+	cursor: col-resize;
+	touch-action: none;
+}
+
+._handle_1olms_151::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 3px;
+	width: 2px;
+}
+
+._handle_1olms_151:hover::after,
+._handle_1olms_151[data-dragging]::after {
+	background: var(--mantine-primary-color-filled);
+}
+
+/* Over the border and the padding of the first cell of the row or the column, and never over its text */
+._grip_1olms_176 {
+	position: absolute;
+	z-index: 3;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	border: 1px solid var(--mantine-color-default-border);
+	border-radius: var(--mantine-radius-sm);
+	background: var(--mantine-color-body);
+	color: var(--mantine-color-dimmed);
+	cursor: pointer;
+}
+
+._grip_1olms_176:hover,
+._grip_1olms_176[data-open] {
+	background: var(--mantine-color-default-hover);
+	color: var(--mantine-color-text);
+}
+
+._rowGrip_1olms_196 {
+	width: var(--table-grip-thickness);
+	height: var(--table-grip-length);
+}
+
+._columnGrip_1olms_201 {
+	width: var(--table-grip-length);
+	height: var(--table-grip-thickness);
+}
 /* The colors of the theme instead of Mantine's. The ones of a picked day come last, so they win over the weekend */
 ._day_147ud_2[data-weekend] {
 	color: var(--mantine-color-tertiary-text);

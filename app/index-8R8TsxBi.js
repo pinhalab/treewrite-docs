@@ -126,7 +126,7 @@ function isObject$4(value) {
 	return typeof value === "object" && value !== null && !Array.isArray(value);
 }
 function hiddenFeaturesOf(metadata) {
-	const features = (isObject$4(metadata.settings) ? metadata.settings : {})[FEATURES_SETTINGS_KEY];
+	const features = metadata[FEATURES_SETTINGS_KEY];
 	const hidden = isObject$4(features) && Array.isArray(features.hidden) ? features.hidden : [];
 	return FEATURES.filter((feature) => hidden.includes(feature));
 }
@@ -37561,6 +37561,60 @@ var pageType = defineBulletType("page", {
 	backspaceTurnsIntoText: true
 });
 //#endregion
+//#region src/shared/outline/bullets/table.ts
+var TABLE_HEADERS = ["horizontal", "vertical"];
+function rectangle(rows) {
+	const filled = rows.length === 0 ? [[]] : rows;
+	const columns = Math.max(1, ...filled.map((row) => row.length));
+	return filled.map((row) => row.length === columns ? row : [...row, ...Array(columns - row.length).fill("")]);
+}
+function firstCell(rows) {
+	return rows.flat().find((cell) => cell.trim() !== "") ?? "";
+}
+function columnWidthsOf(fields) {
+	const { widths } = fields;
+	if (widths === void 0) return void 0;
+	return fields.rows[0].map((_, column) => widths[column] ?? 120);
+}
+var tableType = defineBulletType("table", {
+	label: "Table",
+	fields: object({
+		rows: array(array(string())).nullish().transform((rows) => rectangle(rows ?? [])),
+		header: _enum(TABLE_HEADERS).nullish().transform((value) => value ?? void 0).optional(),
+		widths: array(number$1().int().positive()).nullish().transform((value) => value?.length ? value : void 0).optional()
+	}),
+	create: (text) => ({
+		rows: [
+			[
+				text.replace(/\n/g, " "),
+				"",
+				""
+			],
+			[
+				"",
+				"",
+				""
+			],
+			[
+				"",
+				"",
+				""
+			]
+		],
+		header: "horizontal"
+	}),
+	inlineText: (fields) => stripMarkers(firstCell(fields.rows)),
+	carriedText: (fields) => firstCell(fields.rows),
+	search: { get: (fields) => fields.rows.map((row) => row.map(stripMarkers).filter((cell) => cell.trim() !== "").join(" | ")).filter((line) => line !== "").join("\n") },
+	splitsAtCaret: false,
+	keepsTextBeforeCaret: false,
+	mergesText: false,
+	outdentsWhenEmpty: false,
+	repeatsType: false,
+	changesTypeByMarks: false,
+	backspaceTurnsIntoText: false
+});
+//#endregion
 //#region src/shared/outline/bullets/text.ts
 var textType = defineBulletType("text", {
 	label: "Text",
@@ -37622,7 +37676,7 @@ var titleType = defineBulletType("title", {
 function registry(...types) {
 	return Object.fromEntries(types.map((type) => [type.name, type]));
 }
-var BULLET_MODELS = registry(textType, pageType, checkboxType, numberType, titleType, dividerType, calloutType, codeType, mathType, imageType, fileType);
+var BULLET_MODELS = registry(textType, pageType, checkboxType, numberType, titleType, dividerType, calloutType, codeType, mathType, imageType, fileType, tableType);
 function isBulletType(type) {
 	return Object.prototype.hasOwnProperty.call(BULLET_MODELS, type);
 }
@@ -38634,6 +38688,24 @@ var Tree = class {
 		}
 		return patches;
 	}
+	updateTables(updates) {
+		const patches = [];
+		for (const update of updates) {
+			const n = this.nodes.get(update.id);
+			if (!n || n.record.opaque || n.record.type !== "table") continue;
+			const made = decodeFields("table", {
+				...n.record.fields,
+				rows: update.rows
+			});
+			if (!made) continue;
+			this.replaceRecord(n, {
+				...n.record,
+				fields: made.fields
+			});
+			patches.push(this.replacePatch(n));
+		}
+		return patches;
+	}
 	setNote(id, note) {
 		const n = this.bullet(id);
 		this.setNoteOf(n, note);
@@ -39056,20 +39128,14 @@ function useMetadata() {
 function isObject(value) {
 	return typeof value === "object" && value !== null && !Array.isArray(value);
 }
-function settingsOf(metadata) {
-	return isObject(metadata.settings) ? metadata.settings : {};
-}
 function settingOf(metadata, key) {
-	const setting = settingsOf(metadata)[key];
+	const setting = metadata[key];
 	return isObject(setting) ? setting : {};
 }
 function writeSetting(metadata, key, value) {
 	return {
 		...metadata,
-		settings: {
-			...settingsOf(metadata),
-			[key]: value
-		}
+		[key]: value
 	};
 }
 //#endregion
@@ -43937,6 +44003,26 @@ var IconStar = createReactComponent("outline", "star", "Star", [["path", {
 * This source code is licensed under the MIT license.
 * See the LICENSE file in the root directory of this source tree.
 */
+var IconTable = createReactComponent("outline", "table", "Table", [
+	["path", {
+		"d": "M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14",
+		"key": "svg-0"
+	}],
+	["path", {
+		"d": "M3 10h18",
+		"key": "svg-1"
+	}],
+	["path", {
+		"d": "M10 3v18",
+		"key": "svg-2"
+	}]
+]);
+/**
+* @license @tabler/icons-react v3.47.0 - MIT
+*
+* This source code is licensed under the MIT license.
+* See the LICENSE file in the root directory of this source tree.
+*/
 var IconTags = createReactComponent("outline", "tags", "Tags", [
 	["path", {
 		"d": "M3 8v4.172a2 2 0 0 0 .586 1.414l5.71 5.71a2.41 2.41 0 0 0 3.408 0l3.592 -3.592a2.41 2.41 0 0 0 0 -3.408l-5.71 -5.71a2 2 0 0 0 -1.414 -.586h-4.172a2 2 0 0 0 -2 2",
@@ -44360,6 +44446,7 @@ var BULLET_ICONS = {
 	math: IconMathFunction,
 	image: IconPhoto,
 	file: IconFile,
+	table: IconTable,
 	unsupported: IconQuestionMark
 };
 var HOME_TYPE_ICON = IconHome;
@@ -44756,6 +44843,14 @@ var SPACING = {
 		above: 8,
 		below: 8,
 		grouped: true
+	},
+	image: {
+		above: 8,
+		below: 8
+	},
+	table: {
+		above: 8,
+		below: 0
 	}
 };
 function spacingOf(bullet) {
@@ -46325,7 +46420,7 @@ function getLoadedCount() {
 	return loadedCount;
 }
 function getHighlighter() {
-	highlighter ??= Promise.all([__vitePreload(() => import("./core-mh9itEH7.js"), [], import.meta.url), __vitePreload(() => import("./engine-javascript-BgMzXrAA.js"), [], import.meta.url)]).then(async ([{ createHighlighterCore }, { createJavaScriptRegexEngine }]) => {
+	highlighter ??= Promise.all([__vitePreload(() => import("./core-Bo5gBwiU.js"), [], import.meta.url), __vitePreload(() => import("./engine-javascript-BgMzXrAA.js"), [], import.meta.url)]).then(async ([{ createHighlighterCore }, { createJavaScriptRegexEngine }]) => {
 		ready = await createHighlighterCore({ engine: createJavaScriptRegexEngine({ forgiving: true }) });
 		return ready;
 	});
@@ -62558,7 +62653,7 @@ function defineSymbol(mode, font, group, replace, name, acceptUnicodeChar) {
 	if (acceptUnicodeChar && replace) symbols[mode][replace] = symbols[mode][name];
 }
 var math$1 = "math";
-var text = "text";
+var text$2 = "text";
 var main = "main";
 var ams = "ams";
 var accent = "accent-token";
@@ -62599,11 +62694,11 @@ defineSymbol(math$1, main, rel, "∋", "\\owns");
 defineSymbol(math$1, main, punct, ".", "\\ldotp");
 defineSymbol(math$1, main, punct, "⋅", "\\cdotp");
 defineSymbol(math$1, main, punct, "⋅", "·");
-defineSymbol(text, main, textord, "⋅", "·");
+defineSymbol(text$2, main, textord, "⋅", "·");
 defineSymbol(math$1, main, textord, "#", "\\#");
-defineSymbol(text, main, textord, "#", "\\#");
+defineSymbol(text$2, main, textord, "#", "\\#");
 defineSymbol(math$1, main, textord, "&", "\\&");
-defineSymbol(text, main, textord, "&", "\\&");
+defineSymbol(text$2, main, textord, "&", "\\&");
 defineSymbol(math$1, main, textord, "ℵ", "\\aleph", true);
 defineSymbol(math$1, main, textord, "∀", "\\forall", true);
 defineSymbol(math$1, main, textord, "ℏ", "\\hbar", true);
@@ -62621,15 +62716,15 @@ defineSymbol(math$1, main, textord, "♡", "\\heartsuit", true);
 defineSymbol(math$1, main, textord, "ℑ", "\\Im", true);
 defineSymbol(math$1, main, textord, "♠", "\\spadesuit", true);
 defineSymbol(math$1, main, textord, "§", "\\S", true);
-defineSymbol(text, main, textord, "§", "\\S");
+defineSymbol(text$2, main, textord, "§", "\\S");
 defineSymbol(math$1, main, textord, "¶", "\\P", true);
-defineSymbol(text, main, textord, "¶", "\\P");
+defineSymbol(text$2, main, textord, "¶", "\\P");
 defineSymbol(math$1, main, textord, "†", "\\dag");
-defineSymbol(text, main, textord, "†", "\\dag");
-defineSymbol(text, main, textord, "†", "\\textdagger");
+defineSymbol(text$2, main, textord, "†", "\\dag");
+defineSymbol(text$2, main, textord, "†", "\\textdagger");
 defineSymbol(math$1, main, textord, "‡", "\\ddag");
-defineSymbol(text, main, textord, "‡", "\\ddag");
-defineSymbol(text, main, textord, "‡", "\\textdaggerdbl");
+defineSymbol(text$2, main, textord, "‡", "\\ddag");
+defineSymbol(text$2, main, textord, "‡", "\\textdaggerdbl");
 defineSymbol(math$1, main, close, "⎱", "\\rmoustache", true);
 defineSymbol(math$1, main, open, "⎰", "\\lmoustache", true);
 defineSymbol(math$1, main, close, "⟯", "\\rgroup", true);
@@ -62733,7 +62828,7 @@ defineSymbol(math$1, ams, textord, "▽", "\\triangledown");
 defineSymbol(math$1, ams, textord, "◊", "\\lozenge");
 defineSymbol(math$1, ams, textord, "Ⓢ", "\\circledS");
 defineSymbol(math$1, ams, textord, "®", "\\circledR");
-defineSymbol(text, ams, textord, "®", "\\circledR");
+defineSymbol(text$2, ams, textord, "®", "\\circledR");
 defineSymbol(math$1, ams, textord, "∡", "\\measuredangle", true);
 defineSymbol(math$1, ams, textord, "∄", "\\nexists");
 defineSymbol(math$1, ams, textord, "℧", "\\mho");
@@ -62748,16 +62843,16 @@ defineSymbol(math$1, ams, textord, "★", "\\bigstar");
 defineSymbol(math$1, ams, textord, "∢", "\\sphericalangle", true);
 defineSymbol(math$1, ams, textord, "∁", "\\complement", true);
 defineSymbol(math$1, ams, textord, "ð", "\\eth", true);
-defineSymbol(text, main, textord, "ð", "ð");
+defineSymbol(text$2, main, textord, "ð", "ð");
 defineSymbol(math$1, ams, textord, "╱", "\\diagup");
 defineSymbol(math$1, ams, textord, "╲", "\\diagdown");
 defineSymbol(math$1, ams, textord, "□", "\\square");
 defineSymbol(math$1, ams, textord, "□", "\\Box");
 defineSymbol(math$1, ams, textord, "◊", "\\Diamond");
 defineSymbol(math$1, ams, textord, "¥", "\\yen", true);
-defineSymbol(text, ams, textord, "¥", "\\yen", true);
+defineSymbol(text$2, ams, textord, "¥", "\\yen", true);
 defineSymbol(math$1, ams, textord, "✓", "\\checkmark", true);
-defineSymbol(text, ams, textord, "✓", "\\checkmark");
+defineSymbol(text$2, ams, textord, "✓", "\\checkmark");
 defineSymbol(math$1, ams, textord, "ℶ", "\\beth", true);
 defineSymbol(math$1, ams, textord, "ℸ", "\\daleth", true);
 defineSymbol(math$1, ams, textord, "ℷ", "\\gimel", true);
@@ -62897,13 +62992,13 @@ defineSymbol(math$1, ams, rel, "⇛", "\\Rrightarrow", true);
 defineSymbol(math$1, ams, rel, "↾", "\\restriction");
 defineSymbol(math$1, main, textord, "‘", "`");
 defineSymbol(math$1, main, textord, "$", "\\$");
-defineSymbol(text, main, textord, "$", "\\$");
-defineSymbol(text, main, textord, "$", "\\textdollar");
+defineSymbol(text$2, main, textord, "$", "\\$");
+defineSymbol(text$2, main, textord, "$", "\\textdollar");
 defineSymbol(math$1, main, textord, "%", "\\%");
-defineSymbol(text, main, textord, "%", "\\%");
+defineSymbol(text$2, main, textord, "%", "\\%");
 defineSymbol(math$1, main, textord, "_", "\\_");
-defineSymbol(text, main, textord, "_", "\\_");
-defineSymbol(text, main, textord, "_", "\\textunderscore");
+defineSymbol(text$2, main, textord, "_", "\\_");
+defineSymbol(text$2, main, textord, "_", "\\textunderscore");
 defineSymbol(math$1, main, textord, "∠", "\\angle", true);
 defineSymbol(math$1, main, textord, "∞", "\\infty", true);
 defineSymbol(math$1, main, textord, "′", "\\prime");
@@ -63020,10 +63115,10 @@ defineSymbol(math$1, ams, rel, "≰", "\\nleq", true);
 defineSymbol(math$1, main, spacing, "\xA0", "\\ ");
 defineSymbol(math$1, main, spacing, "\xA0", "\\space");
 defineSymbol(math$1, main, spacing, "\xA0", "\\nobreakspace");
-defineSymbol(text, main, spacing, "\xA0", "\\ ");
-defineSymbol(text, main, spacing, "\xA0", " ");
-defineSymbol(text, main, spacing, "\xA0", "\\space");
-defineSymbol(text, main, spacing, "\xA0", "\\nobreakspace");
+defineSymbol(text$2, main, spacing, "\xA0", "\\ ");
+defineSymbol(text$2, main, spacing, "\xA0", " ");
+defineSymbol(text$2, main, spacing, "\xA0", "\\space");
+defineSymbol(text$2, main, spacing, "\xA0", "\\nobreakspace");
 defineSymbol(math$1, main, spacing, "", "\\nobreak");
 defineSymbol(math$1, main, spacing, "", "\\allowbreak");
 defineSymbol(math$1, main, punct, ",", ",");
@@ -63045,21 +63140,21 @@ defineSymbol(math$1, main, bin, "⋆", "\\star");
 defineSymbol(math$1, main, bin, "◃", "\\triangleleft");
 defineSymbol(math$1, main, bin, "▹", "\\triangleright");
 defineSymbol(math$1, main, open, "{", "\\{");
-defineSymbol(text, main, textord, "{", "\\{");
-defineSymbol(text, main, textord, "{", "\\textbraceleft");
+defineSymbol(text$2, main, textord, "{", "\\{");
+defineSymbol(text$2, main, textord, "{", "\\textbraceleft");
 defineSymbol(math$1, main, close, "}", "\\}");
-defineSymbol(text, main, textord, "}", "\\}");
-defineSymbol(text, main, textord, "}", "\\textbraceright");
+defineSymbol(text$2, main, textord, "}", "\\}");
+defineSymbol(text$2, main, textord, "}", "\\textbraceright");
 defineSymbol(math$1, main, open, "{", "\\lbrace");
 defineSymbol(math$1, main, close, "}", "\\rbrace");
 defineSymbol(math$1, main, open, "[", "\\lbrack", true);
-defineSymbol(text, main, textord, "[", "\\lbrack", true);
+defineSymbol(text$2, main, textord, "[", "\\lbrack", true);
 defineSymbol(math$1, main, close, "]", "\\rbrack", true);
-defineSymbol(text, main, textord, "]", "\\rbrack", true);
+defineSymbol(text$2, main, textord, "]", "\\rbrack", true);
 defineSymbol(math$1, main, open, "(", "\\lparen", true);
 defineSymbol(math$1, main, close, ")", "\\rparen", true);
-defineSymbol(text, main, textord, "<", "\\textless", true);
-defineSymbol(text, main, textord, ">", "\\textgreater", true);
+defineSymbol(text$2, main, textord, "<", "\\textless", true);
+defineSymbol(text$2, main, textord, ">", "\\textgreater", true);
 defineSymbol(math$1, main, open, "⌊", "\\lfloor", true);
 defineSymbol(math$1, main, close, "⌋", "\\rfloor", true);
 defineSymbol(math$1, main, open, "⌈", "\\lceil", true);
@@ -63067,13 +63162,13 @@ defineSymbol(math$1, main, close, "⌉", "\\rceil", true);
 defineSymbol(math$1, main, textord, "\\", "\\backslash");
 defineSymbol(math$1, main, textord, "∣", "|");
 defineSymbol(math$1, main, textord, "∣", "\\vert");
-defineSymbol(text, main, textord, "|", "\\textbar", true);
+defineSymbol(text$2, main, textord, "|", "\\textbar", true);
 defineSymbol(math$1, main, textord, "∥", "\\|");
 defineSymbol(math$1, main, textord, "∥", "\\Vert");
-defineSymbol(text, main, textord, "∥", "\\textbardbl");
-defineSymbol(text, main, textord, "~", "\\textasciitilde");
-defineSymbol(text, main, textord, "\\", "\\textbackslash");
-defineSymbol(text, main, textord, "^", "\\textasciicircum");
+defineSymbol(text$2, main, textord, "∥", "\\textbardbl");
+defineSymbol(text$2, main, textord, "~", "\\textasciitilde");
+defineSymbol(text$2, main, textord, "\\", "\\textbackslash");
+defineSymbol(text$2, main, textord, "^", "\\textasciicircum");
 defineSymbol(math$1, main, rel, "↑", "\\uparrow", true);
 defineSymbol(math$1, main, rel, "⇑", "\\Uparrow", true);
 defineSymbol(math$1, main, rel, "↓", "\\downarrow", true);
@@ -63100,14 +63195,14 @@ defineSymbol(math$1, main, op, "∯", "\\oiint");
 defineSymbol(math$1, main, op, "∰", "\\oiiint");
 defineSymbol(math$1, main, op, "⨆", "\\bigsqcup");
 defineSymbol(math$1, main, op, "∫", "\\smallint");
-defineSymbol(text, main, inner, "…", "\\textellipsis");
+defineSymbol(text$2, main, inner, "…", "\\textellipsis");
 defineSymbol(math$1, main, inner, "…", "\\mathellipsis");
-defineSymbol(text, main, inner, "…", "\\ldots", true);
+defineSymbol(text$2, main, inner, "…", "\\ldots", true);
 defineSymbol(math$1, main, inner, "…", "\\ldots", true);
 defineSymbol(math$1, main, inner, "⋯", "\\@cdots", true);
 defineSymbol(math$1, main, inner, "⋱", "\\ddots", true);
 defineSymbol(math$1, main, textord, "⋮", "\\varvdots");
-defineSymbol(text, main, textord, "⋮", "\\varvdots");
+defineSymbol(text$2, main, textord, "⋮", "\\varvdots");
 defineSymbol(math$1, main, accent, "ˊ", "\\acute");
 defineSymbol(math$1, main, accent, "ˋ", "\\grave");
 defineSymbol(math$1, main, accent, "¨", "\\ddot");
@@ -63123,55 +63218,55 @@ defineSymbol(math$1, main, mathord, "", "\\@imath");
 defineSymbol(math$1, main, mathord, "", "\\@jmath");
 defineSymbol(math$1, main, textord, "ı", "ı");
 defineSymbol(math$1, main, textord, "ȷ", "ȷ");
-defineSymbol(text, main, textord, "ı", "\\i", true);
-defineSymbol(text, main, textord, "ȷ", "\\j", true);
-defineSymbol(text, main, textord, "ß", "\\ss", true);
-defineSymbol(text, main, textord, "æ", "\\ae", true);
-defineSymbol(text, main, textord, "œ", "\\oe", true);
-defineSymbol(text, main, textord, "ø", "\\o", true);
-defineSymbol(text, main, textord, "Æ", "\\AE", true);
-defineSymbol(text, main, textord, "Œ", "\\OE", true);
-defineSymbol(text, main, textord, "Ø", "\\O", true);
-defineSymbol(text, main, accent, "ˊ", "\\'");
-defineSymbol(text, main, accent, "ˋ", "\\`");
-defineSymbol(text, main, accent, "ˆ", "\\^");
-defineSymbol(text, main, accent, "˜", "\\~");
-defineSymbol(text, main, accent, "ˉ", "\\=");
-defineSymbol(text, main, accent, "˘", "\\u");
-defineSymbol(text, main, accent, "˙", "\\.");
-defineSymbol(text, main, accent, "¸", "\\c");
-defineSymbol(text, main, accent, "˚", "\\r");
-defineSymbol(text, main, accent, "ˇ", "\\v");
-defineSymbol(text, main, accent, "¨", "\\\"");
-defineSymbol(text, main, accent, "˝", "\\H");
-defineSymbol(text, main, accent, "◯", "\\textcircled");
+defineSymbol(text$2, main, textord, "ı", "\\i", true);
+defineSymbol(text$2, main, textord, "ȷ", "\\j", true);
+defineSymbol(text$2, main, textord, "ß", "\\ss", true);
+defineSymbol(text$2, main, textord, "æ", "\\ae", true);
+defineSymbol(text$2, main, textord, "œ", "\\oe", true);
+defineSymbol(text$2, main, textord, "ø", "\\o", true);
+defineSymbol(text$2, main, textord, "Æ", "\\AE", true);
+defineSymbol(text$2, main, textord, "Œ", "\\OE", true);
+defineSymbol(text$2, main, textord, "Ø", "\\O", true);
+defineSymbol(text$2, main, accent, "ˊ", "\\'");
+defineSymbol(text$2, main, accent, "ˋ", "\\`");
+defineSymbol(text$2, main, accent, "ˆ", "\\^");
+defineSymbol(text$2, main, accent, "˜", "\\~");
+defineSymbol(text$2, main, accent, "ˉ", "\\=");
+defineSymbol(text$2, main, accent, "˘", "\\u");
+defineSymbol(text$2, main, accent, "˙", "\\.");
+defineSymbol(text$2, main, accent, "¸", "\\c");
+defineSymbol(text$2, main, accent, "˚", "\\r");
+defineSymbol(text$2, main, accent, "ˇ", "\\v");
+defineSymbol(text$2, main, accent, "¨", "\\\"");
+defineSymbol(text$2, main, accent, "˝", "\\H");
+defineSymbol(text$2, main, accent, "◯", "\\textcircled");
 var ligatures = {
 	"--": true,
 	"---": true,
 	"``": true,
 	"''": true
 };
-defineSymbol(text, main, textord, "–", "--", true);
-defineSymbol(text, main, textord, "–", "\\textendash");
-defineSymbol(text, main, textord, "—", "---", true);
-defineSymbol(text, main, textord, "—", "\\textemdash");
-defineSymbol(text, main, textord, "‘", "`", true);
-defineSymbol(text, main, textord, "‘", "\\textquoteleft");
-defineSymbol(text, main, textord, "’", "'", true);
-defineSymbol(text, main, textord, "’", "\\textquoteright");
-defineSymbol(text, main, textord, "“", "``", true);
-defineSymbol(text, main, textord, "“", "\\textquotedblleft");
-defineSymbol(text, main, textord, "”", "''", true);
-defineSymbol(text, main, textord, "”", "\\textquotedblright");
+defineSymbol(text$2, main, textord, "–", "--", true);
+defineSymbol(text$2, main, textord, "–", "\\textendash");
+defineSymbol(text$2, main, textord, "—", "---", true);
+defineSymbol(text$2, main, textord, "—", "\\textemdash");
+defineSymbol(text$2, main, textord, "‘", "`", true);
+defineSymbol(text$2, main, textord, "‘", "\\textquoteleft");
+defineSymbol(text$2, main, textord, "’", "'", true);
+defineSymbol(text$2, main, textord, "’", "\\textquoteright");
+defineSymbol(text$2, main, textord, "“", "``", true);
+defineSymbol(text$2, main, textord, "“", "\\textquotedblleft");
+defineSymbol(text$2, main, textord, "”", "''", true);
+defineSymbol(text$2, main, textord, "”", "\\textquotedblright");
 defineSymbol(math$1, main, textord, "°", "\\degree", true);
-defineSymbol(text, main, textord, "°", "\\degree");
-defineSymbol(text, main, textord, "°", "\\textdegree", true);
+defineSymbol(text$2, main, textord, "°", "\\degree");
+defineSymbol(text$2, main, textord, "°", "\\textdegree", true);
 defineSymbol(math$1, main, textord, "£", "\\pounds");
 defineSymbol(math$1, main, textord, "£", "\\mathsterling", true);
-defineSymbol(text, main, textord, "£", "\\pounds");
-defineSymbol(text, main, textord, "£", "\\textsterling", true);
+defineSymbol(text$2, main, textord, "£", "\\pounds");
+defineSymbol(text$2, main, textord, "£", "\\textsterling", true);
 defineSymbol(math$1, ams, textord, "✠", "\\maltese");
-defineSymbol(text, ams, textord, "✠", "\\maltese");
+defineSymbol(text$2, ams, textord, "✠", "\\maltese");
 var mathTextSymbols = "0123456789/@.\"";
 for (var i = 0; i < mathTextSymbols.length; i++) {
 	var ch = mathTextSymbols.charAt(i);
@@ -63180,92 +63275,92 @@ for (var i = 0; i < mathTextSymbols.length; i++) {
 var textSymbols = "0123456789!@*()-=+\";:?/.,";
 for (var _i = 0; _i < textSymbols.length; _i++) {
 	var _ch = textSymbols.charAt(_i);
-	defineSymbol(text, main, textord, _ch, _ch);
+	defineSymbol(text$2, main, textord, _ch, _ch);
 }
 var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 for (var _i2 = 0; _i2 < letters.length; _i2++) {
 	var _ch2 = letters.charAt(_i2);
 	defineSymbol(math$1, main, mathord, _ch2, _ch2);
-	defineSymbol(text, main, textord, _ch2, _ch2);
+	defineSymbol(text$2, main, textord, _ch2, _ch2);
 }
 defineSymbol(math$1, ams, textord, "C", "ℂ");
-defineSymbol(text, ams, textord, "C", "ℂ");
+defineSymbol(text$2, ams, textord, "C", "ℂ");
 defineSymbol(math$1, ams, textord, "H", "ℍ");
-defineSymbol(text, ams, textord, "H", "ℍ");
+defineSymbol(text$2, ams, textord, "H", "ℍ");
 defineSymbol(math$1, ams, textord, "N", "ℕ");
-defineSymbol(text, ams, textord, "N", "ℕ");
+defineSymbol(text$2, ams, textord, "N", "ℕ");
 defineSymbol(math$1, ams, textord, "P", "ℙ");
-defineSymbol(text, ams, textord, "P", "ℙ");
+defineSymbol(text$2, ams, textord, "P", "ℙ");
 defineSymbol(math$1, ams, textord, "Q", "ℚ");
-defineSymbol(text, ams, textord, "Q", "ℚ");
+defineSymbol(text$2, ams, textord, "Q", "ℚ");
 defineSymbol(math$1, ams, textord, "R", "ℝ");
-defineSymbol(text, ams, textord, "R", "ℝ");
+defineSymbol(text$2, ams, textord, "R", "ℝ");
 defineSymbol(math$1, ams, textord, "Z", "ℤ");
-defineSymbol(text, ams, textord, "Z", "ℤ");
+defineSymbol(text$2, ams, textord, "Z", "ℤ");
 defineSymbol(math$1, main, mathord, "h", "ℎ");
-defineSymbol(text, main, mathord, "h", "ℎ");
+defineSymbol(text$2, main, mathord, "h", "ℎ");
 var wideChar;
 for (var _i3 = 0; _i3 < letters.length; _i3++) {
 	var _ch3 = letters.charAt(_i3);
 	wideChar = String.fromCharCode(55349, 56320 + _i3);
 	defineSymbol(math$1, main, mathord, _ch3, wideChar);
-	defineSymbol(text, main, textord, _ch3, wideChar);
+	defineSymbol(text$2, main, textord, _ch3, wideChar);
 	wideChar = String.fromCharCode(55349, 56372 + _i3);
 	defineSymbol(math$1, main, mathord, _ch3, wideChar);
-	defineSymbol(text, main, textord, _ch3, wideChar);
+	defineSymbol(text$2, main, textord, _ch3, wideChar);
 	wideChar = String.fromCharCode(55349, 56424 + _i3);
 	defineSymbol(math$1, main, mathord, _ch3, wideChar);
-	defineSymbol(text, main, textord, _ch3, wideChar);
+	defineSymbol(text$2, main, textord, _ch3, wideChar);
 	wideChar = String.fromCharCode(55349, 56580 + _i3);
 	defineSymbol(math$1, main, mathord, _ch3, wideChar);
-	defineSymbol(text, main, textord, _ch3, wideChar);
+	defineSymbol(text$2, main, textord, _ch3, wideChar);
 	wideChar = String.fromCharCode(55349, 56684 + _i3);
 	defineSymbol(math$1, main, mathord, _ch3, wideChar);
-	defineSymbol(text, main, textord, _ch3, wideChar);
+	defineSymbol(text$2, main, textord, _ch3, wideChar);
 	wideChar = String.fromCharCode(55349, 56736 + _i3);
 	defineSymbol(math$1, main, mathord, _ch3, wideChar);
-	defineSymbol(text, main, textord, _ch3, wideChar);
+	defineSymbol(text$2, main, textord, _ch3, wideChar);
 	wideChar = String.fromCharCode(55349, 56788 + _i3);
 	defineSymbol(math$1, main, mathord, _ch3, wideChar);
-	defineSymbol(text, main, textord, _ch3, wideChar);
+	defineSymbol(text$2, main, textord, _ch3, wideChar);
 	wideChar = String.fromCharCode(55349, 56840 + _i3);
 	defineSymbol(math$1, main, mathord, _ch3, wideChar);
-	defineSymbol(text, main, textord, _ch3, wideChar);
+	defineSymbol(text$2, main, textord, _ch3, wideChar);
 	wideChar = String.fromCharCode(55349, 56944 + _i3);
 	defineSymbol(math$1, main, mathord, _ch3, wideChar);
-	defineSymbol(text, main, textord, _ch3, wideChar);
+	defineSymbol(text$2, main, textord, _ch3, wideChar);
 	if (_i3 < 26) {
 		wideChar = String.fromCharCode(55349, 56632 + _i3);
 		defineSymbol(math$1, main, mathord, _ch3, wideChar);
-		defineSymbol(text, main, textord, _ch3, wideChar);
+		defineSymbol(text$2, main, textord, _ch3, wideChar);
 		wideChar = String.fromCharCode(55349, 56476 + _i3);
 		defineSymbol(math$1, main, mathord, _ch3, wideChar);
-		defineSymbol(text, main, textord, _ch3, wideChar);
+		defineSymbol(text$2, main, textord, _ch3, wideChar);
 	}
 }
 wideChar = String.fromCharCode(55349, 56668);
 defineSymbol(math$1, main, mathord, "k", wideChar);
-defineSymbol(text, main, textord, "k", wideChar);
+defineSymbol(text$2, main, textord, "k", wideChar);
 for (var _i4 = 0; _i4 < 10; _i4++) {
 	var _ch4 = _i4.toString();
 	wideChar = String.fromCharCode(55349, 57294 + _i4);
 	defineSymbol(math$1, main, mathord, _ch4, wideChar);
-	defineSymbol(text, main, textord, _ch4, wideChar);
+	defineSymbol(text$2, main, textord, _ch4, wideChar);
 	wideChar = String.fromCharCode(55349, 57314 + _i4);
 	defineSymbol(math$1, main, mathord, _ch4, wideChar);
-	defineSymbol(text, main, textord, _ch4, wideChar);
+	defineSymbol(text$2, main, textord, _ch4, wideChar);
 	wideChar = String.fromCharCode(55349, 57324 + _i4);
 	defineSymbol(math$1, main, mathord, _ch4, wideChar);
-	defineSymbol(text, main, textord, _ch4, wideChar);
+	defineSymbol(text$2, main, textord, _ch4, wideChar);
 	wideChar = String.fromCharCode(55349, 57334 + _i4);
 	defineSymbol(math$1, main, mathord, _ch4, wideChar);
-	defineSymbol(text, main, textord, _ch4, wideChar);
+	defineSymbol(text$2, main, textord, _ch4, wideChar);
 }
 var extraLatin = "ÐÞþ";
 for (var _i5 = 0; _i5 < extraLatin.length; _i5++) {
 	var _ch5 = extraLatin.charAt(_i5);
 	defineSymbol(math$1, main, mathord, _ch5, _ch5);
-	defineSymbol(text, main, textord, _ch5, _ch5);
+	defineSymbol(text$2, main, textord, _ch5, _ch5);
 }
 /**
 * This file provides support for Unicode range U+1D400 to U+1D7FF,
@@ -73297,6 +73392,114 @@ function PageLook(props) {
 		before: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(PageThumbnail, { page: props.bullet })
 	});
 }
+var TableBullet_module_default = {
+	block: "_block_1olms_2",
+	scroller: "_scroller_1olms_8",
+	frame: "_frame_1olms_17",
+	table: "_table_1olms_31",
+	cell: "_cell_1olms_36",
+	content: "_content_1olms_77",
+	text: "_text_1olms_91",
+	mirror: "_mirror_1olms_92",
+	field: "_field_1olms_93",
+	addRow: "_addRow_1olms_115",
+	addColumn: "_addColumn_1olms_116",
+	handle: "_handle_1olms_151",
+	grip: "_grip_1olms_176",
+	rowGrip: "_rowGrip_1olms_196",
+	columnGrip: "_columnGrip_1olms_201"
+};
+//#endregion
+//#region src/renderer/components/TableLook.tsx
+var CELL_PADDING_Y = 6;
+var CELL_PADDING_X = 10;
+var AUTO_MIN_COLUMN_WIDTH = 80;
+var ROW_HEIGHT = 35;
+var TABLE_LINE = {
+	...lineOf(),
+	lineHeight: ROW_HEIGHT + 1
+};
+var TABLE_VARIABLES = {
+	"--table-line-height": rem(22),
+	"--table-padding-y": rem(CELL_PADDING_Y),
+	"--table-padding-x": rem(CELL_PADDING_X),
+	"--table-header-bg": DARKER_THAN_THE_PAGE,
+	"--table-auto-min-width": rem(AUTO_MIN_COLUMN_WIDTH),
+	"--table-add-size": rem(14),
+	"--table-grip-thickness": rem(10),
+	"--table-grip-length": rem(20)
+};
+function estimateTableHeight(bullet) {
+	return bullet.rows.length * ROW_HEIGHT + 1 + 14;
+}
+function isHeaderCell(header, row, column) {
+	return header === "horizontal" ? row === 0 : header === "vertical" ? column === 0 : false;
+}
+function TableScroller(props) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+		className: TableBullet_module_default.block,
+		style: TABLE_VARIABLES,
+		"data-content": true,
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+			ref: props.scrollerRef,
+			className: TableBullet_module_default.scroller,
+			onScroll: props.onScroll,
+			"data-table-scroller": true,
+			children: props.children
+		})
+	});
+}
+function TableGrid(props) {
+	const { widths, editable } = props;
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("table", {
+		ref: props.tableRef,
+		className: TableBullet_module_default.table,
+		"data-header": props.header,
+		"data-fixed": widths !== void 0 || void 0,
+		style: widths && {
+			tableLayout: "fixed",
+			width: widths.reduce((sum, width) => sum + width, 0)
+		},
+		...editable && { ["data-field-grid"]: "" },
+		children: [widths && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("colgroup", { children: widths.map((width, column) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("col", { style: { width } }, column)) }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("tbody", { children: props.rows.map((cells, row) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("tr", {
+			...editable && { ["data-field-grid-line"]: "" },
+			children: cells.map((text, column) => {
+				const isHeader = isHeaderCell(props.header, row, column);
+				const Cell = isHeader ? "th" : "td";
+				const scope = isHeader ? row === 0 && props.header === "horizontal" ? "col" : "row" : void 0;
+				return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Cell, {
+					className: TableBullet_module_default.cell,
+					scope,
+					children: props.cell(row, column, text)
+				}, column);
+			})
+		}, row)) })]
+	});
+}
+function LookCell(props) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+		className: TableBullet_module_default.content,
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+			className: TableBullet_module_default.text,
+			children: props.text === "" ? "​" : /* @__PURE__ */ (0, import_jsx_runtime.jsx)(FormattedText, { text: props.text })
+		})
+	});
+}
+function TableLook(props) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Bullet, {
+		bullet: props.bullet,
+		firstLine: TABLE_LINE,
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(TableScroller, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+			className: TableBullet_module_default.frame,
+			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(TableGrid, {
+				rows: props.bullet.rows,
+				header: props.bullet.header,
+				widths: columnWidthsOf(props.bullet),
+				cell: (_, __, text) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(LookCell, { text })
+			})
+		}) })
+	});
+}
 //#endregion
 //#region src/renderer/components/TextLook.tsx
 function TextLook(props) {
@@ -73348,6 +73551,7 @@ var BULLET_LOOKS = {
 	math: MathLook,
 	image: ImageLook,
 	file: FileLook,
+	table: TableLook,
 	unsupported: UnsupportedLook
 };
 function BulletLook(props) {
@@ -75038,7 +75242,7 @@ var VIEWPORT_PROPS = { "data-editor-viewport": true };
 var SCROLL_AREA_CLASSES = { content: OutlineList_module_default.content };
 var WHEEL_SETTLE_MS = 150;
 function estimateRowSize(bullet) {
-	return (bullet?.type === "code" ? estimateCodeHeight(bullet) : bullet?.type === "math" ? estimateMathHeight(bullet) : bullet?.type === "image" ? 200 : 22) + 8;
+	return (bullet?.type === "code" ? estimateCodeHeight(bullet) : bullet?.type === "math" ? estimateMathHeight(bullet) : bullet?.type === "image" ? 200 : bullet?.type === "table" ? estimateTableHeight(bullet) : 22) + 8;
 }
 var REVEAL_ATTEMPTS = 10;
 function revealRow(id, store, virtualizer) {
@@ -76526,6 +76730,9 @@ function useTabIcon() {
 function sameNote(draft, saved) {
 	return draft.trim() === "" ? saved === void 0 : draft === saved;
 }
+function sameRows(draft, saved) {
+	return draft.length === saved.length && draft.every((row, index) => row.length === saved[index].length && row.every((cell, column) => cell === saved[index][column]));
+}
 var NO_CHILDREN = [];
 var NO_ANCESTORS = [];
 function createEditorStore() {
@@ -76534,6 +76741,7 @@ function createEditorStore() {
 	const parentOf = /* @__PURE__ */ new Map();
 	const drafts = /* @__PURE__ */ new Map();
 	const noteDrafts = /* @__PURE__ */ new Map();
+	const tableDrafts = /* @__PURE__ */ new Map();
 	const listeners = /* @__PURE__ */ new Set();
 	let datePicking = null;
 	let rootId = null;
@@ -76564,6 +76772,7 @@ function createEditorStore() {
 		if (dropDrafts) {
 			drafts.delete(id);
 			noteDrafts.delete(id);
+			tableDrafts.delete(id);
 			if (datePicking === id) datePicking = null;
 		}
 	}
@@ -76737,6 +76946,14 @@ function createEditorStore() {
 		dropNoteDraft(id) {
 			if (noteDrafts.delete(id)) notify();
 		},
+		getTableDraft: (id) => tableDrafts.get(id),
+		setTableDraft(id, rows) {
+			tableDrafts.set(id, rows);
+			notify();
+		},
+		dropTableDraft(id) {
+			if (tableDrafts.delete(id)) notify();
+		},
 		getDatePicking: () => datePicking,
 		setDatePicking(id) {
 			if (datePicking === id) return;
@@ -76751,7 +76968,7 @@ function createEditorStore() {
 		getSaveState() {
 			if (writeFailed) return "error";
 			const unsentNote = [...noteDrafts].some(([id, note]) => !sameNote(note, nodes.get(id)?.note));
-			return drafts.size > 0 || unsentNote || unsentChanges || pendingWrites > 0 ? "unsaved" : "saved";
+			return drafts.size > 0 || tableDrafts.size > 0 || unsentNote || unsentChanges || pendingWrites > 0 ? "unsaved" : "saved";
 		},
 		setUnsentChanges(unsent) {
 			if (unsentChanges === unsent) return;
@@ -76776,10 +76993,21 @@ function createEditorStore() {
 			}
 			return toSave;
 		},
-		commitSaved(sent, patches, sentNotes = []) {
+		takeTableDraftsToSave() {
+			const toSave = [];
+			for (const [id, rows] of tableDrafts) {
+				const saved = nodes.get(id);
+				if (saved?.type === "table" && sameRows(rows, saved.rows)) tableDrafts.delete(id);
+				else toSave.push([id, rows]);
+			}
+			if (toSave.length === 0) notify();
+			return toSave;
+		},
+		commitSaved(sent, patches, sentNotes = [], sentTables = []) {
 			applyAll(patches);
 			for (const [id, text] of sent) if (drafts.get(id) === text) drafts.delete(id);
 			for (const [id, note] of sentNotes) if (noteDrafts.get(id) === note) noteDrafts.delete(id);
+			for (const [id, rows] of sentTables) if (tableDrafts.get(id) === rows) tableDrafts.delete(id);
 			notify();
 		},
 		trackWrite(write) {
