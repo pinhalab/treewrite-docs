@@ -489,3 +489,4 @@
 {"id":"01M3CPBRTH1MDH1W1EY39HBPD6","parent":"","index":"ZxE","type":"number","text":"All bullets are stored in a single `.jsonl` ([JSON lines](https://jsonlines.org) file on your computer, no cloud storage (ever). You own your data in an open and documented file format"}
 {"id":"01M3CPBRTH1MDH1W1EY39HBPD6","parent":"","index":"ZxE","type":"number","text":"All bullets are stored in a single `.jsonl` ([JSON lines](https://jsonlines.org)) file on your computer, no cloud storage (ever). You own your data in an open and documented file format"}
 {"id":"01M3CPBRTH1MDH1W1EY39HBPD6","parent":"","index":"ZxE","type":"number","text":"All bullets are stored in a single `.jsonl` ([JSON Lines](https://jsonlines.org)) file on your computer, no cloud storage (ever). You own your data in an open and documented file format"}
+{"id":"01M3HVS7ZDC0NXJXKVKN61SKVZ","parent":"","index":"ZxUV","type":"number","text":"How much does TreeWrite cost?","collapsed":true}
