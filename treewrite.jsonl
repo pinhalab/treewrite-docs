@@ -1086,3 +1086,7 @@
 {"id":"01M3PPT0NRTC27Z08RQYF404CY","parent":"01M3PN21SX7VYQZTVH1TSFBE25","index":"a6","type":"text","text":"If that's the case, then the file is rewritten, now containing only the latest data. The condition that is verified is:"}
 {"id":"01M3PPVZSG47D30XEWF3E4GE9Q","parent":"01M3PN21SX7VYQZTVH1TSFBE25","index":"a7","type":"text","text":""}
 {"id":"01M3PPVZSG47D30XEWF3E4GE9Q","parent":"01M3PN21SX7VYQZTVH1TSFBE25","index":"a7","type":"math","text":""}
+{"id":"01M3PN11TSYJJH8TYNFZ3SNCZ7","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"Zz","type":"text","text":"Basic concepts of `.jsonl` files"}
+{"id":"01M3PNZSWS8DX0ZM55JRMND93G","parent":"01M3PN11TSYJJH8TYNFZ3SNCZ7","index":"a4","type":"text","text":"Metadata is an object that contains information such as settings ( favorites, tags, ...)"}
+{"id":"01M3PNZSWS8DX0ZM55JRMND93G","parent":"01M3PN11TSYJJH8TYNFZ3SNCZ7","index":"a4","type":"text","text":"Metadata is an object that contains information such as settings (favorites, tags, ...)"}
+{"id":"01M3PN11TSYJJH8TYNFZ3SNCZ7","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"Zz","type":"text","text":"Basic concepts of `.jsonl` files","collapsed":true}
