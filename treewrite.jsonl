@@ -592,3 +592,20 @@
 {"id":"01M3QBV3HPV0ND9TWNJ6VGABAK","parent":"01M3Q2H95YEWXA0GRW81Y1B8QM","index":"a6","type":"text","text":"`git`","collapsed":true}
 {"id":"01M3QD7MNAPKGY0P4MBBBH5CDE","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"a1","type":"text","text":"Bullet types and metadata","collapsed":true}
 {"id":"01M3QD8BXYMNV9Y02Q98REJVE8","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a2","type":"text","text":"Bullet types","collapsed":true}
+{"id":"01M3CPBKSYBSCSKNFNMYTWP891","parent":"","index":"ZxC","type":"number","text":"Everything is a bullet, and there are many (text, code, image, checkbox, ...)"}
+{"id":"01M3CPBKSYBSCSKNFNMYTWP891","parent":"","index":"ZxC","type":"number","text":"Everything is a bullet, and there are many [[ (text, code, image, checkbox, ...)"}
+{"id":"01M3CPBKSYBSCSKNFNMYTWP891","parent":"","index":"ZxC","type":"number","text":"Everything is a bullet, and there are many [[bull (text, code, image, checkbox, ...)"}
+{"id":"01M3CPBKSYBSCSKNFNMYTWP891","parent":"","index":"ZxC","type":"number","text":"Everything is a bullet, and there are many [[bullet  (text, code, image, checkbox, ...)"}
+{"id":"01M3CPBKSYBSCSKNFNMYTWP891","parent":"","index":"ZxC","type":"number","text":"Everything is a bullet, and there are many [[bullet ty (text, code, image, checkbox, ...)"}
+{"id":"01M3CPBKSYBSCSKNFNMYTWP891","parent":"","index":"ZxC","type":"number","text":"Everything is a bullet, and there are many [[bullet type (text, code, image, checkbox, ...)"}
+{"id":"01M3CK4D608BX01BDWAWPSDR8G","parent":"","index":"Zxd","type":"page","text":"File format","icon":"💾","background":"#2e2e2e","note":"How bullets are stored in your file system"}
+{"id":"01M3QD7MNAPKGY0P4MBBBH5CDE","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"a1","type":"text","text":"Bullet types and metadata"}
+{"id":"01M3QD8BXYMNV9Y02Q98REJVE8","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a2","type":"text","text":"Bullet types"}
+{"id":"01M3CPBKSYBSCSKNFNMYTWP891","parent":"","index":"ZxC","type":"number","text":"Everything is a bullet, and there are many  (text, code, image, checkbox, ...)"}
+{"id":"01M3CPBKSYBSCSKNFNMYTWP891","parent":"","index":"ZxC","type":"number","text":"Everything is a bullet, and there are many [[bullet  (text, code, image, checkbox, ...)"}
+{"id":"01M3CPBKSYBSCSKNFNMYTWP891","parent":"","index":"ZxC","type":"number","text":"Everything is a bullet, and there are many [[bullet ty (text, code, image, checkbox, ...)"}
+{"id":"01M3CPBKSYBSCSKNFNMYTWP891","parent":"","index":"ZxC","type":"number","text":"Everything is a bullet, and there are many [[bullet type (text, code, image, checkbox, ...)"}
+{"id":"01M3CPBKSYBSCSKNFNMYTWP891","parent":"","index":"ZxC","type":"number","text":"Everything is a bullet, and there are many [[bullet types (text, code, image, checkbox, ...)"}
+{"id":"01M3CPBKSYBSCSKNFNMYTWP891","parent":"","index":"ZxC","type":"number","text":"Everything is a bullet, and there are many [[01M3QD8BXYMNV9Y02Q98REJVE8]] (text, code, image, checkbox, ...)"}
+{"id":"01M3QD8BXYMNV9Y02Q98REJVE8","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a2","type":"text","text":"Bullet types","collapsed":true}
+{"id":"01M3QD8BXYMNV9Y02Q98REJVE8","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a2","type":"text","text":"Bullet types"}
