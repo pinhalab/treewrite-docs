@@ -45607,16 +45607,16 @@ function formatFileSize(bytes) {
 	return `${size < 10 ? size.toFixed(1) : Math.round(size)} ${UNITS[unit]}`;
 }
 var AssetsPanel_module_default = {
-	panel: "_panel_1baho_1",
-	toolbar: "_toolbar_1baho_6",
-	note: "_note_1baho_10",
-	list: "_list_1baho_16",
-	item: "_item_1baho_23",
-	open: "_open_1baho_36",
-	action: "_action_1baho_51",
-	rename: "_rename_1baho_61",
-	name: "_name_1baho_67",
-	size: "_size_1baho_75"
+	panel: "_panel_1vkd4_1",
+	toolbar: "_toolbar_1vkd4_6",
+	note: "_note_1vkd4_11",
+	list: "_list_1vkd4_17",
+	item: "_item_1vkd4_24",
+	open: "_open_1vkd4_37",
+	action: "_action_1vkd4_52",
+	rename: "_rename_1vkd4_62",
+	name: "_name_1vkd4_68",
+	size: "_size_1vkd4_76"
 };
 //#endregion
 //#region src/renderer/components/AssetsLook.tsx
@@ -46325,7 +46325,7 @@ function getLoadedCount() {
 	return loadedCount;
 }
 function getHighlighter() {
-	highlighter ??= Promise.all([__vitePreload(() => import("./core-BJ06czfL.js"), [], import.meta.url), __vitePreload(() => import("./engine-javascript-BgMzXrAA.js"), [], import.meta.url)]).then(async ([{ createHighlighterCore }, { createJavaScriptRegexEngine }]) => {
+	highlighter ??= Promise.all([__vitePreload(() => import("./core-mh9itEH7.js"), [], import.meta.url), __vitePreload(() => import("./engine-javascript-BgMzXrAA.js"), [], import.meta.url)]).then(async ([{ createHighlighterCore }, { createJavaScriptRegexEngine }]) => {
 		ready = await createHighlighterCore({ engine: createJavaScriptRegexEngine({ forgiving: true }) });
 		return ready;
 	});
@@ -73356,14 +73356,14 @@ function BulletLook(props) {
 }
 var Calendar_module_default = { day: "_day_147ud_2" };
 var CalendarPanel_module_default = {
-	panel: "_panel_1mii1_1",
-	toolbar: "_toolbar_1mii1_7",
-	tagList: "_tagList_1mii1_11",
-	pin: "_pin_1mii1_16",
-	calendar: "_calendar_1mii1_23",
-	day: "_day_1mii1_32",
-	heading: "_heading_1mii1_49",
-	time: "_time_1mii1_53"
+	panel: "_panel_1k5p5_1",
+	toolbar: "_toolbar_1k5p5_7",
+	tagList: "_tagList_1k5p5_11",
+	pin: "_pin_1k5p5_16",
+	calendar: "_calendar_1k5p5_23",
+	day: "_day_1k5p5_32",
+	heading: "_heading_1k5p5_49",
+	time: "_time_1k5p5_53"
 };
 //#endregion
 //#region src/renderer/components/SidebarContext.ts
@@ -73372,15 +73372,15 @@ function useActivePanel() {
 	return (0, import_react.useContext)(ActivePanelContext);
 }
 var TagsPanel_module_default = {
-	panel: "_panel_11cpu_1",
-	toolbar: "_toolbar_11cpu_6",
-	note: "_note_11cpu_10",
-	list: "_list_11cpu_16",
-	item: "_item_11cpu_23",
-	select: "_select_11cpu_44",
-	bulletIcon: "_bulletIcon_11cpu_55",
-	name: "_name_11cpu_60",
-	actions: "_actions_11cpu_69"
+	panel: "_panel_7af5e_1",
+	toolbar: "_toolbar_7af5e_6",
+	note: "_note_7af5e_11",
+	list: "_list_7af5e_17",
+	item: "_item_7af5e_24",
+	select: "_select_7af5e_45",
+	bulletIcon: "_bulletIcon_7af5e_56",
+	name: "_name_7af5e_61",
+	actions: "_actions_7af5e_70"
 };
 //#endregion
 //#region src/renderer/components/CalendarPanel.tsx
@@ -73625,15 +73625,15 @@ function useFavoriteBullets(store) {
 	};
 }
 var FavoritesPanel_module_default = {
-	panel: "_panel_1gj7j_1",
-	toolbar: "_toolbar_1gj7j_6",
-	note: "_note_1gj7j_10",
-	list: "_list_1gj7j_16",
-	item: "_item_1gj7j_23",
-	select: "_select_1gj7j_44",
-	bulletIcon: "_bulletIcon_1gj7j_55",
-	name: "_name_1gj7j_60",
-	actions: "_actions_1gj7j_69"
+	panel: "_panel_1oy5w_1",
+	toolbar: "_toolbar_1oy5w_6",
+	note: "_note_1oy5w_11",
+	list: "_list_1oy5w_17",
+	item: "_item_1oy5w_24",
+	select: "_select_1oy5w_45",
+	bulletIcon: "_bulletIcon_1oy5w_56",
+	name: "_name_1oy5w_61",
+	actions: "_actions_1oy5w_70"
 };
 //#endregion
 //#region src/renderer/components/FavoritesLook.tsx

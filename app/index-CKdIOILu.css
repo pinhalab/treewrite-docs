@@ -11472,29 +11472,30 @@ fieldset:disabled .m_38aeed47:where(:not([data-inverted])),
 	overflow: hidden;
 	background-color: var(--mantine-color-body);
 }
-._panel_1baho_1 {
+._panel_1vkd4_1 {
 	display: flex;
 	flex-direction: column;
 }
 
-._toolbar_1baho_6 {
+._toolbar_1vkd4_6 {
 	padding-left: var(--mantine-spacing-xs);
+	padding-bottom: var(--mantine-spacing-xs);
 }
 
-._note_1baho_10 {
+._note_1vkd4_11 {
 	padding: var(--mantine-spacing-xs);
 	color: var(--mantine-color-dimmed);
 	font-size: var(--mantine-font-size-xs);
 }
 
-._list_1baho_16 {
+._list_1vkd4_17 {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
 /* A row of the list reaches the sides of the sidebar, as the items of the pathway do */
-._item_1baho_23 {
+._item_1vkd4_24 {
 	display: flex;
 	align-items: center;
 	gap: 2px;
@@ -11502,16 +11503,16 @@ fieldset:disabled .m_38aeed47:where(:not([data-inverted])),
 	padding-right: var(--mantine-spacing-xs);
 }
 
-._item_1baho_23:hover {
+._item_1vkd4_24:hover {
 	background-color: var(--mantine-color-gray-3);
 }
 
-[data-mantine-color-scheme='dark'] ._item_1baho_23:hover {
+[data-mantine-color-scheme='dark'] ._item_1vkd4_24:hover {
 	background-color: var(--mantine-color-dark-6);
 }
 
 /* All of the row but its action */
-._open_1baho_36 {
+._open_1vkd4_37 {
 	flex: 1;
 	min-width: 0;
 	display: flex;
@@ -11526,23 +11527,23 @@ fieldset:disabled .m_38aeed47:where(:not([data-inverted])),
 }
 
 /* Only on the row the pointer is on */
-._action_1baho_51 {
+._action_1vkd4_52 {
 	display: none;
 	flex-shrink: 0;
 }
 
-._item_1baho_23:hover ._action_1baho_51,
-._item_1baho_23:focus-within ._action_1baho_51 {
+._item_1vkd4_24:hover ._action_1vkd4_52,
+._item_1vkd4_24:focus-within ._action_1vkd4_52 {
 	display: flex;
 }
 
-._rename_1baho_61 {
+._rename_1vkd4_62 {
 	flex: 1;
 	min-width: 0;
 	padding: 2px 0 2px var(--mantine-spacing-xs);
 }
 
-._name_1baho_67 {
+._name_1vkd4_68 {
 	flex: 1;
 	min-width: 0;
 	overflow: hidden;
@@ -11550,7 +11551,7 @@ fieldset:disabled .m_38aeed47:where(:not([data-inverted])),
 	white-space: nowrap;
 }
 
-._size_1baho_75 {
+._size_1vkd4_76 {
 	flex-shrink: 0;
 	color: var(--mantine-color-dimmed);
 	font-size: var(--mantine-font-size-xs);
@@ -12079,29 +12080,29 @@ fieldset:disabled .m_38aeed47:where(:not([data-inverted])),
 		background-color: var(--mantine-color-secondary-filled-hover);
 	}
 }
-._panel_1mii1_1 {
+._panel_1k5p5_1 {
 	display: flex;
 	flex-direction: column;
 	gap: var(--mantine-spacing-xs);
 }
 
-._toolbar_1mii1_7 {
+._toolbar_1k5p5_7 {
 	padding-left: var(--mantine-spacing-xs);
 }
 
-._tagList_1mii1_11 {
+._tagList_1k5p5_11 {
 	overflow-y: auto;
 	min-width: 160px;
 }
 
-._pin_1mii1_16 {
+._pin_1k5p5_16 {
 	display: inline-flex;
 	align-items: center;
 	gap: 4px;
 	font-size: var(--mantine-font-size-xs);
 }
 
-._calendar_1mii1_23 {
+._calendar_1k5p5_23 {
 	margin-left: var(--mantine-spacing-xs);
 	padding: 4px;
 	border: 1px solid var(--mantine-color-default-border);
@@ -12109,12 +12110,16 @@ fieldset:disabled .m_38aeed47:where(:not([data-inverted])),
 	background-color: var(--mantine-color-body);
 }
 
+[data-mantine-color-scheme='dark'] ._calendar_1k5p5_23 {
+	background-color: transparent;
+}
+
 /* A dot under the days that have bullets with a date */
-._day_1mii1_32 {
+._day_1k5p5_32 {
 	position: relative;
 }
 
-._day_1mii1_32[data-dated]::after {
+._day_1k5p5_32[data-dated]::after {
 	content: "";
 	position: absolute;
 	bottom: 2px;
@@ -12127,36 +12132,37 @@ fieldset:disabled .m_38aeed47:where(:not([data-inverted])),
 	opacity: 0.6;
 }
 
-._heading_1mii1_49 {
+._heading_1k5p5_49 {
 	padding: 0 var(--mantine-spacing-xs);
 }
 
-._time_1mii1_53 {
+._time_1k5p5_53 {
 	flex-shrink: 0;
 }
-._panel_11cpu_1 {
+._panel_7af5e_1 {
 	display: flex;
 	flex-direction: column;
 }
 
-._toolbar_11cpu_6 {
+._toolbar_7af5e_6 {
 	padding-left: var(--mantine-spacing-xs);
+	padding-bottom: var(--mantine-spacing-xs);
 }
 
-._note_11cpu_10 {
+._note_7af5e_11 {
 	padding: var(--mantine-spacing-xs);
 	color: var(--mantine-color-dimmed);
 	font-size: var(--mantine-font-size-xs);
 }
 
-._list_11cpu_16 {
+._list_7af5e_17 {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
 /* A row of the list reaches the sides of the sidebar, as the items of the assets do */
-._item_11cpu_23 {
+._item_7af5e_24 {
 	display: flex;
 	width: 100%;
 	align-items: center;
@@ -12167,21 +12173,21 @@ fieldset:disabled .m_38aeed47:where(:not([data-inverted])),
 	font-size: var(--mantine-font-size-sm);
 }
 
-._item_11cpu_23:hover,
-._item_11cpu_23[data-active] {
+._item_7af5e_24:hover,
+._item_7af5e_24[data-active] {
 	background-color: var(--mantine-color-gray-3);
 }
 
-[data-mantine-color-scheme='dark'] ._item_11cpu_23:hover, [data-mantine-color-scheme='dark'] ._item_11cpu_23[data-active] {
+[data-mantine-color-scheme='dark'] ._item_7af5e_24:hover, [data-mantine-color-scheme='dark'] ._item_7af5e_24[data-active] {
 	background-color: var(--mantine-color-dark-6);
 }
 
-._item_11cpu_23[data-dragging] {
+._item_7af5e_24[data-dragging] {
 	z-index: 1;
 }
 
 /* What of a row of the list of tags shows the bullets that have the tag: all of it but its actions */
-._select_11cpu_44 {
+._select_7af5e_45 {
 	flex: 1;
 	min-width: 0;
 	display: flex;
@@ -12192,12 +12198,12 @@ fieldset:disabled .m_38aeed47:where(:not([data-inverted])),
 	font-size: inherit;
 }
 
-._bulletIcon_11cpu_55 {
+._bulletIcon_7af5e_56 {
 	flex-shrink: 0;
 	color: var(--mantine-color-dimmed);
 }
 
-._name_11cpu_60 {
+._name_7af5e_61 {
 	flex: 1;
 	min-width: 0;
 	overflow: hidden;
@@ -12206,39 +12212,40 @@ fieldset:disabled .m_38aeed47:where(:not([data-inverted])),
 }
 
 /* Only on the row the pointer is on, or the one whose popover is open */
-._actions_11cpu_69 {
+._actions_7af5e_70 {
 	display: none;
 	flex-shrink: 0;
 }
 
-._item_11cpu_23:hover ._actions_11cpu_69,
-._item_11cpu_23:focus-within ._actions_11cpu_69,
-._item_11cpu_23[data-active] ._actions_11cpu_69 {
+._item_7af5e_24:hover ._actions_7af5e_70,
+._item_7af5e_24:focus-within ._actions_7af5e_70,
+._item_7af5e_24[data-active] ._actions_7af5e_70 {
 	display: flex;
 }
-._panel_1gj7j_1 {
+._panel_1oy5w_1 {
 	display: flex;
 	flex-direction: column;
 }
 
-._toolbar_1gj7j_6 {
+._toolbar_1oy5w_6 {
 	padding-left: var(--mantine-spacing-xs);
+	padding-bottom: var(--mantine-spacing-xs);
 }
 
-._note_1gj7j_10 {
+._note_1oy5w_11 {
 	padding: var(--mantine-spacing-xs);
 	color: var(--mantine-color-dimmed);
 	font-size: var(--mantine-font-size-xs);
 }
 
-._list_1gj7j_16 {
+._list_1oy5w_17 {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
 /* A row of the list reaches the sides of the sidebar, as the items of the tags do */
-._item_1gj7j_23 {
+._item_1oy5w_24 {
 	display: flex;
 	width: 100%;
 	align-items: center;
@@ -12249,21 +12256,21 @@ fieldset:disabled .m_38aeed47:where(:not([data-inverted])),
 	font-size: var(--mantine-font-size-sm);
 }
 
-._item_1gj7j_23:hover,
-._item_1gj7j_23[data-current] {
+._item_1oy5w_24:hover,
+._item_1oy5w_24[data-current] {
 	background-color: var(--mantine-color-gray-3);
 }
 
-[data-mantine-color-scheme='dark'] ._item_1gj7j_23:hover, [data-mantine-color-scheme='dark'] ._item_1gj7j_23[data-current] {
+[data-mantine-color-scheme='dark'] ._item_1oy5w_24:hover, [data-mantine-color-scheme='dark'] ._item_1oy5w_24[data-current] {
 	background-color: var(--mantine-color-dark-6);
 }
 
-._item_1gj7j_23[data-dragging] {
+._item_1oy5w_24[data-dragging] {
 	z-index: 1;
 }
 
 /* All of the row but its actions */
-._select_1gj7j_44 {
+._select_1oy5w_45 {
 	flex: 1;
 	min-width: 0;
 	display: flex;
@@ -12274,12 +12281,12 @@ fieldset:disabled .m_38aeed47:where(:not([data-inverted])),
 	text-decoration: none;
 }
 
-._bulletIcon_1gj7j_55 {
+._bulletIcon_1oy5w_56 {
 	flex-shrink: 0;
 	color: var(--mantine-color-dimmed);
 }
 
-._name_1gj7j_60 {
+._name_1oy5w_61 {
 	flex: 1;
 	min-width: 0;
 	overflow: hidden;
@@ -12288,13 +12295,13 @@ fieldset:disabled .m_38aeed47:where(:not([data-inverted])),
 }
 
 /* Only on the row the pointer is on */
-._actions_1gj7j_69 {
+._actions_1oy5w_70 {
 	display: none;
 	flex-shrink: 0;
 }
 
-._item_1gj7j_23:hover ._actions_1gj7j_69,
-._item_1gj7j_23:focus-within ._actions_1gj7j_69 {
+._item_1oy5w_24:hover ._actions_1oy5w_70,
+._item_1oy5w_24:focus-within ._actions_1oy5w_70 {
 	display: flex;
 }
 ._item_dgjyu_1 {
