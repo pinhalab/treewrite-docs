@@ -1142,3 +1142,26 @@
 {"id":"01M3PQVVKYCGVC293RRR3Q725W","parent":"01M3J50TXFFWGNGN8NNFTYBVHQ","index":"a1","type":"image","src":"northeast-road.jpeg"}
 {"id":"01M3PQVVKYCGVC293RRR3Q725W","parent":"01M3J50TXFFWGNGN8NNFTYBVHQ","index":"a1","type":"image","src":"northeast-road.jpeg","width":176}
 {"id":"01M3PQVVKYCGVC293RRR3Q725W","parent":"01M3J50TXFFWGNGN8NNFTYBVHQ","index":"a1","type":"image","src":"northeast-road.jpeg","width":201}
+{"id":"01M3PRM4VEWVG25R6Z1XBNZHNF","parent":"01M3J50TXFFWGNGN8NNFTYBVHQ","index":"a2","type":"text","text":""}
+{"id":"01M3PRM4VEWVG25R6Z1XBNZHNF","parent":"01M3J50TXFFWGNGN8NNFTYBVHQ","index":"a2","type":"text","text":"Olá mundo"}
+{"id":"01M3PRM75HPCX6V0R48B54R4JR","parent":"01M3J50TXFFWGNGN8NNFTYBVHQ","index":"a3","type":"text","text":""}
+{"id":"01M3PRM75HPCX6V0R48B54R4JR","deleted":true}
+{"id":"01M3PRM4VEWVG25R6Z1XBNZHNF","parent":"01M3J50TXFFWGNGN8NNFTYBVHQ","index":"a2","type":"text","text":"Olá mund"}
+{"id":"01M3PRM4VEWVG25R6Z1XBNZHNF","deleted":true}
+{"id":"01M3J50TXFFWGNGN8NNFTYBVHQ","parent":"01M3DG9Z1NNFGR3K5HWFDC01GM","index":"a1V","type":"page","text":"Image","icon":"photo.png","collapsed":true}
+{"id":"01M3J516TYWQMNZTFY10E8GGF6","parent":"01M3DG9Z1NNFGR3K5HWFDC01GM","index":"a1","type":"page","text":"Callout","icon":"info-square-rounded.png"}
+{"id":"01M3J516TYWQMNZTFY10E8GGF6","parent":"01M3DG9Z1NNFGR3K5HWFDC01GM","index":"a1","type":"page","text":"Callout","icon":"info-square-rounded.png","collapsed":true}
+{"id":"01M3J50TXFFWGNGN8NNFTYBVHQ","parent":"01M3DG9Z1NNFGR3K5HWFDC01GM","index":"a1V","type":"page","text":"Image","icon":"photo.png"}
+{"id":"01M3J50TXFFWGNGN8NNFTYBVHQ","parent":"01M3DG9Z1NNFGR3K5HWFDC01GM","index":"a1V","type":"page","text":"Image","icon":"photo.png","collapsed":true}
+{"id":"01M3J4ZYC2DC92VSDF8JGHFR2Q","parent":"01M3DG9Z1NNFGR3K5HWFDC01GM","index":"a1l","type":"page","text":"File","icon":"file.png"}
+{"id":"01M3J4ZYC2DC92VSDF8JGHFR2Q","parent":"01M3DG9Z1NNFGR3K5HWFDC01GM","index":"a1l","type":"page","text":"File","icon":"file.png","collapsed":true}
+{"id":"01M3J4ZYC2DC92VSDF8JGHFR2Q","parent":"01M3DG9Z1NNFGR3K5HWFDC01GM","index":"a1l","type":"page","text":"File","icon":"file.png"}
+{"id":"01M3J4ZYC2DC92VSDF8JGHFR2Q","parent":"01M3DG9Z1NNFGR3K5HWFDC01GM","index":"a1l","type":"page","text":"File","icon":"file.png","collapsed":true}
+{"id":"01M3DG9Z1NNFGR3K5HWFDC01GM","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"a0","type":"text","text":"List of bullet types","note":"See examples of usage/appearance of each existing bullet type","collapsed":true}
+{"id":"01M3CNK6ZRBGVM62Z4J03JPDZ7","parent":"","index":"ZxZ","type":"page","text":"Bullets","icon":"📚","background":"#4c6ef5","note":"What are bullets and what types of bullets are there (with visual examples)","collapsed":true}
+{"id":"01M3CK4D608BX01BDWAWPSDR8G","parent":"","index":"Zxd","type":"page","text":"File format","icon":"💾","background":"#2e2e2e","note":"How bullets are stored in your file system"}
+{"id":"01M3PN11TSYJJH8TYNFZ3SNCZ7","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"Zz","type":"text","text":"Basic concepts of `.jsonl` files"}
+{"id":"01M3PN11TSYJJH8TYNFZ3SNCZ7","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"Zz","type":"text","text":"Basic concepts of `.jsonl` files","collapsed":true}
+{"id":"01M3PN21SX7VYQZTVH1TSFBE25","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"a0","type":"text","text":"Append-only log structure"}
+{"id":"01M3PPGNXFJJ74A3GPMQDYBTXY","parent":"01M3PN21SX7VYQZTVH1TSFBE25","index":"a3","type":"text","text":"If we were to update the bullet line with the new values, we would have to rewrite the entire file with each edit. This is because the lines don't have a fixed byte length, and ´we can't update a JSON object in the middle of the file without updating everything else. But appending new data to a file in the file system is a cheap and fast operation"}
+{"id":"01M3PPGNXFJJ74A3GPMQDYBTXY","parent":"01M3PN21SX7VYQZTVH1TSFBE25","index":"a3","type":"text","text":"If we were to update the bullet line with the new values, we would have to rewrite the entire file with each edit. This is because the lines don't have a fixed byte length, so we can't update a JSON object in the middle of the file without updating everything else. But appending new data to a file in the file system is a cheap and fast operation"}
