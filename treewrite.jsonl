@@ -1181,3 +1181,9 @@
 {"id":"01M3PS53TSBPEBJ91HKD20CEV2","parent":"01M3PN11TSYJJH8TYNFZ3SNCZ7","index":"a6","type":"text","text":""}
 {"id":"01M3PS53TSBPEBJ91HKD20CEV2","parent":"01M3PRXK6QQS0VNGMRFNEP3AFW","index":"a0","type":"text","text":""}
 {"id":"01M3PS53TSBPEBJ91HKD20CEV2","parent":"01M3PRXK6QQS0VNGMRFNEP3AFW","index":"a0","type":"number","text":""}
+{"id":"01M3PS53TSBPEBJ91HKD20CEV2","parent":"01M3PRXK6QQS0VNGMRFNEP3AFW","index":"a0","type":"number","text":"Using an append-only log structure, each edit appends to the end of the file instead of overwriting the entire file, making TreeWrite much more performant for large documents."}
+{"id":"01M3PS53TSBPEBJ91HKD20CEV2","parent":"01M3PRXK6QQS0VNGMRFNEP3AFW","index":"a0","type":"number","text":"Using an append-only log structure, each edit appends to the end of the file instead of overwriting the entire file, making TreeWrite much more performant for large documents"}
+{"id":"01M3PS53TSBPEBJ91HKD20CEV2","parent":"01M3PRXK6QQS0VNGMRFNEP3AFW","index":"a0","type":"number","text":"Using an append-only log structure, each edit appends to the end of the file instead of overwriting the entire file, making TreeWrite much more performant for large documents"}
+{"id":"01M3PSEN792ETWAJFD260A3PW7","parent":"01M3PRXK6QQS0VNGMRFNEP3AFW","index":"a1","type":"number","text":""}
+{"id":"01M3PSEN792ETWAJFD260A3PW7","parent":"01M3PRXK6QQS0VNGMRFNEP3AFW","index":"a1","type":"number","text":"A damaged line or crash does not corrupt the entire document"}
+{"id":"01M3PSGDGK77J7X45HT1SSMEZJ","parent":"01M3PRXK6QQS0VNGMRFNEP3AFW","index":"a2","type":"number","text":""}
