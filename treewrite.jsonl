@@ -910,3 +910,15 @@
 {"id":"01M3CNK6ZRBGVM62Z4J03JPDZ7","parent":"","index":"ZxZ","type":"page","text":"Bullets","icon":"📚","background":"#4c6ef5","note":"What are bullets and what types of bullets are there","collapsed":true}
 {"id":"01M3DGA9V9JJEKMYPBXA0P7VTM","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"a0","type":"text","text":"TreeWrite has a very unique and special way of storing your bullets in your file system"}
 {"id":"01M3PHNFAP5XG3TJ55Y7K7QYFP","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"a1","type":"text","text":"Basically, your bullets are stored in `.jsonl` ([JSON Lines](https://jsonlines.org)) files. This means that each line of the file is a JSON object containing either a single bullet information or metadata from your notes"}
+{"id":"01M3PJCQZ75TFMC90YZQXP7N4S","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"a3","type":"text","text":"Specification"}
+{"id":"01M3PJMHZH5NANH2P2M0PAE581","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"a4","type":"text","text":""}
+{"id":"01M3PJMHZH5NANH2P2M0PAE581","parent":"01M3PJCQZ75TFMC90YZQXP7N4S","index":"a0","type":"text","text":""}
+{"id":"01M3PJMHZH5NANH2P2M0PAE581","parent":"01M3PJCQZ75TFMC90YZQXP7N4S","index":"a0","type":"text","text":"Bullet format and fields"}
+{"id":"01M3PJN4XW4PAYMW6J3P2H8BVE","parent":"01M3PJCQZ75TFMC90YZQXP7N4S","index":"a1","type":"text","text":""}
+{"id":"01M3PJN4XW4PAYMW6J3P2H8BVE","parent":"01M3PJCQZ75TFMC90YZQXP7N4S","index":"a1","type":"text","text":"Metadata form"}
+{"id":"01M3PJN4XW4PAYMW6J3P2H8BVE","parent":"01M3PJCQZ75TFMC90YZQXP7N4S","index":"a1","type":"text","text":"Metadata format and fields"}
+{"id":"01M3PJCQZ75TFMC90YZQXP7N4S","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"a3","type":"page","text":"Specification"}
+{"id":"01M3PJCQZ75TFMC90YZQXP7N4S","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"a3","type":"page","text":"Specification","icon":"📄"}
+{"id":"01M3PJCQZ75TFMC90YZQXP7N4S","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"a3","type":"page","text":"**Specification**","icon":"📄"}
+{"id":"01M3PJCQZ75TFMC90YZQXP7N4S","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"a3","type":"page","text":"**File format pecification**","icon":"📄"}
+{"id":"01M3PJCQZ75TFMC90YZQXP7N4S","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"a3","type":"page","text":"**File format specification**","icon":"📄"}
