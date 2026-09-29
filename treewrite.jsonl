@@ -481,3 +481,17 @@
 {"id":"01M3DG9Z1NNFGR3K5HWFDC01GM","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"a0","type":"text","text":"List of bulle","note":"See examples of usage/appearance of each existing bullet type"}
 {"id":"01M3DG9Z1NNFGR3K5HWFDC01GM","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"a0","type":"text","text":"List of bulle"}
 {"id":"01M3DG9Z1NNFGR3K5HWFDC01GM","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"a0","type":"text","text":""}
+{"id":"01M3DG9Z1NNFGR3K5HWFDC01GM","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"a0","type":"text","text":"See the list of existing bullet types, their appearance, and how they are stored in `.json`."}
+{"id":"01M3DG9Z1NNFGR3K5HWFDC01GM","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"a0","type":"text","text":"See the list of existing bullet types, their appearance, and how they are stored in `.json`"}
+{"id":"01M3Q2KE10D5K3MNJSMP2PWBSN","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"Zz","type":"page","text":"Text","icon":"align-left.png"}
+{"id":"01M3Q2KE10D5K3MNJSMP2PWBSN","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"Zz","type":"page","text":"Text","icon":"align-left.png","collapsed":true}
+{"id":"01M3Q2KZY27DHTX08NT3BB7W4G","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a0","type":"page","text":"Title","icon":"heading.png"}
+{"id":"01M3Q2KZY27DHTX08NT3BB7W4G","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a0","type":"page","text":"Title","icon":"heading.png"}
+{"id":"01M3Q2KZY27DHTX08NT3BB7W4G","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a0","type":"page","text":"Title","icon":"heading.png","collapsed":true}
+{"id":"01M3Q2M57PQ48DV93NG70W8J0Q","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a1","type":"page","text":"Number","icon":"list-numbers.png"}
+{"id":"01M3Q2M57PQ48DV93NG70W8J0Q","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a1","type":"page","text":"Number","icon":"list-numbers.png","collapsed":true}
+{"id":"01M3QD8BXYMNV9Y02Q98REJVE8","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a2","type":"text","text":"Bullet types","collapsed":true}
+{"id":"01M3QD7MNAPKGY0P4MBBBH5CDE","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"a1","type":"text","text":"Bullet types and metadata","collapsed":true}
+{"id":"01M3DG9Z1NNFGR3K5HWFDC01GM","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"a0","type":"text","text":"See the list of existing bullet types, their appearance, and how they are stored in `.jsonl`"}
+{"id":"01M3QD7MNAPKGY0P4MBBBH5CDE","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"a1","type":"text","text":"Bullet types and metadata"}
+{"id":"01M3QD7MNAPKGY0P4MBBBH5CDE","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"a1","type":"text","text":"Bullet types and metadata","collapsed":true}
