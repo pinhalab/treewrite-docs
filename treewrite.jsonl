@@ -1195,3 +1195,4 @@
 {"id":"01M3PRXK6QQS0VNGMRFNEP3AFW","parent":"01M3PN11TSYJJH8TYNFZ3SNCZ7","index":"a5","type":"text","text":"Some reasons to use a JSON Lines file instead of a pure JSON file:"}
 {"id":"01M3PN11TSYJJH8TYNFZ3SNCZ7","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"Zz","type":"text","text":"Basic concepts of `.jsonl` files","collapsed":true}
 {"id":"01M3CK4D608BX01BDWAWPSDR8G","parent":"","index":"Zxd","type":"page","text":"File format asdgag","icon":"💾","background":"#2e2e2e","note":"How bullets are stored in your file system"}
+{"id":"01M3CK4D608BX01BDWAWPSDR8G","parent":"","index":"Zxd","type":"page","text":"File format","icon":"💾","background":"#2e2e2e","note":"How bullets are stored in your file system"}
