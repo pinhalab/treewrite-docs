@@ -321,3 +321,163 @@
 {"id":"01M3QBV3HG2N4AY5V74FPA5DWE","parent":"01M3QBV3HF20E8KGC4JQVZ40A3","index":"a0","type":"table","rows":[["Field","Type","Required?","Description"],["`title`","`string`","No","Title of the root of the document. Omitted to use `Home`"],["`icon`","`string`","No","Icon of the root, like the `icon` of a page: an emoji, a file name in the assets directory or a URL. Omitted to use the default icon"],["`background`","`string`","No","Background of the root, like the `background` of a page: a color, a file name in the assets directory or a URL. Omitted when there is none"],["`position`","`number`","No","Vertical position the background image is shown from, from `0` (top) to `100` (bottom). Omitted when it is `50`"]],"header":"horizontal","widths":[121,101,101,280]}
 {"id":"01M3QBV3HPVWPE5FT4KSF0GV4N","parent":"01M3QBV3HPV0ND9TWNJ6VGABAK","index":"a0","type":"table","rows":[["Field","Type","Required?","Description"],["`enabled`","`boolean`","Yes","Whether the Git integration is on. Defaults to `false`"],["`mode`","`string`","Yes","`sync` pulls the changes of other machines before pushing, and `backup` only pushes. Defaults to `sync`"],["`idleMinutes`","`number`","Yes","Minutes after the last change before the document is committed and synced, from `0.5` to `1440`. Defaults to `1`"],["`pullIntervalMinutes`","`number`","Yes","Minutes between pulls of the changes of other machines, even with nothing changed locally, from `0.5` to `1440`. Defaults to `5`"],["`pullOnOpen`","`boolean`","Yes","Whether changes are pulled when the document is opened. Defaults to `true`"],["`commitMessage`","`string`","Yes","Template of the commit messages, which takes `{{file}}`, `{{date}}` and `{{hostname}}`. Defaults to `{{file}} from {{hostname}} at {{date}}`"]],"header":"horizontal","widths":[196,101,101,267]}
 {"id":"01M3Q2H95YEWXA0GRW81Y1B8QM","parent":"01M3PJCQZ75TFMC90YZQXP7N4S","index":"a1","type":"text","text":"Metadata fields","collapsed":true}
+{"id":"01M3PN21SX7VYQZTVH1TSFBE25","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"a0","type":"text","text":"Append-only log structure","collapsed":true}
+{"id":"01M3QD7MNAPKGY0P4MBBBH5CDE","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"a1","type":"text","text":""}
+{"id":"01M3QD7MNAPKGY0P4MBBBH5CDE","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"a1","type":"text","text":"Bullet types and metad"}
+{"id":"01M3QD7MNAPKGY0P4MBBBH5CDE","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"a1","type":"text","text":"Bullet types and metadata"}
+{"id":"01M3Q2E3J20NKRPCQFF6YJK5MC","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a0","type":"text","text":"Bullet base fields","note":"The fields that are common to all bullet types","collapsed":true}
+{"id":"01M3Q2E3J20NKRPCQFF6YJK5MC","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a0","type":"text","text":"Bullet base fields","note":"The fields that are common to all bullet types","collapsed":true}
+{"id":"01M3QD89NDBG7MX46QBF4VYCPQ","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a1","type":"text","text":""}
+{"id":"01M3QD89NDBG7MX46QBF4VYCPQ","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a1","type":"text","text":"Metadata"}
+{"id":"01M3QD8BXYMNV9Y02Q98REJVE8","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a2","type":"text","text":""}
+{"id":"01M3QD8BXYMNV9Y02Q98REJVE8","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a2","type":"text","text":"Bullet types"}
+{"id":"01M3QD8BXYMNV9Y02Q98REJVE8","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a2","type":"text","text":"Bullet typesa"}
+{"id":"01M3QD8BXYMNV9Y02Q98REJVE8","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a2","type":"text","text":"Bullet types"}
+{"id":"01M3QD8BXYMNV9Y02Q98REJVE8","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a2","type":"text","text":"Bullet types"}
+{"id":"01M3QD8M4MVTT4REN22GJT64PP","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a3","type":"text","text":""}
+{"id":"01M3QD8M4MVTT4REN22GJT64PP","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a0","type":"text","text":""}
+{"id":"01M3QD8M4MVTT4REN22GJT64PP","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a0","type":"text","text":"Text"}
+{"id":"01M3QD8PRNTS4EZQ4FC4PJP0AK","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a1","type":"text","text":""}
+{"id":"01M3QD8PRNTS4EZQ4FC4PJP0AK","parent":"01M3QD8M4MVTT4REN22GJT64PP","index":"a0","type":"text","text":"Example"}
+{"id":"01M3QD8PRNTS4EZQ4FC4PJP0AK","parent":"01M3QD8M4MVTT4REN22GJT64PP","index":"a0","type":"text","text":"Examples"}
+{"id":"01M3QD8PRNTS4EZQ4FC4PJP0AK","parent":"01M3QD8M4MVTT4REN22GJT64PP","index":"a0","type":"text","text":"Example"}
+{"id":"01M3QD8PRNTS4EZQ4FC4PJP0AK","deleted":true}
+{"id":"01M3QD8M4MVTT4REN22GJT64PP","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a0","type":"text","text":"Text"}
+{"id":"01M3QD90YKXSVT468RDD70ANP6","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a1","type":"text","text":""}
+{"id":"01M3QD90YKXSVT468RDD70ANP6","parent":"01M3QD8M4MVTT4REN22GJT64PP","index":"a0","type":"text","text":""}
+{"id":"01M3Q2H95YEWXA0GRW81Y1B8QM","parent":"01M3PJCQZ75TFMC90YZQXP7N4S","index":"a1","type":"text","text":"Metadata fields"}
+{"id":"01M3Q2H95YEWXA0GRW81Y1B8QM","parent":"01M3PJCQZ75TFMC90YZQXP7N4S","index":"a1","type":"text","text":"Metadata fields","collapsed":true}
+{"id":"01M3Q2J2YTB3XF7MNNFE9XF64D","parent":"01M3PJCQZ75TFMC90YZQXP7N4S","index":"a2","type":"text","text":"Specific fields for each bullet type"}
+{"id":"01M3QD89NDBG7MX46QBF4VYCPQ","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a1","type":"text","text":"Metadata fields"}
+{"id":"01M3Q2KE10D5K3MNJSMP2PWBSN","parent":"01M3Q2J2YTB3XF7MNNFE9XF64D","index":"a0","type":"page","text":"Text","icon":"align-left.png"}
+{"id":"01M3QD8M4MVTT4REN22GJT64PP","deleted":true}
+{"id":"01M3QD90YKXSVT468RDD70ANP6","deleted":true}
+{"id":"01M3QD8BXYMNV9Y02Q98REJVE8","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a2","type":"text","text":"Bullet types"}
+{"id":"01M3QD9N38J8DEQ4KNEKW2SXCZ","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a3","type":"text","text":""}
+{"id":"01M3QD9N38J8DEQ4KNEKW2SXCZ","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a0","type":"text","text":""}
+{"id":"01M3Q2KE10D5K3MNJSMP2PWBSN","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"Zz","type":"page","text":"Text","icon":"align-left.png"}
+{"id":"01M3QD9N38J8DEQ4KNEKW2SXCZ","deleted":true}
+{"id":"01M3Q2KZY27DHTX08NT3BB7W4G","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a0","type":"page","text":"Title","icon":"heading.png","collapsed":true}
+{"id":"01M3Q2M57PQ48DV93NG70W8J0Q","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a1","type":"page","text":"Number","icon":"list-numbers.png","collapsed":true}
+{"id":"01M3Q2M9YMY3EQ7RVWD67W7KYY","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a2","type":"page","text":"Checkbox","icon":"square-check.png","collapsed":true}
+{"id":"01M3Q2MEXEC5CK467FD99DTA84","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a3","type":"page","text":"Divider","icon":"separator.png","collapsed":true}
+{"id":"01M3Q2MTK0ST2Y1K7M4CQH4P0K","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a4","type":"page","text":"Callout","icon":"info-square-rounded.png","collapsed":true}
+{"id":"01M3Q7VAC5PGWB97ZDH1BS84R7","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a5","type":"page","text":"Table","icon":"table.png","collapsed":true}
+{"id":"01M3Q2MYYY1D3RSG9PRBMNW9HR","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a6","type":"page","text":"Image","icon":"photo.png","collapsed":true}
+{"id":"01M3Q2N3PAHRK6P5910QQ3JZ31","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a7","type":"page","text":"File","icon":"file.png","collapsed":true}
+{"id":"01M3Q2NBW6MWP9M2DXW5559921","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a8","type":"page","text":"Code","icon":"code.png","collapsed":true}
+{"id":"01M3Q2NGG81YTYQB3Y37RDAJG0","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a9","type":"page","text":"Math","icon":"math-function.png","collapsed":true}
+{"id":"01M3Q2NMH5GP7P18DD5HGZX6JR","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"aA","type":"page","text":"Page","icon":"app-window.png","collapsed":true}
+{"id":"01M3Q2H95YEWXA0GRW81Y1B8QM","parent":"01M3PJCQZ75TFMC90YZQXP7N4S","index":"a1","type":"text","text":"Metadata fields","collapsed":true}
+{"id":"01M3Q2H95YEWXA0GRW81Y1B8QM","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a1V","type":"text","text":"Metadata fields","collapsed":true}
+{"id":"01M3QD89NDBG7MX46QBF4VYCPQ","deleted":true}
+{"id":"01M3Q2KE10D5K3MNJSMP2PWBSN","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"Zz","type":"page","text":"Text","icon":"align-left.png","collapsed":true}
+{"id":"01M3Q2J2YTB3XF7MNNFE9XF64D","deleted":true}
+{"id":"01M3PJCQZ75TFMC90YZQXP7N4S","deleted":true}
+{"id":"01M3J4Z0ZT8Y7248FSMCQRP9B0","parent":"01M3DG9Z1NNFGR3K5HWFDC01GM","index":"a0","type":"page","text":"Text","icon":"align-left.png"}
+{"id":"01M3PF0NC7QATMQ15BHR9HB0Y1","parent":"01M3Q2KE10D5K3MNJSMP2PWBSN","index":"Zz","type":"text","text":"Hello world, this is **bold**, *italic*, ***bold+italic*** and a [link](https://example.com)","note":"Example of a text bullet, with bold, italic, and link markers. Other text bullets may also support these markers"}
+{"id":"01M3Q2KE10D5K3MNJSMP2PWBSN","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"Zz","type":"page","text":"Text","icon":"align-left.png"}
+{"id":"01M3Q2KE10D5K3MNJSMP2PWBSN","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"Zz","type":"page","text":"Text","icon":"align-left.png","collapsed":true}
+{"id":"01M3J51NV19VJDKJS5ENE5J6HE","parent":"01M3DG9Z1NNFGR3K5HWFDC01GM","index":"a0G","type":"page","text":"Title","icon":"heading.png"}
+{"id":"01M3J51NV19VJDKJS5ENE5J6HE","parent":"01M3Q2KZY27DHTX08NT3BB7W4G","index":"Zz","type":"page","text":"Title","icon":"heading.png"}
+{"id":"01M3Q2KZY27DHTX08NT3BB7W4G","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a0","type":"page","text":"Title","icon":"heading.png"}
+{"id":"01M3J5Z0W8RA8C0NZFTD0BEGMD","parent":"01M3Q2KZY27DHTX08NT3BB7W4G","index":"ZzV","type":"title","text":"Heading 1","level":1}
+{"id":"01M3J5Z997PD46J6XM3E16MVBH","parent":"01M3Q2KZY27DHTX08NT3BB7W4G","index":"ZzG","type":"title","text":"Heading 2","level":2}
+{"id":"01M3J5ZBF1ZQS4NQS9B57XDMCT","parent":"01M3Q2KZY27DHTX08NT3BB7W4G","index":"Zz8","type":"title","text":"Heading 3","level":3,"note":"Examples of title (h1, h2, h3)"}
+{"id":"01M3J5ZBF1ZQS4NQS9B57XDMCT","parent":"01M3Q2KZY27DHTX08NT3BB7W4G","index":"Zzl","type":"title","text":"Heading 3","level":3,"note":"Examples of title (h1, h2, h3)"}
+{"id":"01M3J5Z997PD46J6XM3E16MVBH","parent":"01M3Q2KZY27DHTX08NT3BB7W4G","index":"Zzd","type":"title","text":"Heading 2","level":2}
+{"id":"01M3J51NV19VJDKJS5ENE5J6HE","deleted":true}
+{"id":"01M3Q2KZY27DHTX08NT3BB7W4G","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a0","type":"page","text":"Title","icon":"heading.png","collapsed":true}
+{"id":"01M3J51FAKEGFTNYG5C4HED541","parent":"01M3Q2M57PQ48DV93NG70W8J0Q","index":"Zz","type":"page","text":"Number","icon":"list-numbers.png","collapsed":true}
+{"id":"01M3Q2M57PQ48DV93NG70W8J0Q","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a1","type":"page","text":"Number","icon":"list-numbers.png"}
+{"id":"01M3J51FAKEGFTNYG5C4HED541","parent":"01M3Q2M57PQ48DV93NG70W8J0Q","index":"Zz","type":"page","text":"Number","icon":"list-numbers.png"}
+{"id":"01M3J608NX4JMJ4ZJKJHV6FR1T","parent":"01M3Q2M57PQ48DV93NG70W8J0Q","index":"ZzV","type":"number","text":"Item C","note":"Example of a numbered list"}
+{"id":"01M3J606E77TX6CAEC8VKSE1AZ","parent":"01M3Q2M57PQ48DV93NG70W8J0Q","index":"ZzG","type":"number","text":"Item B"}
+{"id":"01M3J5ZXFZY7Z50BC5X8HZYB1W","parent":"01M3Q2M57PQ48DV93NG70W8J0Q","index":"Zz8","type":"number","text":"Item A"}
+{"id":"01M3J51FAKEGFTNYG5C4HED541","deleted":true}
+{"id":"01M3Q2M57PQ48DV93NG70W8J0Q","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a1","type":"page","text":"Number","icon":"list-numbers.png","collapsed":true}
+{"id":"01M3QD8BXYMNV9Y02Q98REJVE8","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a2","type":"text","text":"Bullet types "}
+{"id":"01M3QD8BXYMNV9Y02Q98REJVE8","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a2","type":"text","text":"Bullet types"}
+{"id":"01M3Q2E3J20NKRPCQFF6YJK5MC","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a0","type":"text","text":"Bullet base fields","note":"The fields that are common to all bullet types"}
+{"id":"01M3Q2E3J20NKRPCQFF6YJK5MC","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a0","type":"text","text":"Bullet base fields","note":"The fields that are common to all bullet types","collapsed":true}
+{"id":"01M3Q2KE10D5K3MNJSMP2PWBSN","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"Zz","type":"page","text":"Text","icon":"align-left.png"}
+{"id":"01M3Q2KE10D5K3MNJSMP2PWBSN","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"Zz","type":"page","text":"Text","icon":"align-left.png","collapsed":true}
+{"id":"01M3Q2KE10D5K3MNJSMP2PWBSN","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"Zz","type":"page","text":"Text","icon":"align-left.png"}
+{"id":"01M3Q2KE10D5K3MNJSMP2PWBSN","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"Zz","type":"page","text":"Text","icon":"align-left.png","collapsed":true}
+{"id":"01M3J4Z9GV8TWVPHVTPZY1CAES","parent":"01M3Q2M9YMY3EQ7RVWD67W7KYY","index":"Zz","type":"page","text":"Checkbox","icon":"square-check.png","collapsed":true}
+{"id":"01M3Q2M9YMY3EQ7RVWD67W7KYY","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a2","type":"page","text":"Checkbox","icon":"square-check.png"}
+{"id":"01M3J4Z9GV8TWVPHVTPZY1CAES","parent":"01M3Q2M9YMY3EQ7RVWD67W7KYY","index":"Zz","type":"page","text":"Checkbox","icon":"square-check.png"}
+{"id":"01M3PFWTF3470P9AQ9B440BJW9","parent":"01M3Q2M9YMY3EQ7RVWD67W7KYY","index":"ZzV","type":"checkbox","text":"Task C","checked":false,"note":"Example of a checkbox list"}
+{"id":"01M3PFWS97X0AV3QEFTRY5Q8EN","parent":"01M3Q2M9YMY3EQ7RVWD67W7KYY","index":"ZzG","type":"checkbox","text":"Task B","checked":true}
+{"id":"01M3PF0H7MXHY4C31FCQ2DKDYK","parent":"01M3Q2M9YMY3EQ7RVWD67W7KYY","index":"Zz8","type":"checkbox","text":"Task A","checked":false}
+{"id":"01M3J4Z9GV8TWVPHVTPZY1CAES","deleted":true}
+{"id":"01M3Q2M9YMY3EQ7RVWD67W7KYY","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a2","type":"page","text":"Checkbox","icon":"square-check.png","collapsed":true}
+{"id":"01M3J51THZ17VYMQE91XFV6E1N","parent":"01M3Q2MEXEC5CK467FD99DTA84","index":"Zz","type":"page","text":"Divider","icon":"separator.png","collapsed":true}
+{"id":"01M3Q2MEXEC5CK467FD99DTA84","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a3","type":"page","text":"Divider","icon":"separator.png"}
+{"id":"01M3J51THZ17VYMQE91XFV6E1N","parent":"01M3Q2MEXEC5CK467FD99DTA84","index":"Zz","type":"page","text":"Divider","icon":"separator.png"}
+{"id":"01M3PFXJ60GR5PP1QZNBB8Y58M","parent":"01M3Q2MEXEC5CK467FD99DTA84","index":"ZzV","type":"divider","text":"Hello, ***world***","note":"Examples of dividers with and without text"}
+{"id":"01M3PFXC0PPXHMW816G8CJKDVS","parent":"01M3Q2MEXEC5CK467FD99DTA84","index":"ZzG","type":"divider"}
+{"id":"01M3J51THZ17VYMQE91XFV6E1N","deleted":true}
+{"id":"01M3Q2MEXEC5CK467FD99DTA84","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a3","type":"page","text":"Divider","icon":"separator.png","collapsed":true}
+{"id":"01M3J516TYWQMNZTFY10E8GGF6","parent":"01M3Q2MTK0ST2Y1K7M4CQH4P0K","index":"Zz","type":"page","text":"Callout","icon":"info-square-rounded.png","collapsed":true}
+{"id":"01M3Q2MTK0ST2Y1K7M4CQH4P0K","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a4","type":"page","text":"Callout","icon":"info-square-rounded.png"}
+{"id":"01M3J516TYWQMNZTFY10E8GGF6","parent":"01M3Q2MTK0ST2Y1K7M4CQH4P0K","index":"Zz","type":"page","text":"Callout","icon":"info-square-rounded.png"}
+{"id":"01M3PG32TPBCZQQFCE41WF2N8X","parent":"01M3Q2MTK0ST2Y1K7M4CQH4P0K","index":"ZzV","type":"callout","text":"Hello world","title":"Important","level":"important"}
+{"id":"01M3PG2NB7NEE3SYCBEPQ9NGQ7","parent":"01M3Q2MTK0ST2Y1K7M4CQH4P0K","index":"ZzG","type":"callout","text":"Hello world","title":"Warning","level":"warning"}
+{"id":"01M3PG1JP9CQ1YQZMC9993NTRZ","parent":"01M3Q2MTK0ST2Y1K7M4CQH4P0K","index":"Zz8","type":"callout","text":"Hello world","title":"Danger","level":"danger"}
+{"id":"01M3PG11WRJFBNS0QR2SPES5DT","parent":"01M3Q2MTK0ST2Y1K7M4CQH4P0K","index":"Zz4","type":"callout","text":"Hello world","title":"Info","level":"info"}
+{"id":"01M3PG07WVRTQNC04ES4P27FED","parent":"01M3Q2MTK0ST2Y1K7M4CQH4P0K","index":"Zz2","type":"callout","text":"Hello world","title":"Success","level":"success"}
+{"id":"01M3PFZR8ABC34PDDD5E6YB041","parent":"01M3Q2MTK0ST2Y1K7M4CQH4P0K","index":"Zz1","type":"callout","text":"Hello world","title":"Neutral","level":"neutral"}
+{"id":"01M3PFYQNA16K3WA17X27TMVZ9","parent":"01M3Q2MTK0ST2Y1K7M4CQH4P0K","index":"Zz0V","type":"callout","text":"Hello world","level":"neutral","note":"Callout without title"}
+{"id":"01M3J516TYWQMNZTFY10E8GGF6","deleted":true}
+{"id":"01M3Q2MTK0ST2Y1K7M4CQH4P0K","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a4","type":"page","text":"Callout","icon":"info-square-rounded.png","collapsed":true}
+{"id":"01M3Q7VAC5PGWB97ZDH1BS84R7","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a5","type":"page","text":"Table","icon":"table.png"}
+{"id":"01M3Q7VN0K6AA4S60NZ7VCHH58","parent":"01M3Q7VAC5PGWB97ZDH1BS84R7","index":"Zz","type":"page","text":"Table","icon":"table.png","collapsed":true}
+{"id":"01M3Q7VN0K6AA4S60NZ7VCHH58","parent":"01M3Q7VAC5PGWB97ZDH1BS84R7","index":"Zz","type":"page","text":"Table","icon":"table.png"}
+{"id":"01M3QB5ZA38RNT18DHA9SKXFWH","parent":"01M3Q7VAC5PGWB97ZDH1BS84R7","index":"ZzV","type":"table","rows":[["Hello","World"]],"note":"Without header"}
+{"id":"01M3QB4XE2Q3M1MPHA46A9X06D","parent":"01M3Q7VAC5PGWB97ZDH1BS84R7","index":"ZzG","type":"table","rows":[["Column 1","Hello"],["Column 2","World"]],"header":"vertical","note":"With vertical header"}
+{"id":"01M3QB3XARX5ZJ5G71E71C2WSX","parent":"01M3Q7VAC5PGWB97ZDH1BS84R7","index":"Zz8","type":"table","rows":[["Column 1","Column 2"],["Hello","World"]],"header":"horizontal","note":"With horizontal header"}
+{"id":"01M3Q7VN0K6AA4S60NZ7VCHH58","deleted":true}
+{"id":"01M3Q7VAC5PGWB97ZDH1BS84R7","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a5","type":"page","text":"Table","icon":"table.png","collapsed":true}
+{"id":"01M3J50TXFFWGNGN8NNFTYBVHQ","parent":"01M3Q2MYYY1D3RSG9PRBMNW9HR","index":"Zz","type":"page","text":"Image","icon":"photo.png","collapsed":true}
+{"id":"01M3Q2MYYY1D3RSG9PRBMNW9HR","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a6","type":"page","text":"Image","icon":"photo.png"}
+{"id":"01M3J50TXFFWGNGN8NNFTYBVHQ","parent":"01M3Q2MYYY1D3RSG9PRBMNW9HR","index":"Zz","type":"page","text":"Image","icon":"photo.png"}
+{"id":"01M3PQVVKYCGVC293RRR3Q725W","parent":"01M3Q2MYYY1D3RSG9PRBMNW9HR","index":"ZzV","type":"image","src":"northeast-road.jpeg","width":201}
+{"id":"01M3PG3TZ94G9653GPNKDQ2WHH","parent":"01M3Q2MYYY1D3RSG9PRBMNW9HR","index":"ZzG","type":"image","src":"home-logo.svg","width":84,"note":"Example image. Images can be resized and are stored in the assets"}
+{"id":"01M3J50TXFFWGNGN8NNFTYBVHQ","deleted":true}
+{"id":"01M3Q2MYYY1D3RSG9PRBMNW9HR","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a6","type":"page","text":"Image","icon":"photo.png","collapsed":true}
+{"id":"01M3J4ZYC2DC92VSDF8JGHFR2Q","parent":"01M3Q2N3PAHRK6P5910QQ3JZ31","index":"Zz","type":"page","text":"File","icon":"file.png","collapsed":true}
+{"id":"01M3Q2N3PAHRK6P5910QQ3JZ31","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a7","type":"page","text":"File","icon":"file.png"}
+{"id":"01M3J4ZYC2DC92VSDF8JGHFR2Q","parent":"01M3Q2N3PAHRK6P5910QQ3JZ31","index":"Zz","type":"page","text":"File","icon":"file.png"}
+{"id":"01M3PG6AYA3H0NBYJHXE9STGFT","parent":"01M3Q2N3PAHRK6P5910QQ3JZ31","index":"ZzV","type":"file","name":"home-logo.svg","note":"Example file. Clicking it opens the file on your system. Files are stored in the assets"}
+{"id":"01M3J4ZYC2DC92VSDF8JGHFR2Q","deleted":true}
+{"id":"01M3Q2N3PAHRK6P5910QQ3JZ31","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a7","type":"page","text":"File","icon":"file.png","collapsed":true}
+{"id":"01M3J50WRNV5WD3QZXS4WY8Z1M","parent":"01M3Q2NBW6MWP9M2DXW5559921","index":"Zz","type":"page","text":"Code","icon":"code.png","collapsed":true}
+{"id":"01M3Q2NBW6MWP9M2DXW5559921","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a8","type":"page","text":"Code","icon":"code.png"}
+{"id":"01M3J50WRNV5WD3QZXS4WY8Z1M","parent":"01M3Q2NBW6MWP9M2DXW5559921","index":"Zz","type":"page","text":"Code","icon":"code.png"}
+{"id":"01M3PGBXV651RJC6CT254WNVJR","parent":"01M3Q2NBW6MWP9M2DXW5559921","index":"ZzV","type":"code","text":"const msg = \"Hello world\";\nconsole.log(msg);","lang":"javascript","lineNumbers":true,"firstLineNumber":123,"note":"You can specify the first number of the line numbers"}
+{"id":"01M3PGAA4CGJWG307EF78HWCXX","parent":"01M3Q2NBW6MWP9M2DXW5559921","index":"ZzG","type":"code","text":"const msg = \"Hello world\";\nconsole.log(msg);","filename":"helloWorld.js","lang":"javascript","lineNumbers":true,"note":"The code block can also have a filename and line numbers"}
+{"id":"01M3PG90DTRXS1MZ3EG6RSVWM8","parent":"01M3Q2NBW6MWP9M2DXW5559921","index":"Zz8","type":"code","text":"console.log(\"Hello world\");","lang":"javascript","note":"Example of a code block"}
+{"id":"01M3J50WRNV5WD3QZXS4WY8Z1M","deleted":true}
+{"id":"01M3Q2NBW6MWP9M2DXW5559921","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a8","type":"page","text":"Code","icon":"code.png","collapsed":true}
+{"id":"01M3Q2NBW6MWP9M2DXW5559921","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a8","type":"page","text":"Code","icon":"code.png"}
+{"id":"01M3Q2NBW6MWP9M2DXW5559921","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a8","type":"page","text":"Code","icon":"code.png","collapsed":true}
+{"id":"01M3J4ZDZXN8GVN8V94078BYA4","parent":"01M3Q2NGG81YTYQB3Y37RDAJG0","index":"Zz","type":"page","text":"Math","icon":"math-function.png","collapsed":true}
+{"id":"01M3Q2NGG81YTYQB3Y37RDAJG0","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a9","type":"page","text":"Math","icon":"math-function.png"}
+{"id":"01M3J4ZDZXN8GVN8V94078BYA4","parent":"01M3Q2NGG81YTYQB3Y37RDAJG0","index":"Zz","type":"page","text":"Math","icon":"math-function.png"}
+{"id":"01M3J7XTGY3TT4XS5XD3T1B1B3","parent":"01M3Q2NGG81YTYQB3Y37RDAJG0","index":"ZzV","type":"math","text":"\\begin{align*}\ne^{ix} &= 1 + ix + \\frac{(ix)^2}{2!} + \\frac{(ix)^3}{3!} + \\frac{(ix)^4}{4!} + \\dots \\\\\n&= 1 + ix - \\frac{x^2}{2!} - i\\frac{x^3}{3!} + \\frac{x^4}{4!} + \\dots \\\\\n&= \\left( 1 - \\frac{x^2}{2!} + \\frac{x^4}{4!} - \\dots \\right) + i\\left( x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - \\dots \\right) \\\\\n&= \\cos(x) + i\\sin(x)\n\\end{align*}","note":"Example of demonstrating the equivalence of Euler's Identity using Taylor Series. We can use multi-line LaTeX expressions"}
+{"id":"01M3J7XC4FRHS0YARXND45F1JN","parent":"01M3Q2NGG81YTYQB3Y37RDAJG0","index":"ZzG","type":"math","text":"\\begin{pmatrix}\na & b \\\\\nc & d\n\\end{pmatrix}\n\\begin{pmatrix}\nx & y \\\\\nz & w\n\\end{pmatrix}\n=\n\\begin{pmatrix}\nax + bz & ay + bw \\\\\ncx + dz & cy + dw\n\\end{pmatrix}","note":"Example of multiplying two 2 × 2 matrices"}
+{"id":"01M3J6PDE76HMXJ60SM5VJE7PS","parent":"01M3Q2NGG81YTYQB3Y37RDAJG0","index":"Zz8","type":"math","text":"f(x) = \\frac{1}{\\sigma\\sqrt{2\\pi}} e^{-\\frac{1}{2}\\left(\\frac{x-\\mu}{\\sigma}\\right)^2}","note":"Example of the Normal/Gaussian distribution"}
+{"id":"01M3J4ZDZXN8GVN8V94078BYA4","deleted":true}
+{"id":"01M3Q2NGG81YTYQB3Y37RDAJG0","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a9","type":"page","text":"Math","icon":"math-function.png","collapsed":true}
+{"id":"01M3J51292TQJCFQBNNBYSZ22T","parent":"01M3Q2NMH5GP7P18DD5HGZX6JR","index":"Zz","type":"page","text":"Page","icon":"app-window.png","collapsed":true}
+{"id":"01M3Q2NMH5GP7P18DD5HGZX6JR","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"aA","type":"page","text":"Page","icon":"app-window.png"}
+{"id":"01M3J51292TQJCFQBNNBYSZ22T","parent":"01M3Q2NMH5GP7P18DD5HGZX6JR","index":"Zz","type":"page","text":"Page","icon":"app-window.png"}
+{"id":"01M3PGHQZ1BXTBMCFN1Y2FJ2BM","parent":"01M3Q2NMH5GP7P18DD5HGZX6JR","index":"ZzV","type":"page","text":"Hello ***world***","icon":"home-logo.svg","background":"northeast-road.jpeg","position":61,"note":"A page is like a text bullet, except you can add an icon and a background that will be displayed when you zoom in on the bullet. It's a way to organize your bullets into categories. If you are not zoomed in, the icon will appear as a miniature next to the text"}
+{"id":"01M3J51292TQJCFQBNNBYSZ22T","deleted":true}
+{"id":"01M3Q2NMH5GP7P18DD5HGZX6JR","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"aA","type":"page","text":"Page","icon":"app-window.png","collapsed":true}
+{"id":"01M3J4Z0ZT8Y7248FSMCQRP9B0","deleted":true}
+{"id":"01M3DG9Z1NNFGR3K5HWFDC01GM","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"a0","type":"text","text":"List of bullet type","note":"See examples of usage/appearance of each existing bullet type"}
+{"id":"01M3DG9Z1NNFGR3K5HWFDC01GM","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"a0","type":"text","text":"List of bulle","note":"See examples of usage/appearance of each existing bullet type"}
+{"id":"01M3DG9Z1NNFGR3K5HWFDC01GM","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"a0","type":"text","text":"List of bulle"}
+{"id":"01M3DG9Z1NNFGR3K5HWFDC01GM","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"a0","type":"text","text":""}
