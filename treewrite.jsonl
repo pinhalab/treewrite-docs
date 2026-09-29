@@ -664,3 +664,19 @@
 {"id":"01M3QJEPS7Y051WM81BJQ5C2KA","parent":"","index":"ZxFG","type":"number","text":"Backup and synchronization with [[01M3CK4TT3EEMYQ55VSYQVCFZK|Git]]. Merge conflicts are resolved automatically"}
 {"id":"01M3CPBRTH1MDH1W1EY39HBPD6","parent":"","index":"ZxE","type":"number","text":"All bullets are stored in a single `.jsonl` ([JSON Lines](https://jsonlines.org)) file on your computer, no cloud storage (ever). ***You own your data*** in an open and documented text file format"}
 {"id":"01M3DZYGXAGMKQ6ZE8G0HP9FKR","deleted":true}
+{"id":"01M3CK4D608BX01BDWAWPSDR8G","parent":"","index":"Zxd","type":"page","text":"File format","icon":"💾","background":"#2e2e2e","note":"How bullets are stored in your file system"}
+{"id":"01M3PN11TSYJJH8TYNFZ3SNCZ7","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"Zz","type":"text","text":"Basic concepts of `.jsonl` files"}
+{"id":"01M3PN11TSYJJH8TYNFZ3SNCZ7","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"Zz","type":"text","text":"Basic concepts of `.jsonl` files","collapsed":true}
+{"id":"01M3PN11TSYJJH8TYNFZ3SNCZ7","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"Zz","type":"text","text":"Basic concepts of `.jsonl` files"}
+{"id":"01M3PN11TSYJJH8TYNFZ3SNCZ7","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"Zz","type":"text","text":"Basic concepts of `.jsonl` files","collapsed":true}
+{"id":"01M3CK4D608BX01BDWAWPSDR8G","parent":"","index":"Zxd","type":"page","text":"File format","icon":"💾","background":"#2e2e2e","note":"How bullets are stored in your file system","collapsed":true}
+{"id":"01M3CNK6ZRBGVM62Z4J03JPDZ7","parent":"","index":"ZxZ","type":"page","text":"Bullets","icon":"📚","background":"#4c6ef5","note":"What are bullets and what types of bullets are there"}
+{"id":"01M3DG9Z1NNFGR3K5HWFDC01GM","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"a0","type":"text","text":"See the list of existing [[bullet types, their appearance, and how they are stored in `.jsonl`"}
+{"id":"01M3DG9Z1NNFGR3K5HWFDC01GM","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"a0","type":"text","text":"See the list of existing [[01M3QD8BXYMNV9Y02Q98REJVE8]], their appearance, and how they are stored in `.jsonl`"}
+{"id":"01M3CNK6ZRBGVM62Z4J03JPDZ7","parent":"","index":"ZxZ","type":"page","text":"Bullets","icon":"📚","background":"#4c6ef5","note":"What are bullets and what types of bullets are there","collapsed":true}
+{"id":"01M3CK4D608BX01BDWAWPSDR8G","parent":"","index":"Zxd","type":"page","text":"File format","icon":"💾","background":"#2e2e2e","note":"How bullets are stored in your file system"}
+{"id":"01M3PN11TSYJJH8TYNFZ3SNCZ7","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"Zz","type":"text","text":"Basic concepts of `.jsonl` files"}
+{"id":"01M3PRXK6QQS0VNGMRFNEP3AFW","parent":"01M3PN11TSYJJH8TYNFZ3SNCZ7","index":"a5","type":"text","text":"Some reasons to use a JSON Lines file instead of a pure JSON file:"}
+{"id":"01M3PRXK6QQS0VNGMRFNEP3AFW","parent":"01M3PN11TSYJJH8TYNFZ3SNCZ7","index":"a5","type":"text","text":"Some reasons to use a JSON Lines file instead of a pure JSON file:","collapsed":true}
+{"id":"01M3PN11TSYJJH8TYNFZ3SNCZ7","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"Zz","type":"text","text":"Basic concepts of `.jsonl` files","collapsed":true}
+{"id":"01M3PN21SX7VYQZTVH1TSFBE25","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"a0","type":"text","text":"Append-only log structure"}
