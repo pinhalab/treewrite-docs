@@ -240,3 +240,59 @@
 {"id":"01M3J4Z0ZT8Y7248FSMCQRP9B0","parent":"01M3DG9Z1NNFGR3K5HWFDC01GM","index":"a0","type":"page","text":"Text","icon":"align-left.png","collapsed":true}
 {"id":"01M3Q7VN0K6AA4S60NZ7VCHH58","parent":"01M3DG9Z1NNFGR3K5HWFDC01GM","index":"a1G","type":"page","text":"Table","icon":"table.png"}
 {"id":"01M3Q7VAC5PGWB97ZDH1BS84R7","parent":"01M3Q2J2YTB3XF7MNNFE9XF64D","index":"a5V","type":"page","text":"Table","icon":"table.png"}
+{"id":"01M3QAHYVQA9VZ8JCCNSD02X0M","parent":"01M3Q2NBW6MWP9M2DXW5559921","index":"a0","type":"table","rows":[["Field","Type","Required?","Description"],["`text`","`string`","Yes","Source code of the block. It can contain line breaks"],["`filename`","`string`","No","File name shown above the code. Omitted when there is none"],["`lang`","`string`","No","Language used for syntax highlighting, such as `json`. Omitted when there is none"],["`shrink`","`boolean`","No","Whether a block longer than 8 lines shows only its first 8. Omitted when `false`"],["`lineNumbers`","`boolean`","No","Whether line numbers are shown. Omitted when `false`"],["`firstLineNumber`","`number`","No","Number of the first line, as an integer of at least `0`. Kept while line numbers are hidden, and omitted when it is `1`"]],"header":"horizontal","widths":[159,101,101,270]}
+{"id":"01M3QAHYVPK9KBWGCE7SSZP32Q","parent":"01M3Q7VAC5PGWB97ZDH1BS84R7","index":"a0","type":"table","rows":[["Field","Type","Required?","Description"],["`rows`","`string[][]`","Yes","Cells of the table, as a list of rows. Every row has the same number of cells, and each cell is a single line with inline Markdown formatting"],["`header`","`string`","No","Which cells are the header, `horizontal` for the first row or `vertical` for the first column. Omitted when the table has no header"],["`widths`","`number[]`","No","Width of each column in pixels, as positive integers. Omitted when each column fits its content"]],"header":"horizontal","widths":[102,130,101,280]}
+{"id":"01M3QAHYVQX4AXS7X2E485A11W","parent":"01M3Q2NGG81YTYQB3Y37RDAJG0","index":"a0","type":"table","rows":[["Field","Type","Required?","Description"],["`text`","`string`","Yes","LaTeX source of the formula, rendered with [KaTeX](. It can contain line breaks"]],"header":"horizontal"}
+{"id":"01M3QAHYVQX4AXS7X2E485A11W","parent":"01M3Q2NGG81YTYQB3Y37RDAJG0","index":"a0","type":"table","rows":[["Field","Type","Required?","Description"],["`text`","`string`","Yes","LaTeX source of the formula, rendered with [KaTeX](https://katex.org/. It can contain line breaks"]],"header":"horizontal"}
+{"id":"01M3QAHYVQX4AXS7X2E485A11W","parent":"01M3Q2NGG81YTYQB3Y37RDAJG0","index":"a0","type":"table","rows":[["Field","Type","Required?","Description"],["`text`","`string`","Yes","LaTeX source of the formula, rendered with [KaTeX](https://katex.org). It can contain line breaks"]],"header":"horizontal"}
+{"id":"01M3QAHYVR364B1FSN71MNTYFK","parent":"01M3Q2NMH5GP7P18DD5HGZX6JR","index":"a0","type":"table","rows":[["Field","Type","Required?","Description"],["`text`","`string`","Yes","Title of the page, with inline Markdown formatting"],["`icon`","`string`","No","Icon of the page, an emoji, a file name in the assets directory or a URL. Omitted when the page has no icon"],["`background`","`string`","No","Background of the page, a color such as `#fab005`, a file name in the assets directory or a URL. Omitted when the page has no background"],["`position`","`number`","No","Vertical position the background image is shown from, from `0` (top) to `100` (bottom). Omitted when it is `50`"]],"header":"horizontal","widths":[117,101,101,280]}
+{"id":"01M3Q2KE10D5K3MNJSMP2PWBSN","parent":"01M3Q2J2YTB3XF7MNNFE9XF64D","index":"a0","type":"page","text":"Text","icon":"align-left.png","collapsed":true}
+{"id":"01M3Q2KZY27DHTX08NT3BB7W4G","parent":"01M3Q2J2YTB3XF7MNNFE9XF64D","index":"a1","type":"page","text":"Title","icon":"heading.png","collapsed":true}
+{"id":"01M3Q2M57PQ48DV93NG70W8J0Q","parent":"01M3Q2J2YTB3XF7MNNFE9XF64D","index":"a2","type":"page","text":"Number","icon":"list-numbers.png","collapsed":true}
+{"id":"01M3Q2M9YMY3EQ7RVWD67W7KYY","parent":"01M3Q2J2YTB3XF7MNNFE9XF64D","index":"a3","type":"page","text":"Checkbox","icon":"square-check.png","collapsed":true}
+{"id":"01M3Q2MEXEC5CK467FD99DTA84","parent":"01M3Q2J2YTB3XF7MNNFE9XF64D","index":"a4","type":"page","text":"Divider","icon":"separator.png","collapsed":true}
+{"id":"01M3Q2MTK0ST2Y1K7M4CQH4P0K","parent":"01M3Q2J2YTB3XF7MNNFE9XF64D","index":"a5","type":"page","text":"Callout","icon":"info-square-rounded.png","collapsed":true}
+{"id":"01M3Q2MYYY1D3RSG9PRBMNW9HR","parent":"01M3Q2J2YTB3XF7MNNFE9XF64D","index":"a6","type":"page","text":"Image","icon":"photo.png","collapsed":true}
+{"id":"01M3Q2N3PAHRK6P5910QQ3JZ31","parent":"01M3Q2J2YTB3XF7MNNFE9XF64D","index":"a7","type":"page","text":"File","icon":"file.png","collapsed":true}
+{"id":"01M3Q2NBW6MWP9M2DXW5559921","parent":"01M3Q2J2YTB3XF7MNNFE9XF64D","index":"a8","type":"page","text":"Code","icon":"code.png","collapsed":true}
+{"id":"01M3Q2NGG81YTYQB3Y37RDAJG0","parent":"01M3Q2J2YTB3XF7MNNFE9XF64D","index":"a9","type":"page","text":"Math","icon":"math-function.png","collapsed":true}
+{"id":"01M3Q2NMH5GP7P18DD5HGZX6JR","parent":"01M3Q2J2YTB3XF7MNNFE9XF64D","index":"aA","type":"page","text":"Page","icon":"app-window.png","collapsed":true}
+{"id":"01M3Q7VAC5PGWB97ZDH1BS84R7","parent":"01M3Q2J2YTB3XF7MNNFE9XF64D","index":"a5V","type":"page","text":"Table","icon":"table.png","collapsed":true}
+{"id":"01M3Q7VN0K6AA4S60NZ7VCHH58","parent":"01M3DG9Z1NNFGR3K5HWFDC01GM","index":"a1G","type":"page","text":"Table","icon":"table.png"}
+{"id":"01M3QB3XARX5ZJ5G71E71C2WSX","parent":"01M3DG9Z1NNFGR3K5HWFDC01GM","index":"a1O","type":"text","text":""}
+{"id":"01M3QB3XARX5ZJ5G71E71C2WSX","parent":"01M3Q7VN0K6AA4S60NZ7VCHH58","index":"a0","type":"text","text":""}
+{"id":"01M3QB3XARX5ZJ5G71E71C2WSX","parent":"01M3Q7VN0K6AA4S60NZ7VCHH58","index":"a0","type":"table","rows":[["","",""],["","",""],["","",""]],"header":"horizontal"}
+{"id":"01M3QB3XARX5ZJ5G71E71C2WSX","parent":"01M3Q7VN0K6AA4S60NZ7VCHH58","index":"a0","type":"table","rows":[["Column 1","",""],["","",""],["","",""]],"header":"horizontal"}
+{"id":"01M3QB3XARX5ZJ5G71E71C2WSX","parent":"01M3Q7VN0K6AA4S60NZ7VCHH58","index":"a0","type":"table","rows":[["Column 1","Column 2",""],["","",""],["","",""]],"header":"horizontal"}
+{"id":"01M3QB3XARX5ZJ5G71E71C2WSX","parent":"01M3Q7VN0K6AA4S60NZ7VCHH58","index":"a0","type":"table","rows":[["Column 1","Column 2"],["",""],["",""]],"header":"horizontal"}
+{"id":"01M3QB3XARX5ZJ5G71E71C2WSX","parent":"01M3Q7VN0K6AA4S60NZ7VCHH58","index":"a0","type":"table","rows":[["Column 1","Column 2"],["Hello",""],["",""]],"header":"horizontal"}
+{"id":"01M3QB3XARX5ZJ5G71E71C2WSX","parent":"01M3Q7VN0K6AA4S60NZ7VCHH58","index":"a0","type":"table","rows":[["Column 1","Column 2"],["Hello","World"],["",""]],"header":"horizontal"}
+{"id":"01M3QB3XARX5ZJ5G71E71C2WSX","parent":"01M3Q7VN0K6AA4S60NZ7VCHH58","index":"a0","type":"table","rows":[["Column 1","Column 2"],["Hello","World"],["Foo",""]],"header":"horizontal"}
+{"id":"01M3QB3XARX5ZJ5G71E71C2WSX","parent":"01M3Q7VN0K6AA4S60NZ7VCHH58","index":"a0","type":"table","rows":[["Column 1","Column 2"],["Hello","World"],["Foo","Bar"]],"header":"horizontal"}
+{"id":"01M3QB3XARX5ZJ5G71E71C2WSX","parent":"01M3DG9Z1NNFGR3K5HWFDC01GM","index":"a1O","type":"table","rows":[["Column 1","Column 2"],["Hello","World"],["Foo","Bar"]],"header":"horizontal"}
+{"id":"01M3QB3XARX5ZJ5G71E71C2WSX","parent":"01M3Q7VN0K6AA4S60NZ7VCHH58","index":"a0","type":"table","rows":[["Column 1","Column 2"],["Hello","World"],["Foo","Bar"]],"header":"horizontal"}
+{"id":"01M3QB3XARX5ZJ5G71E71C2WSX","parent":"01M3Q7VN0K6AA4S60NZ7VCHH58","index":"a0","type":"table","rows":[["Column 1","Column 2"],["Hello","World"],["Foo","Bar"]],"header":"horizontal","note":"With horizontal header"}
+{"id":"01M3QB4XE2Q3M1MPHA46A9X06D","parent":"01M3Q7VN0K6AA4S60NZ7VCHH58","index":"a1","type":"text","text":""}
+{"id":"01M3QB3XARX5ZJ5G71E71C2WSX","parent":"01M3Q7VN0K6AA4S60NZ7VCHH58","index":"a0","type":"table","rows":[["Column 1","Column 2"],["Hello","World"]],"header":"horizontal","note":"With horizontal header"}
+{"id":"01M3QB4XE2Q3M1MPHA46A9X06D","parent":"01M3Q7VN0K6AA4S60NZ7VCHH58","index":"a1","type":"table","rows":[["","",""],["","",""],["","",""]],"header":"horizontal"}
+{"id":"01M3QB4XE2Q3M1MPHA46A9X06D","parent":"01M3Q7VN0K6AA4S60NZ7VCHH58","index":"a1","type":"table","rows":[["Column 1","",""],["","",""],["","",""]],"header":"horizontal"}
+{"id":"01M3QB4XE2Q3M1MPHA46A9X06D","parent":"01M3Q7VN0K6AA4S60NZ7VCHH58","index":"a1","type":"table","rows":[["Column 1","",""],["Column 2","",""],["","",""]],"header":"horizontal"}
+{"id":"01M3QB4XE2Q3M1MPHA46A9X06D","parent":"01M3Q7VN0K6AA4S60NZ7VCHH58","index":"a1","type":"table","rows":[["Column 1","Hello",""],["Column 2","",""],["","",""]],"header":"horizontal"}
+{"id":"01M3QB4XE2Q3M1MPHA46A9X06D","parent":"01M3Q7VN0K6AA4S60NZ7VCHH58","index":"a1","type":"table","rows":[["Column 1","Hello",""],["Column 2","World",""],["","",""]],"header":"horizontal"}
+{"id":"01M3QB4XE2Q3M1MPHA46A9X06D","parent":"01M3Q7VN0K6AA4S60NZ7VCHH58","index":"a1","type":"table","rows":[["Column 1","Hello",""],["Column 2","World",""]],"header":"horizontal"}
+{"id":"01M3QB4XE2Q3M1MPHA46A9X06D","parent":"01M3Q7VN0K6AA4S60NZ7VCHH58","index":"a1","type":"table","rows":[["Column 1","Hello"],["Column 2","World"]],"header":"horizontal"}
+{"id":"01M3QB4XE2Q3M1MPHA46A9X06D","parent":"01M3Q7VN0K6AA4S60NZ7VCHH58","index":"a1","type":"table","rows":[["Column 1","Hello"],["Column 2","World"]],"header":"vertical"}
+{"id":"01M3QB4XE2Q3M1MPHA46A9X06D","parent":"01M3Q7VN0K6AA4S60NZ7VCHH58","index":"a1","type":"table","rows":[["Column 1","Hello"],["Column 2","World"]],"header":"vertical","note":"With vertical header"}
+{"id":"01M3QB5ZA38RNT18DHA9SKXFWH","parent":"01M3Q7VN0K6AA4S60NZ7VCHH58","index":"a2","type":"text","text":""}
+{"id":"01M3QB5ZA38RNT18DHA9SKXFWH","parent":"01M3Q7VN0K6AA4S60NZ7VCHH58","index":"a2","type":"table","rows":[["","",""],["","",""],["","",""]],"header":"horizontal"}
+{"id":"01M3QB5ZA38RNT18DHA9SKXFWH","parent":"01M3Q7VN0K6AA4S60NZ7VCHH58","index":"a2","type":"table","rows":[["Hello","",""],["","",""],["","",""]],"header":"horizontal"}
+{"id":"01M3QB5ZA38RNT18DHA9SKXFWH","parent":"01M3Q7VN0K6AA4S60NZ7VCHH58","index":"a2","type":"table","rows":[["Hello","World",""],["","",""],["","",""]],"header":"horizontal"}
+{"id":"01M3QB5ZA38RNT18DHA9SKXFWH","parent":"01M3Q7VN0K6AA4S60NZ7VCHH58","index":"a2","type":"table","rows":[["Hello","World"],["",""],["",""]],"header":"horizontal"}
+{"id":"01M3QB5ZA38RNT18DHA9SKXFWH","parent":"01M3Q7VN0K6AA4S60NZ7VCHH58","index":"a2","type":"table","rows":[["Hello","World"],["",""]],"header":"horizontal"}
+{"id":"01M3QB5ZA38RNT18DHA9SKXFWH","parent":"01M3Q7VN0K6AA4S60NZ7VCHH58","index":"a2","type":"table","rows":[["Hello","World"]],"header":"horizontal"}
+{"id":"01M3QB5ZA38RNT18DHA9SKXFWH","parent":"01M3Q7VN0K6AA4S60NZ7VCHH58","index":"a2","type":"table","rows":[["Hello","World"]]}
+{"id":"01M3QB5ZA38RNT18DHA9SKXFWH","parent":"01M3Q7VN0K6AA4S60NZ7VCHH58","index":"a2","type":"table","rows":[["Hello","World"]],"note":"Without header"}
+{"id":"01M3Q7VN0K6AA4S60NZ7VCHH58","parent":"01M3DG9Z1NNFGR3K5HWFDC01GM","index":"a1G","type":"page","text":"Table","icon":"table.png","collapsed":true}
+{"id":"01M3Q2KE10D5K3MNJSMP2PWBSN","parent":"01M3Q2J2YTB3XF7MNNFE9XF64D","index":"a0","type":"page","text":"Text","icon":"align-left.png"}
+{"id":"01M3Q2KE10D5K3MNJSMP2PWBSN","parent":"01M3Q2J2YTB3XF7MNNFE9XF64D","index":"a0","type":"page","text":"Text","icon":"align-left.png","collapsed":true}
+{"id":"01M3Q2J2YTB3XF7MNNFE9XF64D","parent":"01M3PJCQZ75TFMC90YZQXP7N4S","index":"a2","type":"text","text":"Specific fields for each bullet type","collapsed":true}
