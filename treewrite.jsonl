@@ -554,3 +554,7 @@
 {"id":"01M3J51FAKEGFTNYG5C4HED541","parent":"01M3DG9Z1NNFGR3K5HWFDC01GM","index":"a0O","type":"page","text":"Number","icon":"list-numbers1.png","collapsed":true}
 {"id":"01M3J4Z9GV8TWVPHVTPZY1CAES","parent":"01M3DG9Z1NNFGR3K5HWFDC01GM","index":"a0S","type":"page","text":"Checkbox","icon":"square-check1.png","collapsed":true}
 {"id":"01M3J51THZ17VYMQE91XFV6E1N","parent":"01M3DG9Z1NNFGR3K5HWFDC01GM","index":"a0V","type":"page","text":"Divider","icon":"separator.png"}
+{"id":"01M3J516TYWQMNZTFY10E8GGF6","parent":"01M3DG9Z1NNFGR3K5HWFDC01GM","index":"a1","type":"page","text":"Callout","icon":"info-square-rounded1.png"}
+{"id":"01M3J50TXFFWGNGN8NNFTYBVHQ","parent":"01M3DG9Z1NNFGR3K5HWFDC01GM","index":"a1V","type":"page","text":"Image","icon":"photo.png"}
+{"id":"01M3J4ZYC2DC92VSDF8JGHFR2Q","parent":"01M3DG9Z1NNFGR3K5HWFDC01GM","index":"a1l","type":"page","text":"File","icon":"file.png"}
+{"id":"01M3J50WRNV5WD3QZXS4WY8Z1M","parent":"01M3DG9Z1NNFGR3K5HWFDC01GM","index":"a1t","type":"page","text":"Code","icon":"code1.png"}
