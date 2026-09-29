@@ -1193,3 +1193,4 @@
 {"id":"01M3PSGDGK77J7X45HT1SSMEZJ","parent":"01M3PRXK6QQS0VNGMRFNEP3AFW","index":"a2","type":"number","text":"Diffs in Git are kept small, summarized in just a few lines"}
 {"id":"01M3PRXK6QQS0VNGMRFNEP3AFW","parent":"01M3PN11TSYJJH8TYNFZ3SNCZ7","index":"a5","type":"text","text":"Some reasons to use a JSON Lines file instead of a pure JSON file:","collapsed":true}
 {"id":"01M3PRXK6QQS0VNGMRFNEP3AFW","parent":"01M3PN11TSYJJH8TYNFZ3SNCZ7","index":"a5","type":"text","text":"Some reasons to use a JSON Lines file instead of a pure JSON file:"}
+{"id":"01M3PN11TSYJJH8TYNFZ3SNCZ7","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"Zz","type":"text","text":"Basic concepts of `.jsonl` files","collapsed":true}
