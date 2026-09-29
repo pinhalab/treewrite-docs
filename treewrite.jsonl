@@ -205,3 +205,20 @@
 {"id":"01M3HVS46CSA83JEM7GF3P8V69","parent":"","index":"ZxU","type":"title","text":"FAQ","level":1}
 {"id":"01M3Q87ZWTWBZ2WK54NSM4RVAT","parent":"","index":"ZxUG","type":"text","text":""}
 {"id":"01M3Q87ZWTWBZ2WK54NSM4RVAT","parent":"","index":"ZxUG","type":"text","text":"/table"}
+{"id":"01M3CPB8BN23FTEVB091S0SMBN","parent":"","index":"Zx8","type":"text","text":"Want to be convinced to use it in a few words? Here they are:"}
+{"id":"01M3Q9SV05Y23164YCDYDZPF8A","parent":"","index":"ZxA","type":"text","text":""}
+{"id":"01M3Q9SV05Y23164YCDYDZPF8A","parent":"","index":"ZxA","type":"table","rows":[["","",""],["","",""],["","",""]],"header":"horizontal"}
+{"id":"01M3Q9SV05Y23164YCDYDZPF8A","parent":"","index":"ZxA","type":"table","rows":[["Field","",""],["","",""],["","",""]],"header":"horizontal"}
+{"id":"01M3Q9SV05Y23164YCDYDZPF8A","parent":"","index":"ZxA","type":"table","rows":[["Field","Type",""],["","",""],["","",""]],"header":"horizontal"}
+{"id":"01M3Q9SV05Y23164YCDYDZPF8A","parent":"","index":"ZxA","type":"table","rows":[["Field","Type","Required"],["","",""],["","",""]],"header":"horizontal"}
+{"id":"01M3Q9SV05Y23164YCDYDZPF8A","parent":"","index":"ZxA","type":"table","rows":[["Field","Type","Required?"],["","",""],["","",""]],"header":"horizontal"}
+{"id":"01M3Q9SV05Y23164YCDYDZPF8A","parent":"","index":"ZxA","type":"table","rows":[["Field","Type","Required?",""],["","","",""],["","","",""]],"header":"horizontal"}
+{"id":"01M3Q9SV05Y23164YCDYDZPF8A","parent":"","index":"ZxA","type":"table","rows":[["Field","Type","Required?","Description"],["","","",""],["","","",""]],"header":"horizontal"}
+{"id":"01M3Q9SV05Y23164YCDYDZPF8A","parent":"","index":"ZxA","type":"table","rows":[["Field","Type","Required?","Description"],["","`","",""],["","","",""]],"header":"horizontal"}
+{"id":"01M3Q9SV05Y23164YCDYDZPF8A","parent":"","index":"ZxA","type":"table","rows":[["Field","Type","Required?","Description"],["","`string","",""],["","","",""]],"header":"horizontal"}
+{"id":"01M3Q9SV05Y23164YCDYDZPF8A","parent":"","index":"ZxA","type":"table","rows":[["Field","Type","Required?","Description"],["","`string[]`","",""],["","","",""]],"header":"horizontal"}
+{"id":"01M3Q9SV05Y23164YCDYDZPF8A","parent":"","index":"ZxA","type":"table","rows":[["Field","Type","Required?","Description"],["`","`string[]`","",""],["","","",""]],"header":"horizontal"}
+{"id":"01M3Q9SV05Y23164YCDYDZPF8A","parent":"","index":"ZxA","type":"table","rows":[["Field","Type","Required?","Description"],["`text`","`string[]`","",""],["","","",""]],"header":"horizontal"}
+{"id":"01M3Q9SV05Y23164YCDYDZPF8A","parent":"","index":"ZxA","type":"table","rows":[["Field","Type","Required?","Description"],["`text`","`string`","",""],["","","",""]],"header":"horizontal"}
+{"id":"01M3Q9SV05Y23164YCDYDZPF8A","parent":"","index":"ZxA","type":"table","rows":[["Field","Type","Required?","Description"],["`text`","`string`","Yes",""],["","","",""]],"header":"horizontal"}
+{"id":"01M3Q9SV05Y23164YCDYDZPF8A","parent":"","index":"ZxA","type":"table","rows":[["Field","Type","Required?","Description"],["`text`","`string`","Yes","..."],["","","",""]],"header":"horizontal"}
