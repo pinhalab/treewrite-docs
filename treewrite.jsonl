@@ -804,3 +804,7 @@
 {"id":"01M3CJESYF2WBDSJQM0GJGKCQ6","parent":"","index":"Zx","type":"callout","text":"The ***simplest*** and most ***beautiful*** outliner out there. An alternative to apps like [Obsidian](https://obsidian.md), [LogSeq](https://logseq.com), [Workflowy](https://workflowy.com), [Roam Research](https://roamresearch.com), [Remnote](https://www.remnote.com) and [Dynalist](https://dynalist.io). Give it a try!","title":"Welcome to TreeWrite 👋","level":"neutral"}
 {"id":"01M3DGA9V9JJEKMYPBXA0P7VTM","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"a0","type":"text","text":"TreeWrite has a very unique and special way of storing its bullets"}
 {"id":"01M3PHNFAP5XG3TJ55Y7K7QYFP","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"a1","type":"text","text":""}
+{"id":"01M3CNK6ZRBGVM62Z4J03JPDZ7","parent":"","index":"ZxZ","type":"page","text":"Bullets","icon":"📚","background":"#4c6ef5","note":"What are bullets and what types of bullets are there"}
+{"id":"01M3DG9Z1NNFGR3K5HWFDC01GM","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"a0","type":"text","text":"List of bullet types","note":"See examples of usage/appearance of each existing bullet type"}
+{"id":"01M3DG9Z1NNFGR3K5HWFDC01GM","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"a0","type":"text","text":"List of bullet types","note":"See examples of usage/appearance of each existing bullet type","collapsed":true}
+{"id":"01M3CNK6ZRBGVM62Z4J03JPDZ7","parent":"","index":"ZxZ","type":"page","text":"Bullets","icon":"📚","background":"#4c6ef5","note":"What are bullets and what types of bullets are there","collapsed":true}
