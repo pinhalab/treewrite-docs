@@ -1107,3 +1107,38 @@
 {"id":"01M3PPK1E7FF4Y8QJGMDB7VKDV","parent":"01M3PN21SX7VYQZTVH1TSFBE25","index":"a5","type":"text","text":"To resolve this, each edit validates whether the file is growing too large and should be cleaned up to contain only the most recent data. If that's the case, then the file is rewritten, now containing only the latest data. The condition that is verified is:"}
 {"id":"01M3PPK1E7FF4Y8QJGMDB7VKDV","parent":"01M3PN21SX7VYQZTVH1TSFBE25","index":"a5","type":"text","text":"The condition that is verified is:"}
 {"id":"01M3PQGKNZ1KXP8CY1W76W8HYH","parent":"01M3PN21SX7VYQZTVH1TSFBE25","index":"a4V","type":"text","text":"To resolve this, each edit validates whether the file is growing too large and should be cleaned up to contain only the most recent data. If that's the case, then the file is rewritten, now containing only the latest data"}
+{"id":"01M3PQB6HBZW7NQ32X3K9DTATE","parent":"01M3PN21SX7VYQZTVH1TSFBE25","index":"a8","type":"text","text":"In summary, the append-only log structure allows updates to your bullets to be made almost instantly, regardless of the number of bullets in your document."}
+{"id":"01M3PQB6HBZW7NQ32X3K9DTATE","parent":"01M3PN21SX7VYQZTVH1TSFBE25","index":"a8","type":"text","text":"In summary, the append-only log structure allows updates to your bullets to be made almost instantly, regardless of the number of bullets in your document"}
+{"id":"01M3PN21SX7VYQZTVH1TSFBE25","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"a0","type":"text","text":"Append-only log structure","collapsed":true}
+{"id":"01M3PJCQZ75TFMC90YZQXP7N4S","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"a3","type":"page","text":"**File format specification**","icon":"📄"}
+{"id":"01M3PQKVCDGZ6BJDFKCMSJKTG6","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"a4","type":"text","text":""}
+{"id":"01M3PQKVCDGZ6BJDFKCMSJKTG6","parent":"01M3PJCQZ75TFMC90YZQXP7N4S","index":"a0","type":"text","text":""}
+{"id":"01M3PJCQZ75TFMC90YZQXP7N4S","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"a3","type":"page","text":"**File format specification**","icon":"📄","collapsed":true}
+{"id":"01M3CNK6ZRBGVM62Z4J03JPDZ7","parent":"","index":"ZxZ","type":"page","text":"Bullets","icon":"📚","background":"#4c6ef5","note":"What are bullets and what types of bullets are there (with visual examples)","collapsed":true}
+{"id":"01M3HVYZZQ26X7HAH17EB7NYMV","parent":"","index":"ZxUl","type":"number","text":"Why use a custom file format instead of Markdown?","collapsed":true}
+{"id":"01M3PQMYTYS7T9B3M87JK2G2PJ","parent":"","index":"ZxUp","type":"number","text":""}
+{"id":"01M3PQMYTYS7T9B3M87JK2G2PJ","parent":"","index":"ZxUp","type":"number","text":"Why use a custom "}
+{"id":"01M3PQMYTYS7T9B3M87JK2G2PJ","parent":"","index":"ZxUp","type":"number","text":"Why use a custom file format instead of a"}
+{"id":"01M3PQMYTYS7T9B3M87JK2G2PJ","parent":"","index":"ZxUp","type":"number","text":"Why use a custom file format instead of a database (li"}
+{"id":"01M3PQMYTYS7T9B3M87JK2G2PJ","parent":"","index":"ZxUp","type":"number","text":"Why use a custom file format instead of a database (like SQLite)?"}
+{"id":"01M3PQMYTYS7T9B3M87JK2G2PJ","parent":"","index":"ZxUp","type":"number","text":"Why use a custom file format instead of a database (like SQLite)?"}
+{"id":"01M3PQNDJNDAR7PA57KP1E08JC","parent":"","index":"ZxUr","type":"number","text":""}
+{"id":"01M3PQNDJNDAR7PA57KP1E08JC","parent":"01M3PQMYTYS7T9B3M87JK2G2PJ","index":"a0","type":"number","text":""}
+{"id":"01M3PQNDJNDAR7PA57KP1E08JC","parent":"01M3PQMYTYS7T9B3M87JK2G2PJ","index":"a0","type":"text","text":""}
+{"id":"01M3PQMYTYS7T9B3M87JK2G2PJ","parent":"","index":"ZxUp","type":"number","text":"Why use a custom file format instead of a database (like SQLite)?","collapsed":true}
+{"id":"01M3CK4D608BX01BDWAWPSDR8G","parent":"","index":"Zxd","type":"page","text":"File format","icon":"💾","background":"#2e2e2e","note":"How bullets are stored in your file system","collapsed":true}
+{"id":"01M3CNK6ZRBGVM62Z4J03JPDZ7","parent":"","index":"ZxZ","type":"page","text":"Bullets","icon":"📚","background":"#4c6ef5","note":"What are bullets and what types of bullets are there (with visual examples)"}
+{"id":"01M3DG9Z1NNFGR3K5HWFDC01GM","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"a0","type":"text","text":"List of bullet types","note":"See examples of usage/appearance of each existing bullet type"}
+{"id":"01M3DG9Z1NNFGR3K5HWFDC01GM","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"a0","type":"text","text":"List of bullet types","note":"See examples of usage/appearance of each existing bullet type","collapsed":true}
+{"id":"01M3CPBRTH1MDH1W1EY39HBPD6","parent":"","index":"ZxE","type":"number","text":"All bullets are stored in a single `.jsonl` ([JSON Lines](https://jsonlines.org)) file on your computer, no cloud storage (ever). You own your data in an open and documented text file format"}
+{"id":"01M3CJESYF2WBDSJQM0GJGKCQ6","parent":"","index":"Zx","type":"callout","text":"The ***simplest*** and most ***beautiful*** [outliner](https://en.wikipedia.org/wiki/Outliner out there. An alternative to apps like [Obsidian](https://obsidian.md), [LogSeq](https://logseq.com), [Workflowy](https://workflowy.com), [Roam Research](https://roamresearch.com), [Remnote](https://www.remnote.com) and [Dynalist](https://dynalist.io). Give it a try!","title":"Welcome to TreeWrite 👋","level":"neutral"}
+{"id":"01M3CJESYF2WBDSJQM0GJGKCQ6","parent":"","index":"Zx","type":"callout","text":"The ***simplest*** and most ***beautiful*** [outliner](https://en.wikipedia.org/wiki/Outliner) out there. An alternative to apps like [Obsidian](https://obsidian.md), [LogSeq](https://logseq.com), [Workflowy](https://workflowy.com), [Roam Research](https://roamresearch.com), [Remnote](https://www.remnote.com) and [Dynalist](https://dynalist.io). Give it a try!","title":"Welcome to TreeWrite 👋","level":"neutral"}
+{"id":"01M3DG9Z1NNFGR3K5HWFDC01GM","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"a0","type":"text","text":"List of bullet types","note":"See examples of usage/appearance of each existing bullet type"}
+{"id":"01M3J4ZDZXN8GVN8V94078BYA4","parent":"01M3DG9Z1NNFGR3K5HWFDC01GM","index":"a2","type":"page","text":"Math","icon":"math-function.png"}
+{"id":"01M3J4ZDZXN8GVN8V94078BYA4","parent":"01M3DG9Z1NNFGR3K5HWFDC01GM","index":"a2","type":"page","text":"Math","icon":"math-function.png","collapsed":true}
+{"id":"01M3J50TXFFWGNGN8NNFTYBVHQ","parent":"01M3DG9Z1NNFGR3K5HWFDC01GM","index":"a1V","type":"page","text":"Image","icon":"photo.png"}
+{"id":"01M3PQVVKYCGVC293RRR3Q725W","parent":"01M3J50TXFFWGNGN8NNFTYBVHQ","index":"a1","type":"text","text":""}
+{"id":"01M3PQVVKYCGVC293RRR3Q725W","parent":"01M3J50TXFFWGNGN8NNFTYBVHQ","index":"a1","type":"text","text":"/imag"}
+{"id":"01M3PQVVKYCGVC293RRR3Q725W","parent":"01M3J50TXFFWGNGN8NNFTYBVHQ","index":"a1","type":"image","src":"northeast-road.jpeg"}
+{"id":"01M3PQVVKYCGVC293RRR3Q725W","parent":"01M3J50TXFFWGNGN8NNFTYBVHQ","index":"a1","type":"image","src":"northeast-road.jpeg","width":176}
+{"id":"01M3PQVVKYCGVC293RRR3Q725W","parent":"01M3J50TXFFWGNGN8NNFTYBVHQ","index":"a1","type":"image","src":"northeast-road.jpeg","width":201}
