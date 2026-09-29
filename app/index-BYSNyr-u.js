@@ -113,17 +113,32 @@ document.addEventListener("copy", function(event) {
 	event.preventDefault();
 });
 //#endregion
-//#region src/shared/publish.ts
-var PUBLISHED_DOCUMENT_FILE = "document.json";
-var PUBLISHED_ASSETS_DIRECTORY = "assets";
-var CARD_PATH = "/card";
-var PUBLISHED_PANELS = [
+//#region src/shared/features.ts
+var FEATURES_SETTINGS_KEY = "features";
+var FEATURES = [
 	"pathway",
 	"favorites",
 	"tags",
 	"calendar",
 	"assets"
 ];
+function isObject$4(value) {
+	return typeof value === "object" && value !== null && !Array.isArray(value);
+}
+function hiddenFeaturesOf(metadata) {
+	const features = (isObject$4(metadata.settings) ? metadata.settings : {})[FEATURES_SETTINGS_KEY];
+	const hidden = isObject$4(features) && Array.isArray(features.hidden) ? features.hidden : [];
+	return FEATURES.filter((feature) => hidden.includes(feature));
+}
+function enabledFeaturesOf(metadata) {
+	const hidden = hiddenFeaturesOf(metadata);
+	return FEATURES.filter((feature) => !hidden.includes(feature));
+}
+//#endregion
+//#region src/shared/publish.ts
+var PUBLISHED_DOCUMENT_FILE = "document.json";
+var PUBLISHED_ASSETS_DIRECTORY = "assets";
+var CARD_PATH = "/card";
 function isObject$3(value) {
 	return typeof value === "object" && value !== null && !Array.isArray(value);
 }
@@ -135,12 +150,10 @@ function parsePublishedDocument(text) {
 		return null;
 	}
 	if (!isObject$3(value) || !Array.isArray(value.records) || !isObject$3(value.metadata) || !Array.isArray(value.assets)) return null;
-	const sidebar = value.sidebar;
 	return {
 		records: value.records.filter(isObject$3),
 		metadata: value.metadata,
-		assets: value.assets.filter((file) => isObject$3(file) && typeof file.name === "string" && typeof file.size === "number"),
-		sidebar: Array.isArray(sidebar) ? PUBLISHED_PANELS.filter((panel) => sidebar.includes(panel)) : [...PUBLISHED_PANELS]
+		assets: value.assets.filter((file) => isObject$3(file) && typeof file.name === "string" && typeof file.size === "number")
 	};
 }
 //#endregion
@@ -46312,7 +46325,7 @@ function getLoadedCount() {
 	return loadedCount;
 }
 function getHighlighter() {
-	highlighter ??= Promise.all([__vitePreload(() => import("./core-hwI5QjdL.js"), [], import.meta.url), __vitePreload(() => import("./engine-javascript-BgMzXrAA.js"), [], import.meta.url)]).then(async ([{ createHighlighterCore }, { createJavaScriptRegexEngine }]) => {
+	highlighter ??= Promise.all([__vitePreload(() => import("./core-BJ06czfL.js"), [], import.meta.url), __vitePreload(() => import("./engine-javascript-BgMzXrAA.js"), [], import.meta.url)]).then(async ([{ createHighlighterCore }, { createJavaScriptRegexEngine }]) => {
 		ready = await createHighlighterCore({ engine: createJavaScriptRegexEngine({ forgiving: true }) });
 		return ready;
 	});
@@ -76125,7 +76138,7 @@ var SidebarPanels_module_default = {
 };
 //#endregion
 //#region src/renderer/components/SidebarAccordion.tsx
-var PANEL_NAMES = {
+var FEATURE_NAMES = {
 	pathway: {
 		label: "Pathway",
 		icon: IconFootsteps
@@ -76464,6 +76477,25 @@ function SidebarSection(props) {
 		},
 		children: props.children
 	});
+}
+//#endregion
+//#region src/renderer/lib/useFeatures.ts
+function withFeature(metadata, feature, enabled) {
+	const others = hiddenFeaturesOf(metadata).filter((other) => other !== feature);
+	const hidden = enabled ? others : FEATURES.filter((other) => other === feature || others.includes(other));
+	const features = { ...settingOf(metadata, FEATURES_SETTINGS_KEY) };
+	if (hidden.length > 0) features.hidden = hidden;
+	else delete features.hidden;
+	return writeSetting(metadata, FEATURES_SETTINGS_KEY, features);
+}
+function useFeatures() {
+	const { metadata, updateMetadata } = useMetadata();
+	const enabled = (0, import_react.useMemo)(() => enabledFeaturesOf(metadata), [metadata]);
+	return {
+		enabled,
+		isEnabled: (0, import_react.useCallback)((feature) => enabled.includes(feature), [enabled]),
+		setEnabled: (0, import_react.useCallback)((feature, on) => updateMetadata((current) => withFeature(current, feature, on)), [updateMetadata])
+	};
 }
 //#endregion
 //#region src/viewer/tabLook.ts
@@ -76895,7 +76927,7 @@ function useViewerOutline(tree, rootId) {
 }
 //#endregion
 //#region src/viewer/ViewerPage.tsx
-function panelsOf(assets, shown) {
+function panelsOf(assets, enabled) {
 	const contents = {
 		pathway: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Pathway, {}),
 		favorites: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(FavoritesLook, {}),
@@ -76903,10 +76935,10 @@ function panelsOf(assets, shown) {
 		calendar: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(CalendarPanel, {}),
 		assets: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(AssetsLook, { files: assets })
 	};
-	return shown.map((panel) => ({
-		value: panel,
-		...PANEL_NAMES[panel],
-		content: contents[panel]
+	return enabled.map((feature) => ({
+		value: feature,
+		...FEATURE_NAMES[feature],
+		content: contents[feature]
 	}));
 }
 function ViewerRows(props) {
@@ -76957,7 +76989,8 @@ function ViewerPage(props) {
 	const history = useBrowserHistory();
 	const sidebar = useSidebar();
 	const parts = useBulletParts();
-	const panelList = (0, import_react.useMemo)(() => panelsOf(props.assets, props.sidebar), [props.assets, props.sidebar]);
+	const { enabled } = useFeatures();
+	const panelList = (0, import_react.useMemo)(() => panelsOf(props.assets, enabled), [props.assets, enabled]);
 	const hasSidebar = panelList.length > 0;
 	const [opened, setOpened] = (0, import_react.useState)(() => panelList.slice(0, 1).map((panel) => panel.value));
 	useTabIcon();
@@ -77078,8 +77111,7 @@ function ViewerApp(props) {
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Route, {
 					element: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ViewerPage, {
 						tree,
-						assets: document.assets,
-						sidebar: document.sidebar
+						assets: document.assets
 					}),
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Route, { index: true }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Route, { path: "bullets/:id" })]
 				}),
