@@ -775,3 +775,22 @@
 {"id":"01M3J4PRT3YW6DZAD4H7DMCFVQ","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"Zz","type":"text","text":"Bullets (also called outlines) are the basic building blocks of your notes"}
 {"id":"01M3J4PRT3YW6DZAD4H7DMCFVQ","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"Zz","type":"text","text":"Bullets (also called outlines) are the basic building blocks of your notes"}
 {"id":"01M3PGYRVFF2YTXBXFAF2AF2B2","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"ZzV","type":"text","text":""}
+{"id":"01M3PGYRVFF2YTXBXFAF2AF2B2","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"ZzV","type":"text","text":"They are the main information stored in your jsonl files."}
+{"id":"01M3PGYRVFF2YTXBXFAF2AF2B2","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"ZzV","type":"text","text":"They are the main information stored in your jsonl files. "}
+{"id":"01M3PGYRVFF2YTXBXFAF2AF2B2","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"ZzV","type":"text","text":"They are the main information stored in your jsonl files. Each bullet has its own type and fields that define certain characteristics of the type."}
+{"id":"01M3PGYRVFF2YTXBXFAF2AF2B2","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"ZzV","type":"text","text":"They are the main information stored in your jsonl files. Each bullet has its own type and fields that define certain characteristics of the type"}
+{"id":"01M3PH1SP8FRC7BXA1T00ZVED4","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"Zzl","type":"text","text":""}
+{"id":"01M3PH1SP8FRC7BXA1T00ZVED4","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"Zzl","type":"text","text":"For example, a callout bullet has a level field that can be success, info, etc."}
+{"id":"01M3PH1SP8FRC7BXA1T00ZVED4","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"Zzl","type":"text","text":"For example, a callout bullet has a level field that can be success, info, etc"}
+{"id":"01M3PH1SP8FRC7BXA1T00ZVED4","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"Zzl","type":"text","text":"For example, a callout bullet has a level field that can be success, info, ..."}
+{"id":"01M3PH1SP8FRC7BXA1T00ZVED4","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"Zzl","type":"text","text":"For example, a callout bullet has a level field that can be success, info, ..."}
+{"id":"01M3PH4H8NMM1761WFVXS1BCSW","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"Zzt","type":"text","text":""}
+{"id":"01M3PH4H8NMM1761WFVXS1BCSW","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"Zzt","type":"text","text":"This type of representation allows bullets to have rich and customized formatting."}
+{"id":"01M3PH4H8NMM1761WFVXS1BCSW","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"Zzt","type":"text","text":"This type of representation allows bullets to have rich and customized formatting"}
+{"id":"01M3DG9Z1NNFGR3K5HWFDC01GM","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"a0","type":"text","text":"List of bullet types","note":"See examples of usage/appearance of each existing bullet type","collapsed":true}
+{"id":"01M3PGYRVFF2YTXBXFAF2AF2B2","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"ZzV","type":"text","text":"They are the main information stored in your `,jsonl files. Each bullet has its own type and fields that define certain characteristics of the type"}
+{"id":"01M3PGYRVFF2YTXBXFAF2AF2B2","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"ZzV","type":"text","text":"They are the main information stored in your `.jsonl files. Each bullet has its own type and fields that define certain characteristics of the type"}
+{"id":"01M3PGYRVFF2YTXBXFAF2AF2B2","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"ZzV","type":"text","text":"They are the main information stored in your `.jsonl` files. Each bullet has its own type and fields that define certain characteristics of the type"}
+{"id":"01M3PH1SP8FRC7BXA1T00ZVED4","parent":"01M3CNK6ZRBGVM62Z4J03JPDZ7","index":"Zzl","type":"text","text":"For example, a callout bullet has a *level* field that can be success, info, ..."}
+{"id":"01M3CNK6ZRBGVM62Z4J03JPDZ7","parent":"","index":"ZxZ","type":"page","text":"Bullets","icon":"📚","background":"#4c6ef5","note":"What are bullets and what types of bullets are there","collapsed":true}
+{"id":"01M3CK4D608BX01BDWAWPSDR8G","parent":"","index":"Zxd","type":"page","text":"File format","icon":"💾","background":"#2e2e2e","note":"How bullets are stored in your file system"}
