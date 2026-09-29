@@ -202,3 +202,6 @@
 {"id":"01M3J516TYWQMNZTFY10E8GGF6","parent":"01M3DG9Z1NNFGR3K5HWFDC01GM","index":"a1","type":"page","text":"Callout","icon":"info-square-rounded.png","collapsed":true}
 {"id":"01M3Q7VN0K6AA4S60NZ7VCHH58","parent":"01M3DG9Z1NNFGR3K5HWFDC01GM","index":"a1G","type":"text","text":""}
 {"id":"01M3Q7VN0K6AA4S60NZ7VCHH58","parent":"01M3DG9Z1NNFGR3K5HWFDC01GM","index":"a1G","type":"page","text":"Table"}
+{"id":"01M3HVS46CSA83JEM7GF3P8V69","parent":"","index":"ZxU","type":"title","text":"FAQ","level":1}
+{"id":"01M3Q87ZWTWBZ2WK54NSM4RVAT","parent":"","index":"ZxUG","type":"text","text":""}
+{"id":"01M3Q87ZWTWBZ2WK54NSM4RVAT","parent":"","index":"ZxUG","type":"text","text":"/table"}
