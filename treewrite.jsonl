@@ -1172,3 +1172,12 @@
 {"id":"01M3PN11TSYJJH8TYNFZ3SNCZ7","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"Zz","type":"text","text":"Basic concepts of `.jsonl` files"}
 {"id":"01M3PNZSWS8DX0ZM55JRMND93G","parent":"01M3PN11TSYJJH8TYNFZ3SNCZ7","index":"a4","type":"text","text":"Metadata is an object that contains information such as settings (favorites, tags, ...)"}
 {"id":"01M3PRXK6QQS0VNGMRFNEP3AFW","parent":"01M3PN11TSYJJH8TYNFZ3SNCZ7","index":"a5","type":"text","text":""}
+{"id":"01M3PRXK6QQS0VNGMRFNEP3AFW","parent":"01M3PN11TSYJJH8TYNFZ3SNCZ7","index":"a5","type":"text","text":"Some reasons to use a JSON Lines file instead of plain JSON."}
+{"id":"01M3PRXK6QQS0VNGMRFNEP3AFW","parent":"01M3PN11TSYJJH8TYNFZ3SNCZ7","index":"a5","type":"text","text":"Some reasons to use a JSON Lines file instead of plain JSON:"}
+{"id":"01M3PRXK6QQS0VNGMRFNEP3AFW","parent":"01M3PN11TSYJJH8TYNFZ3SNCZ7","index":"a5","type":"text","text":"Some reasons to use a JSON Lines file instead of pu JSON:"}
+{"id":"01M3PRXK6QQS0VNGMRFNEP3AFW","parent":"01M3PN11TSYJJH8TYNFZ3SNCZ7","index":"a5","type":"text","text":"Some reasons to use a JSON Lines file instead of a pure JSON:"}
+{"id":"01M3PRXK6QQS0VNGMRFNEP3AFW","parent":"01M3PN11TSYJJH8TYNFZ3SNCZ7","index":"a5","type":"text","text":"Some reasons to use a JSON Lines file instead of a pure JSON file:"}
+{"id":"01M3PRXK6QQS0VNGMRFNEP3AFW","parent":"01M3PN11TSYJJH8TYNFZ3SNCZ7","index":"a5","type":"text","text":"Some reasons to use a JSON Lines file instead of a pure JSON file:"}
+{"id":"01M3PS53TSBPEBJ91HKD20CEV2","parent":"01M3PN11TSYJJH8TYNFZ3SNCZ7","index":"a6","type":"text","text":""}
+{"id":"01M3PS53TSBPEBJ91HKD20CEV2","parent":"01M3PRXK6QQS0VNGMRFNEP3AFW","index":"a0","type":"text","text":""}
+{"id":"01M3PS53TSBPEBJ91HKD20CEV2","parent":"01M3PRXK6QQS0VNGMRFNEP3AFW","index":"a0","type":"number","text":""}
