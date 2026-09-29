@@ -615,3 +615,52 @@
 {"id":"01M3CPC4WYVXJR6NF9J3ZFYYAC","parent":"","index":"ZxF","type":"number","text":"You can search globally, filter by [[01M3CKKTSAKT9DVE52BA7VV5K0]] or by [[01M3CKKYE39X7JV1VXT1H4WBCJ]]"}
 {"id":"01M3CP9RQ287YFRG0ZYQHANVWE","parent":"","index":"ZxG","type":"number","text":"You can [[publish your bullets on a website (that's right, this website is made with TreeWrite!). The website and the editor have the same look and feel"}
 {"id":"01M3CP9RQ287YFRG0ZYQHANVWE","parent":"","index":"ZxG","type":"number","text":"You can [[01M3CK4AA3MES7HVDZBMNQYHER]] your bullets on a website (that's right, this website is made with TreeWrite!). The website and the editor have the same look and feel"}
+{"id":"01M3CJQZTGBY1KNX195FMMDHA5","parent":"","index":"Zxl","type":"page","text":"Assets","icon":"🗃️","background":"#fab005","note":"How files (images, PDF, ...) are stored in your file system","collapsed":true}
+{"id":"01M3CK4AA3MES7HVDZBMNQYHER","parent":"","index":"Zxp","type":"page","text":"Publish","icon":"🚀","background":"#7950f2","note":"How to turn your bullets into a website like this one","collapsed":true}
+{"id":"01M3CK4D608BX01BDWAWPSDR8G","parent":"","index":"Zxd","type":"page","text":"File format","icon":"💾","background":"#2e2e2e","note":"How bullets are stored in your file system","collapsed":true}
+{"id":"01M3CK4TT3EEMYQ55VSYQVCFZK","parent":"","index":"Zxn","type":"page","text":"Git integration","icon":"https://avatars.githubusercontent.com/u/18133?s=280&v=4","background":"#fd7e14","note":"How to integrate your bullets with Git for automatic backups and synchronization","collapsed":true}
+{"id":"01M3CKKTSAKT9DVE52BA7VV5K0","parent":"","index":"Zxm","type":"page","text":"Tags","icon":"🏷️","background":"#15aabf","note":"How to use tags to filter your bullets","tags":["01M3HD4Q8SDKV6D551TEB1957Q","01M3HD4Z3S8XWR28Y0KX66CH5Y"],"collapsed":true}
+{"id":"01M3CKKYE39X7JV1VXT1H4WBCJ","parent":"","index":"ZxmV","type":"page","text":"Calendar","icon":"🗓️","background":"#fa5252","note":"How to add dates to your bullets and filter them in the calendar","date":"2000-11-11T11:11","collapsed":true}
+{"id":"01M3CNK6ZRBGVM62Z4J03JPDZ7","parent":"","index":"ZxZ","type":"page","text":"Bullets","icon":"📚","background":"#4c6ef5","note":"What are bullets and what types of bullets are there","collapsed":true}
+{"id":"01M3CNZ3ZP6FB4C9V4SABK4N7M","parent":"","index":"Zxr","type":"page","text":"Tips & Tricks","icon":"🧠","background":"#868e96","note":"Some tips and tricks to help you delve deeper into TreeWrite","collapsed":true}
+{"id":"01M3HVS7ZDC0NXJXKVKN61SKVZ","parent":"","index":"ZxUV","type":"number","text":"How much does TreeWrite cost?","collapsed":true}
+{"id":"01M3HVYZZQ26X7HAH17EB7NYMV","parent":"","index":"ZxUl","type":"number","text":"Why use a custom file format instead of Markdown?","collapsed":true}
+{"id":"01M3HWXHGGDD8VFSECY39MTH6F","parent":"","index":"ZxUt","type":"number","text":"Is there a risk that TreeWrite will cease to exist and I will lose my data?","collapsed":true}
+{"id":"01M3HX3V6MEK90CX7ANF1W2FW5","parent":"","index":"ZxUx","type":"number","text":"Does TreeWrite have a mobile app?","collapsed":true}
+{"id":"01M3J5WW3S4MWAPSFN292W7MFJ","parent":"","index":"ZxUz","type":"number","text":"Does TreeWrite have folders?","collapsed":true}
+{"id":"01M3PN11TSYJJH8TYNFZ3SNCZ7","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"Zz","type":"text","text":"Basic concepts of `.jsonl` files","collapsed":true}
+{"id":"01M3PN21SX7VYQZTVH1TSFBE25","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"a0","type":"text","text":"Append-only log structure","collapsed":true}
+{"id":"01M3PQMYTYS7T9B3M87JK2G2PJ","parent":"","index":"ZxUp","type":"number","text":"Why use a custom file format instead of a database (like SQLite)?","collapsed":true}
+{"id":"01M3PRXK6QQS0VNGMRFNEP3AFW","parent":"01M3PN11TSYJJH8TYNFZ3SNCZ7","index":"a5","type":"text","text":"Some reasons to use a JSON Lines file instead of a pure JSON file:","collapsed":true}
+{"id":"01M3Q2E3J20NKRPCQFF6YJK5MC","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a0","type":"text","text":"Bullet base fields","note":"The fields that are common to all bullet types","collapsed":true}
+{"id":"01M3Q2H95YEWXA0GRW81Y1B8QM","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a1V","type":"text","text":"Metadata fields","collapsed":true}
+{"id":"01M3Q2KE10D5K3MNJSMP2PWBSN","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"Zz","type":"page","text":"text","icon":"align-left.png","collapsed":true}
+{"id":"01M3Q2KZY27DHTX08NT3BB7W4G","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a0","type":"page","text":"title","icon":"heading.png","collapsed":true}
+{"id":"01M3Q2M57PQ48DV93NG70W8J0Q","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a1","type":"page","text":"number","icon":"list-numbers.png","collapsed":true}
+{"id":"01M3Q2M9YMY3EQ7RVWD67W7KYY","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a2","type":"page","text":"checkbox","icon":"square-check.png","collapsed":true}
+{"id":"01M3Q2MEXEC5CK467FD99DTA84","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a3","type":"page","text":"divider","icon":"separator.png","collapsed":true}
+{"id":"01M3Q2MTK0ST2Y1K7M4CQH4P0K","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a4","type":"page","text":"callout","icon":"info-square-rounded.png","collapsed":true}
+{"id":"01M3Q2MYYY1D3RSG9PRBMNW9HR","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a6","type":"page","text":"image","icon":"photo.png","collapsed":true}
+{"id":"01M3Q2N3PAHRK6P5910QQ3JZ31","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a7","type":"page","text":"file","icon":"file.png","collapsed":true}
+{"id":"01M3Q2NBW6MWP9M2DXW5559921","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a8","type":"page","text":"code","icon":"code.png","collapsed":true}
+{"id":"01M3Q2NGG81YTYQB3Y37RDAJG0","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a9","type":"page","text":"math","icon":"math-function.png","collapsed":true}
+{"id":"01M3Q2NMH5GP7P18DD5HGZX6JR","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"aA","type":"page","text":"page","icon":"app-window.png","collapsed":true}
+{"id":"01M3Q7VAC5PGWB97ZDH1BS84R7","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a5","type":"page","text":"table","icon":"table.png","collapsed":true}
+{"id":"01M3QBV3HDM0M7WGJKAPZEWV4Z","parent":"01M3Q2H95YEWXA0GRW81Y1B8QM","index":"a1","type":"text","text":"`theme`","collapsed":true}
+{"id":"01M3QBV3HF20E8KGC4JQVZ40A3","parent":"01M3Q2H95YEWXA0GRW81Y1B8QM","index":"a2","type":"text","text":"`home`","collapsed":true}
+{"id":"01M3QBV3HHJ4CSRS185S2YD6TJ","parent":"01M3Q2H95YEWXA0GRW81Y1B8QM","index":"a3","type":"text","text":"`publish`","collapsed":true}
+{"id":"01M3QBV3HHX0PS4NWG7MH4JVHT","parent":"01M3Q2H95YEWXA0GRW81Y1B8QM","index":"a4","type":"text","text":"`features`","collapsed":true}
+{"id":"01M3QBV3HN2WCBY37F2CMRV4VC","parent":"01M3Q2H95YEWXA0GRW81Y1B8QM","index":"a5","type":"text","text":"`tags[]`","collapsed":true}
+{"id":"01M3QBV3HPV0ND9TWNJ6VGABAK","parent":"01M3Q2H95YEWXA0GRW81Y1B8QM","index":"a6","type":"text","text":"`git`","collapsed":true}
+{"id":"01M3QD7MNAPKGY0P4MBBBH5CDE","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"a1","type":"text","text":"Bullet types and metadata","collapsed":true}
+{"id":"01M3QD8BXYMNV9Y02Q98REJVE8","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a2","type":"text","text":"Bullet types","collapsed":true}
+{"id":"01M3CPC4WYVXJR6NF9J3ZFYYAC","parent":"","index":"ZxF","type":"number","text":"You can search globally, filter by [[01M3CKKTSAKT9DVE52BA7VV5K0]] or by [[01M3CKKYE39X7JV1VXT1H4WBCJ]]"}
+{"id":"01M3QJEPS7Y051WM81BJQ5C2KA","parent":"","index":"ZxFG","type":"number","text":""}
+{"id":"01M3QJEPS7Y051WM81BJQ5C2KA","parent":"","index":"ZxFG","type":"number","text":"Backup and synchronization with Git. Merge conflicts are resolved automatically."}
+{"id":"01M3QJEPS7Y051WM81BJQ5C2KA","parent":"","index":"ZxFG","type":"number","text":"Backup and synchronization with Git. Merge conflicts are resolved automatically"}
+{"id":"01M3QJEPS7Y051WM81BJQ5C2KA","parent":"","index":"ZxFG","type":"number","text":"Backup and synchronization with . Merge conflicts are resolved automatically"}
+{"id":"01M3QJEPS7Y051WM81BJQ5C2KA","parent":"","index":"ZxFG","type":"number","text":"Backup and synchronization with [[Git. Merge conflicts are resolved automatically"}
+{"id":"01M3QJEPS7Y051WM81BJQ5C2KA","parent":"","index":"ZxFG","type":"number","text":"Backup and synchronization with [[01M3CK4TT3EEMYQ55VSYQVCFZK]]. Merge conflicts are resolved automatically"}
+{"id":"01M3QJEPS7Y051WM81BJQ5C2KA","parent":"","index":"ZxFG","type":"number","text":"Backup and synchronization with [[01M3CK4TT3EEMYQ55VSYQVCFZK|Git]]. Merge conflicts are resolved automatically"}
+{"id":"01M3CPBRTH1MDH1W1EY39HBPD6","parent":"","index":"ZxE","type":"number","text":"All bullets are stored in a single `.jsonl` ([JSON Lines](https://jsonlines.org)) file on your computer, no cloud storage (ever). ***You own your data*** in an open and documented text file format"}
+{"id":"01M3DZYGXAGMKQ6ZE8G0HP9FKR","deleted":true}
