@@ -818,3 +818,7 @@
 {"id":"01M3Q2N3PAHRK6P5910QQ3JZ31","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a7","type":"page","text":"file","icon":"file.png"}
 {"id":"01M3Q2N3PAHRK6P5910QQ3JZ31","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a7","type":"page","text":"file","icon":"file.png","collapsed":true}
 {"id":"01M3Q2NBW6MWP9M2DXW5559921","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a8","type":"page","text":"code","icon":"code.png"}
+{"id":"01M3Q2NBW6MWP9M2DXW5559921","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a8","type":"page","text":"code","icon":"code.png","collapsed":true}
+{"id":"01M3Q2NGG81YTYQB3Y37RDAJG0","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a9","type":"page","text":"math","icon":"math-function.png"}
+{"id":"01M3Q2NGG81YTYQB3Y37RDAJG0","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a9","type":"page","text":"math","icon":"math-function.png","collapsed":true}
+{"id":"01M3Q2E3J20NKRPCQFF6YJK5MC","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a0","type":"text","text":"Bullet base fields","note":"The fields that are common to all bullet types","collapsed":true}
