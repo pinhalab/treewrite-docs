@@ -1073,3 +1073,17 @@
 {"id":"01M3DGAB9R7DBXJHWS477F4TQA","parent":"01M3CJQZTGBY1KNX195FMMDHA5","index":"a0","type":"text","text":"Assets are files of any extension referenced by fields of certain [[bullet ty"}
 {"id":"01M3DGAB9R7DBXJHWS477F4TQA","parent":"01M3CJQZTGBY1KNX195FMMDHA5","index":"a0","type":"text","text":"Assets are files of any extension referenced by fields of certain [[bullet types"}
 {"id":"01M3DGAB9R7DBXJHWS477F4TQA","parent":"01M3CJQZTGBY1KNX195FMMDHA5","index":"a0","type":"text","text":"Assets are files of any extension referenced by fields of certain [[01M3QD8BXYMNV9Y02Q98REJVE8]]"}
+{"id":"01M3S4QD294MZH7N80N3N0MQPJ","parent":"01M3CJQZTGBY1KNX195FMMDHA5","index":"a1","type":"text","text":"The assets are stored near your `.jsonl` file, in the directory `./treewrite/{filename.jsonl}/assets`."}
+{"id":"01M3S4QD294MZH7N80N3N0MQPJ","parent":"01M3CJQZTGBY1KNX195FMMDHA5","index":"a1","type":"text","text":"The assets are stored near your `.jsonl` file, in the directory `./treewrite/{filename.jsonl}/assets`"}
+{"id":"01M3S4QD294MZH7N80N3N0MQPJ","parent":"01M3CJQZTGBY1KNX195FMMDHA5","index":"a1","type":"text","text":"The assets are stored near your `.jsonl` file, in the directory `./treewrite/{filename.jsonl}/assets`"}
+{"id":"01M3S4VK1R19W8DNTYZWKWFBG8","parent":"01M3CJQZTGBY1KNX195FMMDHA5","index":"a2","type":"text","text":""}
+{"id":"01M3S4VK1R19W8DNTYZWKWFBG8","parent":"01M3CJQZTGBY1KNX195FMMDHA5","index":"a2","type":"text","text":"Each of your documents will have its own unique asset directory, allowing for complete isolation between documents."}
+{"id":"01M3S4VK1R19W8DNTYZWKWFBG8","parent":"01M3CJQZTGBY1KNX195FMMDHA5","index":"a2","type":"text","text":"Each of your documents will have its own unique asset directory, allowing for complete isolation between documents"}
+{"id":"01M3S4QD294MZH7N80N3N0MQPJ","parent":"01M3CJQZTGBY1KNX195FMMDHA5","index":"a1","type":"text","text":"The assets are stored near your `.jsonl` file, in the directory `./treewrite/{{filename.jsonl}/assets`"}
+{"id":"01M3S4QD294MZH7N80N3N0MQPJ","parent":"01M3CJQZTGBY1KNX195FMMDHA5","index":"a1","type":"text","text":"The assets are stored near your `.jsonl` file, in the directory `./treewrite/{{filename.jsonl}}/assets`"}
+{"id":"01M3S4QD294MZH7N80N3N0MQPJ","parent":"01M3CJQZTGBY1KNX195FMMDHA5","index":"a1","type":"text","text":"The assets are stored near your `.jsonl` file, in the directory `./treewrite/{{filename.jsonl}/assets`"}
+{"id":"01M3S4QD294MZH7N80N3N0MQPJ","parent":"01M3CJQZTGBY1KNX195FMMDHA5","index":"a1","type":"text","text":"The assets are stored near your `.jsonl` file, in the directory `./treewrite/{filename.jsonl}/assets`"}
+{"id":"01M3DGAB9R7DBXJHWS477F4TQA","parent":"01M3CJQZTGBY1KNX195FMMDHA5","index":"a0","type":"text","text":"Assets are files of any extension referenced by fields of certain [[01M3QD8BXYMNV9Y02Q98REJVE8]] (like src of i"}
+{"id":"01M3DGAB9R7DBXJHWS477F4TQA","parent":"01M3CJQZTGBY1KNX195FMMDHA5","index":"a0","type":"text","text":"Assets are files of any extension referenced by fields of certain [[01M3QD8BXYMNV9Y02Q98REJVE8]] (like src of image)"}
+{"id":"01M3S4QD294MZH7N80N3N0MQPJ","parent":"01M3CJQZTGBY1KNX195FMMDHA5","index":"a1","type":"text","text":"The assets are stored near your `.jsonl` file in the directory `./treewrite/{filename.jsonl}/assets`"}
+{"id":"01M3S4QD294MZH7N80N3N0MQPJ","parent":"01M3CJQZTGBY1KNX195FMMDHA5","index":"a1","type":"text","text":"The assets are stored near your `.jsonl` file, in the directory `./treewrite/{filename.jsonl}/assets`"}
