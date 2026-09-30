@@ -822,3 +822,28 @@
 {"id":"01M3Q2NGG81YTYQB3Y37RDAJG0","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a9","type":"page","text":"math","icon":"math-function.png"}
 {"id":"01M3Q2NGG81YTYQB3Y37RDAJG0","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a9","type":"page","text":"math","icon":"math-function.png","collapsed":true}
 {"id":"01M3Q2E3J20NKRPCQFF6YJK5MC","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a0","type":"text","text":"Bullet base fields","note":"The fields that are common to all bullet types","collapsed":true}
+{"id":"01M3Q2KE10D5K3MNJSMP2PWBSN","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"Zz","type":"page","text":"text","icon":"align-left.png"}
+{"id":"01M3Q2KE10D5K3MNJSMP2PWBSN","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"Zz","type":"page","text":"text","icon":"align-left.png","collapsed":true}
+{"id":"01M3Q2KZY27DHTX08NT3BB7W4G","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a0","type":"page","text":"title","icon":"heading.png"}
+{"id":"01M3Q2KZY27DHTX08NT3BB7W4G","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a0","type":"page","text":"title","icon":"heading.png","collapsed":true}
+{"id":"01M3Q2M57PQ48DV93NG70W8J0Q","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a1","type":"page","text":"number","icon":"list-numbers.png"}
+{"id":"01M3Q2M57PQ48DV93NG70W8J0Q","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a1","type":"page","text":"number","icon":"list-numbers.png","collapsed":true}
+{"id":"01M3Q2KZY27DHTX08NT3BB7W4G","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a0","type":"page","text":"title","icon":"heading.png"}
+{"id":"01M3Q2KZY27DHTX08NT3BB7W4G","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"a0","type":"page","text":"title","icon":"heading.png","collapsed":true}
+{"id":"01M3QD8BXYMNV9Y02Q98REJVE8","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a2","type":"text","text":"Bullet types","collapsed":true}
+{"id":"01M3QD8BXYMNV9Y02Q98REJVE8","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a2","type":"text","text":"Bullet types","collapsed":true}
+{"id":"01M3R02Q7FHS5DJN03NK9ZVJXK","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a3","type":"text","text":""}
+{"id":"01M3QD8BXYMNV9Y02Q98REJVE8","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a2","type":"text","text":"Bullet types"}
+{"id":"01M3QD8BXYMNV9Y02Q98REJVE8","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a2","type":"text","text":"Bullet types","collapsed":true}
+{"id":"01M3R02Q7FHS5DJN03NK9ZVJXK","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a3","type":"text","text":"Markdown "}
+{"id":"01M3R02Q7FHS5DJN03NK9ZVJXK","deleted":true}
+{"id":"01M3QD8BXYMNV9Y02Q98REJVE8","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a2","type":"text","text":"Bullet types","collapsed":true}
+{"id":"01M3R034TPFGR75FWYVGPAN3XG","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a3","type":"text","text":""}
+{"id":"01M3R034TPFGR75FWYVGPAN3XG","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a3","type":"text","text":"Markdown formatting"}
+{"id":"01M3QD8BXYMNV9Y02Q98REJVE8","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a2","type":"text","text":"Bullet types"}
+{"id":"01M3Q2KE10D5K3MNJSMP2PWBSN","parent":"01M3QD8BXYMNV9Y02Q98REJVE8","index":"Zz","type":"page","text":"text","icon":"align-left.png"}
+{"id":"01M3PF0NC7QATMQ15BHR9HB0Y1","parent":"01M3Q2KE10D5K3MNJSMP2PWBSN","index":"Zz","type":"text","text":"Hello world, this is **bold**, *italic*, ***bold+italic***, [link](https://example.com) and [[01M3CJESYF2WBDSJQM0GJGKCQ6|wiki link]]","note":"Example of a text bullet, with bold, italic, and link markers. Other text bullets may also support these markers"}
+{"id":"01M3QD8BXYMNV9Y02Q98REJVE8","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a2","type":"text","text":"Bullet types","collapsed":true}
+{"id":"01M3R034TPFGR75FWYVGPAN3XG","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a3","type":"text","text":"Markdown formatting"}
+{"id":"01M3R043YV7YWYC249H1Y7YXJN","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a4","type":"text","text":""}
+{"id":"01M3R043YV7YWYC249H1Y7YXJN","parent":"01M3R034TPFGR75FWYVGPAN3XG","index":"a0","type":"text","text":""}
