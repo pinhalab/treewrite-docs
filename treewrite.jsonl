@@ -1164,3 +1164,17 @@
 {"id":"01M3S5TK46P12GPS9A4XRFGAE1","parent":"01M3CKKYE39X7JV1VXT1H4WBCJ","index":"a1","type":"text","text":"You can search for bullets with dates in the sidebar calendar."}
 {"id":"01M3S5TK46P12GPS9A4XRFGAE1","parent":"01M3CKKYE39X7JV1VXT1H4WBCJ","index":"a1","type":"text","text":"You can search for bullets with dates in the sidebar calendar"}
 {"id":"01M3S5TK46P12GPS9A4XRFGAE1","parent":"01M3CKKYE39X7JV1VXT1H4WBCJ","index":"a1","type":"text","text":"You can search for bullets with dates in the calendar"}
+{"id":"01M3S5TK46P12GPS9A4XRFGAE1","parent":"01M3CKKYE39X7JV1VXT1H4WBCJ","index":"a1","type":"text","text":"You can search for bullets with dates in the calendar"}
+{"id":"01M3S5ZBAV2M6MD66PYD0NYRZM","parent":"01M3CKKYE39X7JV1VXT1H4WBCJ","index":"a2","type":"text","text":""}
+{"id":"01M3S5ZBAV2M6MD66PYD0NYRZM","parent":"01M3CKKYE39X7JV1VXT1H4WBCJ","index":"a2","type":"text","text":"Dates themselves don't have any inherent semantic meaning; you define that. For example, a date in a checkbox might indicate a task; one on a page might indicate an upcoming trip, and so on."}
+{"id":"01M3S5ZBAV2M6MD66PYD0NYRZM","parent":"01M3CKKYE39X7JV1VXT1H4WBCJ","index":"a2","type":"text","text":"Dates themselves don't have any inherent semantic meaning; you define that. For example, a date in a checkbox might indicate a task; one on a page might indicate an upcoming trip, and so on"}
+{"id":"01M3S5ZBAV2M6MD66PYD0NYRZM","parent":"01M3CKKYE39X7JV1VXT1H4WBCJ","index":"a2","type":"text","text":"Dates themselves don't have any inherent semantic meaning; you define that. For example, a date in a checkbox might indicate a task; one on a page might indicate an upcoming trip, and so on"}
+{"id":"01M3S60ER00G5MGYVD3FXF0WCE","parent":"01M3CKKYE39X7JV1VXT1H4WBCJ","index":"a3","type":"text","text":""}
+{"id":"01M3S60ER00G5MGYVD3FXF0WCE","parent":"01M3CKKYE39X7JV1VXT1H4WBCJ","index":"a3","type":"text","text":"It's also possible to filter the calendar by bullets with a specific tag."}
+{"id":"01M3S60ER00G5MGYVD3FXF0WCE","parent":"01M3CKKYE39X7JV1VXT1H4WBCJ","index":"a3","type":"text","text":"It's also possible to filter the calendar by bullets with a specific tag"}
+{"id":"01M3S60ER00G5MGYVD3FXF0WCE","parent":"01M3CKKYE39X7JV1VXT1H4WBCJ","index":"a3","type":"text","text":"It's also possible to filter the calendar by bullets with a specific "}
+{"id":"01M3S60ER00G5MGYVD3FXF0WCE","parent":"01M3CKKYE39X7JV1VXT1H4WBCJ","index":"a3","type":"text","text":"It's also possible to filter the calendar by bullets with a specific [[tag"}
+{"id":"01M3S60ER00G5MGYVD3FXF0WCE","parent":"01M3CKKYE39X7JV1VXT1H4WBCJ","index":"a3","type":"text","text":"It's also possible to filter the calendar by bullets with a specific [[01M3CKKTSAKT9DVE52BA7VV5K0]]"}
+{"id":"01M3S60ER00G5MGYVD3FXF0WCE","parent":"01M3CKKYE39X7JV1VXT1H4WBCJ","index":"a3","type":"text","text":"It's also possible to filter the calendar by bullets with a specific [[01M3CKKTSAKT9DVE52BA7VV5K0|tag]]"}
+{"id":"01M3S60ER00G5MGYVD3FXF0WCE","parent":"01M3CKKYE39X7JV1VXT1H4WBCJ","index":"a3","type":"text","text":"It's also possible to filter the calendar by bullets with a specific [[01M3CKKTSAKT9DVE52BA7VV5K0|tag]]. If you have, for example, a \"Task\" tag, you can filter by tasks in the current week."}
+{"id":"01M3S60ER00G5MGYVD3FXF0WCE","parent":"01M3CKKYE39X7JV1VXT1H4WBCJ","index":"a3","type":"text","text":"It's also possible to filter the calendar by bullets with a specific [[01M3CKKTSAKT9DVE52BA7VV5K0|tag]]. If you have, for example, a \"Task\" tag, you can filter by tasks in the current week"}
