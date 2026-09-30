@@ -1311,3 +1311,27 @@
 {"id":"01M3SAH7N2FVZA8CNB2SVMDA22","parent":"01M3CK4AA3MES7HVDZBMNQYHER","index":"a6","type":"text","text":"Deploy tutorials","collapsed":true}
 {"id":"01M3CK4AA3MES7HVDZBMNQYHER","parent":"","index":"Zxp","type":"page","text":"Publish","icon":"🚀","background":"#7950f2","note":"How to turn your bullets into a website like this one","collapsed":true}
 {"id":"01M3CNZ3ZP6FB4C9V4SABK4N7M","parent":"","index":"Zxr","type":"page","text":"Tips & Tricks","icon":"🧠","background":"#868e96","note":"Some tips and tricks to help you delve deeper into TreeWrite"}
+{"id":"01M3DGAMS8AGTMRSEM2CVT4S44","parent":"01M3CNZ3ZP6FB4C9V4SABK4N7M","index":"a0","type":"text","text":"Some tips to get the most out of TreeWrite. Click *Shortcuts* in the header to see all the shortcuts"}
+{"id":"01M3SBV7X4QCG8KCFF6XKXK0QT","parent":"01M3CNZ3ZP6FB4C9V4SABK4N7M","index":"a1","type":"text","text":"Performance and memory","collapsed":true}
+{"id":"01M3SBV7X51HRS8H2P2XRNM223","parent":"01M3SBV7X4QCG8KCFF6XKXK0QT","index":"a0","type":"text","text":"The whole document is loaded into memory while it is open, so the memory TreeWrite uses grows with the size of the document"}
+{"id":"01M3SBV7X6HTGPJ56XY2VDES09","parent":"01M3SBV7X4QCG8KCFF6XKXK0QT","index":"a1","type":"text","text":"Only the document being shown is loaded. The other open files take no memory until you switch to them"}
+{"id":"01M3SBV7X7DB1DV5B5969F68D7","parent":"01M3SBV7X4QCG8KCFF6XKXK0QT","index":"a2","type":"text","text":"If a document gets too big, or mixes unrelated subjects, split it into several documents. Each one also has its own [[01M3CJQZTGBY1KNX195FMMDHA5]], settings and [[01M3CK4AA3MES7HVDZBMNQYHER|site]]"}
+{"id":"01M3SBV7X88R8YQTMW0PY1WMVX","parent":"01M3CNZ3ZP6FB4C9V4SABK4N7M","index":"a2","type":"text","text":"Writing faster","collapsed":true}
+{"id":"01M3SBV7X9FNG50HTSNMARNJXP","parent":"01M3SBV7X88R8YQTMW0PY1WMVX","index":"a0","type":"text","text":"Type `/` at the start of a bullet to change its type"}
+{"id":"01M3SBV7XA3HJE5H9WG7K3W3KW","parent":"01M3SBV7X88R8YQTMW0PY1WMVX","index":"a1","type":"text","text":"Or type at the start of the text, followed by Space: `#`, `##` or `###` for a title, `[]` for a checkbox, three backticks for code (type a language like `ts` right after them to set it) and `$$` for math"}
+{"id":"01M3SBV7XBY78JEZ112M709BA4","parent":"01M3SBV7X88R8YQTMW0PY1WMVX","index":"a2","type":"text","text":"Type `[[` to reference another bullet, searching it by its text"}
+{"id":"01M3SBV7XC2RWFG5SVJBZ06A8C","parent":"01M3SBV7X88R8YQTMW0PY1WMVX","index":"a3","type":"text","text":"*Shift+Enter* adds a note to the bullet"}
+{"id":"01M3SBV7XDHBZ3NJPQXEJJDEZH","parent":"01M3SBV7X88R8YQTMW0PY1WMVX","index":"a4","type":"text","text":"Inside code, math and tables, where *Tab* is taken, use *Ctrl+Tab* to indent the bullet and *Ctrl+Enter* to leave it"}
+{"id":"01M3SBV7XEQY2MK4W0RE3WNJHK","parent":"01M3SBV7X88R8YQTMW0PY1WMVX","index":"a5","type":"text","text":"In the asset picker (of an image, a file or an icon), you can paste an image or a file copied in your file manager, or drag files into the window"}
+{"id":"01M3SBV7XFTBXBME35BC6KKX1Z","parent":"01M3CNZ3ZP6FB4C9V4SABK4N7M","index":"a3","type":"text","text":"Navigating","collapsed":true}
+{"id":"01M3SBV7XGK5CS334P2YNMC18A","parent":"01M3SBV7XFTBXBME35BC6KKX1Z","index":"a0","type":"text","text":"*Ctrl+F* searches the whole document, from anywhere"}
+{"id":"01M3SBV7XHNAND4KRRDV366V3J","parent":"01M3SBV7XFTBXBME35BC6KKX1Z","index":"a1","type":"text","text":"*Alt+←* and *Alt+→* go back and forth between the bullets you opened"}
+{"id":"01M3SBV7XJB8WX1HKTKTWV7DZK","parent":"01M3SBV7XFTBXBME35BC6KKX1Z","index":"a2","type":"text","text":"*Ctrl+Space* expands or collapses everything inside the open bullet"}
+{"id":"01M3SBV7XK1384C2TM0V2GH5Z1","parent":"01M3SBV7XFTBXBME35BC6KKX1Z","index":"a3","type":"text","text":"*Ctrl+click* a reference to open it in a new tab. *Ctrl+1* to *Ctrl+9* switch between tabs, and the middle click closes them"}
+{"id":"01M3SBV7XM9M1D1D2S8JJYC5XV","parent":"01M3SBV7XFTBXBME35BC6KKX1Z","index":"a4","type":"text","text":"Drag a bullet by its circle to move it anywhere in the view"}
+{"id":"01M3SBV7XNTGJ75796TXY02Y8H","parent":"01M3SBV7XFTBXBME35BC6KKX1Z","index":"a5","type":"text","text":"Add the bullets you open the most to the favorites"}
+{"id":"01M3SBV7XPZXM18GZXYW8DCBX5","parent":"01M3SBV7XFTBXBME35BC6KKX1Z","index":"a6","type":"text","text":"The *Random bullet* button on the home is a good way to revisit old notes"}
+{"id":"01M3SBV7XQNS7FCWC59E3P4EVM","parent":"01M3CNZ3ZP6FB4C9V4SABK4N7M","index":"a4","type":"text","text":"Your file","collapsed":true}
+{"id":"01M3SBV7XR7CP9BTX8ZHMVHS2B","parent":"01M3SBV7XQNS7FCWC59E3P4EVM","index":"a0","type":"text","text":"Your document is a plain text file, so you can read it with any tool, like `jq` or a script of yours"}
+{"id":"01M3SBV7XSPY64SME2VS5RKKMH","parent":"01M3SBV7XQNS7FCWC59E3P4EVM","index":"a1","type":"text","text":"Only change the file by hand while it is closed in TreeWrite, since the app keeps appending to it while it is open"}
+{"id":"01M3SBV7XTH04TPG2VACZ683Y0","parent":"01M3SBV7XQNS7FCWC59E3P4EVM","index":"a2","type":"text","text":"Turn off the sidebar panels you don't use in *Settings › Features*. Nothing is lost: their data stays in the file"}
