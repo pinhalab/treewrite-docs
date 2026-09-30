@@ -1200,3 +1200,33 @@
 {"id":"01M3CPJDSFCBB4MA3QVVDT8323","parent":"","index":"ZxEV","type":"number","text":"Benchmarked with up to ***100k BULLETS*** per file"}
 {"id":"01M3CPJDSFCBB4MA3QVVDT8323","parent":"","index":"ZxEV","type":"number","text":"Benchmarked with up to ***100k BULLETS***"}
 {"id":"01M3CPC4WYVXJR6NF9J3ZFYYAC","parent":"","index":"ZxF","type":"number","text":"You can search globally, filter by [[01M3CKKTSAKT9DVE52BA7VV5K0]] and by [[01M3CKKYE39X7JV1VXT1H4WBCJ]]"}
+{"id":"01M3DGAGR5BQZ3878HKE00APYF","parent":"01M3CK4TT3EEMYQ55VSYQVCFZK","index":"a0","type":"text","text":"TreeWrite can automatically commit and push your document to a Git repository, as a backup or to keep it in sync across machines"}
+{"id":"01M3S877Q8JY8K5WJ63GJZH3MW","parent":"01M3CK4TT3EEMYQ55VSYQVCFZK","index":"a1","type":"text","text":"It runs the Git installed on your system, so your SSH keys, credentials and `.gitconfig` work just like in the terminal"}
+{"id":"01M3S877Q9J3K7YAPW89HMQPPP","parent":"01M3CK4TT3EEMYQ55VSYQVCFZK","index":"a2","type":"text","text":"The settings are stored in the [[01M3QBV3HPV0ND9TWNJ6VGABAK|metadata]] of your document, so they travel with it to other machines"}
+{"id":"01M3S877QAQH7R4894Y2XBKHRW","parent":"01M3CK4TT3EEMYQ55VSYQVCFZK","index":"a3","type":"text","text":"Setup","collapsed":true}
+{"id":"01M3S877QBTEG9Q65B61P9ZDP0","parent":"01M3S877QAQH7R4894Y2XBKHRW","index":"a0","type":"text","text":"Open the settings and go to the Git section"}
+{"id":"01M3S877QC5MKW57KG3SWCEWEG","parent":"01M3S877QAQH7R4894Y2XBKHRW","index":"a1","type":"text","text":"If the file is not in a repository, TreeWrite can create one in its folder. Temporary files and the [[01M3CK4AA3MES7HVDZBMNQYHER|published site]] are added to `.gitignore`"}
+{"id":"01M3S877QDJ41X5QJWE0B1RGF8","parent":"01M3S877QAQH7R4894Y2XBKHRW","index":"a2","type":"text","text":"If the branch has no remote, type its URL and TreeWrite adds it as `origin` and pushes the branch"}
+{"id":"01M3S877QEV7J7XCRGG152JGDS","parent":"01M3S877QAQH7R4894Y2XBKHRW","index":"a3","type":"text","text":"Finally, turn on the sync of the file and choose a mode"}
+{"id":"01M3S877QFN6WD7A4EVMWB2XQR","parent":"01M3CK4TT3EEMYQ55VSYQVCFZK","index":"a4","type":"text","text":"Modes","collapsed":true}
+{"id":"01M3S877QGMRH88PXWYGVNSDV4","parent":"01M3S877QFN6WD7A4EVMWB2XQR","index":"a0","type":"text","text":"**Sync** pulls the changes of other machines before pushing yours. Use it to edit the same document on more than one machine"}
+{"id":"01M3S877QH6AFRVGA2DQP48AJC","parent":"01M3S877QFN6WD7A4EVMWB2XQR","index":"a1","type":"text","text":"**Backup** only pushes. Use it when a single machine edits the document. If the remote has changes this machine doesn't have, the sync is paused"}
+{"id":"01M3S877QJ7NWNGS5PRR53G6DK","parent":"01M3CK4TT3EEMYQ55VSYQVCFZK","index":"a5","type":"text","text":"When it syncs","collapsed":true}
+{"id":"01M3S877QK1CSP5YMN9JMNPVYA","parent":"01M3S877QJ7NWNGS5PRR53G6DK","index":"a0","type":"number","text":"Some time after your last change (1 minute by default)"}
+{"id":"01M3S877QMBSEW1EF669E77FD8","parent":"01M3S877QJ7NWNGS5PRR53G6DK","index":"a1","type":"number","text":"Periodically, to bring in the changes of other machines (every 5 minutes by default)"}
+{"id":"01M3S877QN332X5KF6HH7CAWP4","parent":"01M3S877QJ7NWNGS5PRR53G6DK","index":"a2","type":"number","text":"When the document is opened"}
+{"id":"01M3S877QPRMM5TVQ7MAHAC6Q2","parent":"01M3S877QJ7NWNGS5PRR53G6DK","index":"a3","type":"number","text":"When you switch to another document or close TreeWrite"}
+{"id":"01M3S877QQ02QAMDYZWDG9ZQMC","parent":"01M3S877QJ7NWNGS5PRR53G6DK","index":"a4","type":"number","text":"When you click the sync status and then *Sync now*"}
+{"id":"01M3S877QRKHH0DGYZP4906HJ2","parent":"01M3S877QJ7NWNGS5PRR53G6DK","index":"a5","type":"text","text":"Only the open document is synced, and each commit includes only the document and its [[01M3CJQZTGBY1KNX195FMMDHA5]]"}
+{"id":"01M3S877QSHSMCTM7ZSVX46VCP","parent":"01M3CK4TT3EEMYQ55VSYQVCFZK","index":"a6","type":"text","text":"Merge conflicts","collapsed":true}
+{"id":"01M3S877QTJ7E1CCR8R37J6RHQ","parent":"01M3S877QSHSMCTM7ZSVX46VCP","index":"a0","type":"text","text":"Conflicts are resolved automatically. Instead of merging the lines of the [[01M3CK4D608BX01BDWAWPSDR8G|`.jsonl` file]], TreeWrite merges the bullets one by one"}
+{"id":"01M3S877QV2C0D3EFKJXA1EGXP","parent":"01M3S877QSHSMCTM7ZSVX46VCP","index":"a1","type":"text","text":"A bullet changed on only one machine keeps that change"}
+{"id":"01M3S877QWACJQGA6QGPQVHTH5","parent":"01M3S877QSHSMCTM7ZSVX46VCP","index":"a2","type":"text","text":"A bullet changed on both machines keeps the version of the current machine, and you are notified"}
+{"id":"01M3S877QX2VVBE1YWG6C3Q0QR","parent":"01M3S877QSHSMCTM7ZSVX46VCP","index":"a3","type":"text","text":"An edit always wins over a removal, so nothing you wrote is lost"}
+{"id":"01M3S877QY8ZHB41K0ZXMF4W1R","parent":"01M3S877QSHSMCTM7ZSVX46VCP","index":"a4","type":"text","text":"The settings in the metadata are merged the same way, one by one"}
+{"id":"01M3S877QZ5R1CYYA746FJFKW6","parent":"01M3S877QSHSMCTM7ZSVX46VCP","index":"a5","type":"text","text":"Two different assets added with the same name on each machine are both kept. The one from the other machine gets a new name (like `photo-2.png`) and its references are updated"}
+{"id":"01M3S877R0D814FVQ3QXNYEX6A","parent":"01M3S877QSHSMCTM7ZSVX46VCP","index":"a6","type":"text","text":"The result is appended to the file, keeping it [[01M3PN21SX7VYQZTVH1TSFBE25|append-only]]"}
+{"id":"01M3S877R1VAYF4VBPEX4TFRPV","parent":"01M3S877QSHSMCTM7ZSVX46VCP","index":"a7","type":"text","text":"Conflicts in other files of the repository are left to you. The merge is aborted, nothing is changed and the sync is paused"}
+{"id":"01M3S877R2YPZ8S89PK7KX9GQT","parent":"01M3CK4TT3EEMYQ55VSYQVCFZK","index":"a7","type":"text","text":"Sync status","collapsed":true}
+{"id":"01M3S877R3XKE9TPEK5GC81TK8","parent":"01M3S877R2YPZ8S89PK7KX9GQT","index":"a0","type":"text","text":"The status is shown in the header, next to the save status. Clicking it shows the last sync time and a button to sync right away"}
+{"id":"01M3S877R4QJA6YFZ5KA68XNXP","parent":"01M3S877R2YPZ8S89PK7KX9GQT","index":"a1","type":"table","rows":[["Status","Meaning"],["Synced","Everything was pushed"],["Syncing","A sync is running"],["Not synced yet","There are changes that were not pushed yet"],["Offline","The remote could not be reached. Your changes are committed and pushed once it is back"],["Sync paused","Something needs your attention, like a refused credential. Fix it and click *Retry*"]],"header":"horizontal"}
