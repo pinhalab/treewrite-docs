@@ -1247,3 +1247,6 @@
 {"id":"01M3S877R2YPZ8S89PK7KX9GQT","parent":"01M3CK4TT3EEMYQ55VSYQVCFZK","index":"a7","type":"text","text":"Sync status"}
 {"id":"01M3S877R2YPZ8S89PK7KX9GQT","parent":"01M3CK4TT3EEMYQ55VSYQVCFZK","index":"a7","type":"text","text":"Sync status","collapsed":true}
 {"id":"01M3CK4TT3EEMYQ55VSYQVCFZK","parent":"","index":"Zxn","type":"page","text":"Git integration","icon":"https://avatars.githubusercontent.com/u/18133?s=280&v=4","background":"#fd7e14","note":"How to integrate your bullets with Git for automatic backups and synchronization","collapsed":true}
+{"id":"01M3CK4TT3EEMYQ55VSYQVCFZK","parent":"","index":"Zxn","type":"page","text":"Git integration","icon":"https://avatars.githubusercontent.com/u/18133?s=280&v=4","background":"#fd7e14","note":"How to integrate your bullets with Git for automatic backups and synchronization"}
+{"id":"01M3CK4TT3EEMYQ55VSYQVCFZK","parent":"","index":"Zxn","type":"page","text":"Git integration","icon":"https://avatars.githubusercontent.com/u/18133?s=280&v=4","background":"#fd7e14","note":"How to integrate your bullets with Git for automatic backups and synchronization","collapsed":true}
+{"id":"01M3CK4AA3MES7HVDZBMNQYHER","parent":"","index":"Zxp","type":"page","text":"Publish","icon":"🚀","background":"#7950f2","note":"How to turn your bullets into a website like this one"}
