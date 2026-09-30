@@ -31980,6 +31980,18 @@ function ulid$1(seedTime, prng) {
 	return encodeTime(!seedTime || isNaN(seedTime) ? Date.now() : seedTime, 10) + encodeRandom(RANDOM_LEN, currentPRNG);
 }
 //#endregion
+//#region src/shared/singleLine.ts
+var BLANKS = /^\s+|\s+$|\s*[\t\n\v\f\r\u2028\u2029]\s*/g;
+function blankFor(start) {
+	return start === 0 ? "" : " ";
+}
+function singleLine(text) {
+	return text.replace(BLANKS, (_, start) => blankFor(start));
+}
+function splitLine(before, after) {
+	return [singleLine(before).trimEnd(), singleLine(after)];
+}
+//#endregion
 //#region node_modules/zod/v4/core/util.js
 function getEnumValues(entries) {
 	const numericValues = Object.values(entries).filter((v) => typeof v === "number");
@@ -37364,7 +37376,8 @@ var calloutType = defineBulletType("callout", {
 	outdentsWhenEmpty: false,
 	repeatsType: false,
 	changesTypeByMarks: false,
-	backspaceTurnsIntoText: true
+	backspaceTurnsIntoText: true,
+	keepsLineBreaks: false
 });
 //#endregion
 //#region src/shared/outline/bullets/checkbox.ts
@@ -37393,7 +37406,8 @@ var checkboxType = defineBulletType("checkbox", {
 	outdentsWhenEmpty: true,
 	repeatsType: true,
 	changesTypeByMarks: true,
-	backspaceTurnsIntoText: true
+	backspaceTurnsIntoText: true,
+	keepsLineBreaks: false
 });
 var optionalText = string().nullish().transform((value) => value || void 0).optional();
 var optionalFlag = boolean().nullish().transform((value) => value || void 0).optional();
@@ -37423,7 +37437,8 @@ var codeType = defineBulletType("code", {
 	outdentsWhenEmpty: false,
 	repeatsType: false,
 	changesTypeByMarks: false,
-	backspaceTurnsIntoText: false
+	backspaceTurnsIntoText: false,
+	keepsLineBreaks: true
 });
 //#endregion
 //#region src/shared/outline/bullets/divider.ts
@@ -37446,7 +37461,8 @@ var dividerType = defineBulletType("divider", {
 	outdentsWhenEmpty: false,
 	repeatsType: false,
 	changesTypeByMarks: false,
-	backspaceTurnsIntoText: true
+	backspaceTurnsIntoText: true,
+	keepsLineBreaks: false
 });
 //#endregion
 //#region src/shared/outline/bullets/file.ts
@@ -37463,7 +37479,8 @@ var fileType = defineBulletType("file", {
 	outdentsWhenEmpty: false,
 	repeatsType: false,
 	changesTypeByMarks: false,
-	backspaceTurnsIntoText: false
+	backspaceTurnsIntoText: false,
+	keepsLineBreaks: false
 });
 //#endregion
 //#region src/shared/imageSource.ts
@@ -37488,7 +37505,8 @@ var imageType = defineBulletType("image", {
 	outdentsWhenEmpty: false,
 	repeatsType: false,
 	changesTypeByMarks: false,
-	backspaceTurnsIntoText: false
+	backspaceTurnsIntoText: false,
+	keepsLineBreaks: false
 });
 //#endregion
 //#region src/shared/outline/bullets/math.ts
@@ -37511,7 +37529,8 @@ var mathType = defineBulletType("math", {
 	outdentsWhenEmpty: false,
 	repeatsType: false,
 	changesTypeByMarks: false,
-	backspaceTurnsIntoText: true
+	backspaceTurnsIntoText: true,
+	keepsLineBreaks: true
 });
 //#endregion
 //#region src/shared/outline/bullets/number.ts
@@ -37534,7 +37553,8 @@ var numberType = defineBulletType("number", {
 	outdentsWhenEmpty: true,
 	repeatsType: true,
 	changesTypeByMarks: true,
-	backspaceTurnsIntoText: true
+	backspaceTurnsIntoText: true,
+	keepsLineBreaks: false
 });
 //#endregion
 //#region src/shared/color.ts
@@ -37577,7 +37597,8 @@ var pageType = defineBulletType("page", {
 	outdentsWhenEmpty: true,
 	repeatsType: false,
 	changesTypeByMarks: false,
-	backspaceTurnsIntoText: true
+	backspaceTurnsIntoText: true,
+	keepsLineBreaks: false
 });
 //#endregion
 //#region src/shared/outline/bullets/table.ts
@@ -37631,7 +37652,8 @@ var tableType = defineBulletType("table", {
 	outdentsWhenEmpty: false,
 	repeatsType: false,
 	changesTypeByMarks: false,
-	backspaceTurnsIntoText: false
+	backspaceTurnsIntoText: false,
+	keepsLineBreaks: false
 });
 //#endregion
 //#region src/shared/outline/bullets/text.ts
@@ -37654,7 +37676,8 @@ var textType = defineBulletType("text", {
 	outdentsWhenEmpty: true,
 	repeatsType: false,
 	changesTypeByMarks: true,
-	backspaceTurnsIntoText: false
+	backspaceTurnsIntoText: false,
+	keepsLineBreaks: false
 });
 //#endregion
 //#region src/shared/outline/bullets/title.ts
@@ -37688,7 +37711,8 @@ var titleType = defineBulletType("title", {
 	outdentsWhenEmpty: true,
 	repeatsType: false,
 	changesTypeByMarks: true,
-	backspaceTurnsIntoText: true
+	backspaceTurnsIntoText: true,
+	keepsLineBreaks: false
 });
 //#endregion
 //#region src/shared/outline/bullets/index.ts
@@ -37707,7 +37731,8 @@ var UNSUPPORTED_RULES = {
 	outdentsWhenEmpty: false,
 	repeatsType: false,
 	changesTypeByMarks: false,
-	backspaceTurnsIntoText: false
+	backspaceTurnsIntoText: false,
+	keepsLineBreaks: false
 };
 function rulesOf(type) {
 	return isBulletType(type) ? BULLET_MODELS[type] : UNSUPPORTED_RULES;
@@ -37718,9 +37743,15 @@ function projectionOf(type) {
 function textOfFields(type, fields) {
 	return isBulletType(type) ? projectionOf(type)?.get(fields) : void 0;
 }
+function lineTextOf(type, text) {
+	return rulesOf(type).keepsLineBreaks ? text : singleLine(text);
+}
+function splitTextOf(type, before, after) {
+	return rulesOf(type).keepsLineBreaks ? [before, after] : splitLine(before, after);
+}
 function withTextFields(type, fields, text) {
 	const projection = isBulletType(type) ? projectionOf(type) : void 0;
-	return projection ? projection.set(fields, text) : fields;
+	return projection ? projection.set(fields, lineTextOf(type, text)) : fields;
 }
 function inlineTextOfFields(type, fields, referenceText) {
 	return isBulletType(type) ? BULLET_MODELS[type].inlineText(fields, referenceText) : "";
@@ -37789,6 +37820,11 @@ var WrongTypeError = class extends Error {
 var InsideItselfError = class extends Error {
 	constructor(id, parentId) {
 		super(`bullet ${JSON.stringify(id)} into ${JSON.stringify(parentId)}: a bullet cannot go inside itself`);
+	}
+};
+var NotSiblingsError = class extends Error {
+	constructor(ids) {
+		super(`bullets ${JSON.stringify(ids)}: not siblings next to each other, in order`);
 	}
 };
 var OutOfRangeError = class extends Error {
@@ -38190,7 +38226,8 @@ function sameExtra(a, b) {
 	return deepEqual(a ?? {}, b ?? {});
 }
 function noteOf(note) {
-	return note === void 0 || note.trim() === "" ? void 0 : note;
+	const line = singleLine(note ?? "");
+	return line === "" ? void 0 : line;
 }
 function withNote(record, note) {
 	const next = {
@@ -38328,6 +38365,14 @@ var Tree = class {
 		if (!n) throw new NotFoundError(id);
 		return n;
 	}
+	siblingRun(ids) {
+		const run = ids.map((id) => this.bullet(id));
+		if (run.length === 0) return run;
+		const siblings = run[0].parent.children;
+		const start = siblings.indexOf(run[0]);
+		if (run.some((n, offset) => siblings[start + offset] !== n)) throw new NotSiblingsError(ids);
+		return run;
+	}
 	len() {
 		return this.nodes.size;
 	}
@@ -38464,7 +38509,7 @@ var Tree = class {
 				index: "",
 				type,
 				collapsed: false,
-				fields: BULLET_MODELS[type].create(text)
+				fields: BULLET_MODELS[type].create(lineTextOf(type, text))
 			},
 			parent: null,
 			children: []
@@ -38525,9 +38570,10 @@ var Tree = class {
 		if (!parent) throw new NotFoundError(parentId);
 		return [this.insertPatch(parent, parent.children.length, this.create(""))];
 	}
-	split(id, before, after) {
+	split(id, textBefore, textAfter) {
 		const n = this.bullet(id);
 		const { record } = n;
+		const [before, after] = splitTextOf(record.type, textBefore, textAfter);
 		const keepsBefore = before !== "" && !record.opaque && rulesOf(record.type).keepsTextBeforeCaret;
 		if (after === "" || keepsBefore) {
 			this.setText(n, before);
@@ -38632,6 +38678,77 @@ var Tree = class {
 			this.replacePatch(origin)
 		];
 	}
+	removeMany(ids) {
+		return this.siblingRun(ids).flatMap((n) => this.detach(n));
+	}
+	indentMany(ids) {
+		const run = this.siblingRun(ids);
+		if (run.length === 0) return [];
+		const parent = run[0].parent;
+		const position = parent.children.indexOf(run[0]);
+		if (position === 0) return [];
+		const target = parent.children[position - 1];
+		const opened = [];
+		if (target.record.collapsed) {
+			this.touch(target);
+			target.record.collapsed = false;
+			opened.push(this.childrenPatch(target));
+		}
+		const moves = run.map((n) => {
+			this.unplace(n);
+			this.place(target, target.children.length, n);
+			return this.movePatch(n);
+		});
+		return [
+			this.replacePatch(target),
+			...opened,
+			...moves
+		];
+	}
+	outdentMany(ids) {
+		const run = this.siblingRun(ids);
+		if (run.length === 0) return [];
+		const parent = run[0].parent;
+		if (parent === this.root) return [];
+		const grandparent = parent.parent;
+		const start = grandparent.children.indexOf(parent) + 1;
+		return [...run.map((n, offset) => {
+			this.unplace(n);
+			this.place(grandparent, start + offset, n);
+			return this.movePatch(n);
+		}), this.replacePatch(parent)];
+	}
+	moveMany(ids, parentId, index) {
+		const run = this.siblingRun(ids);
+		if (run.length === 0) return [];
+		const target = this.lookup(parentId);
+		if (!target) throw new NotFoundError(parentId);
+		for (let ancestor = target; ancestor !== null; ancestor = ancestor.parent) if (run.includes(ancestor)) throw new InsideItselfError(ancestor.record.id, parentId);
+		const origin = run[0].parent;
+		const rest = target.children.filter((child) => !run.includes(child));
+		if (index < 0 || index > rest.length) throw new OutOfRangeError(index, parentId);
+		if (target === origin && origin.children.indexOf(run[0]) === index) return [];
+		const opened = [];
+		if (target !== origin && target.record.collapsed) {
+			this.touch(target);
+			target.record.collapsed = false;
+			opened.push(this.childrenPatch(target));
+		}
+		let previous = index > 0 ? rest[index - 1] : null;
+		const moves = run.map((n) => {
+			this.unplace(n);
+			this.place(target, previous === null ? 0 : target.children.indexOf(previous) + 1, n);
+			previous = n;
+			return this.movePatch(n);
+		});
+		if (target === origin) return moves;
+		return [
+			this.replacePatch(target),
+			...opened,
+			...moves,
+			this.replacePatch(origin)
+		];
+	}
 	setCollapsed(id, collapsed) {
 		const n = this.bullet(id);
 		if (n.record.collapsed !== collapsed) {
@@ -38679,7 +38796,7 @@ var Tree = class {
 		const n = this.bullet(id);
 		if (!isBulletType(bulletType)) throw new UnknownTypeError(bulletType);
 		const made = decodeFields(bulletType, {
-			...BULLET_MODELS[bulletType].create(text),
+			...BULLET_MODELS[bulletType].create(lineTextOf(bulletType, text)),
 			...fields
 		});
 		if (!made) throw new InvalidFieldsError(bulletType);
@@ -38729,9 +38846,10 @@ var Tree = class {
 		for (const update of updates) {
 			const n = this.nodes.get(update.id);
 			if (!n || n.record.opaque || n.record.type !== "table") continue;
+			const rows = update.rows.map((cells) => cells.map(singleLine));
 			const made = decodeFields("table", {
 				...n.record.fields,
-				rows: update.rows
+				rows
 			});
 			if (!made) continue;
 			this.replaceRecord(n, {
@@ -46625,7 +46743,7 @@ function getLoadedCount() {
 	return loadedCount;
 }
 function getHighlighter() {
-	highlighter ??= Promise.all([__vitePreload(() => import("./core-B44p-mfe.js"), [], import.meta.url), __vitePreload(() => import("./engine-javascript-BgMzXrAA.js"), [], import.meta.url)]).then(async ([{ createHighlighterCore }, { createJavaScriptRegexEngine }]) => {
+	highlighter ??= Promise.all([__vitePreload(() => import("./core-ykIG5TpE.js"), [], import.meta.url), __vitePreload(() => import("./engine-javascript-BgMzXrAA.js"), [], import.meta.url)]).then(async ([{ createHighlighterCore }, { createJavaScriptRegexEngine }]) => {
 		ready = await createHighlighterCore({ engine: createJavaScriptRegexEngine({ forgiving: true }) });
 		return ready;
 	});
