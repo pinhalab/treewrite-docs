@@ -1298,3 +1298,8 @@
 {"id":"01M3SAH7MQHKSHNPT6916KB2ZG","parent":"01M3CK4AA3MES7HVDZBMNQYHER","index":"a4","type":"text","text":"How it works"}
 {"id":"01M3SAH7MQHKSHNPT6916KB2ZG","parent":"01M3CK4AA3MES7HVDZBMNQYHER","index":"a4","type":"text","text":"How it works","collapsed":true}
 {"id":"01M3SAH7MQHKSHNPT6916KB2ZG","parent":"01M3CK4AA3MES7HVDZBMNQYHER","index":"a4","type":"text","text":"How it works"}
+{"id":"01M3SAH7MQHKSHNPT6916KB2ZG","parent":"01M3CK4AA3MES7HVDZBMNQYHER","index":"a4","type":"text","text":"How it works","collapsed":true}
+{"id":"01M3SAH7MX86XQE1TAR62MMCSF","parent":"01M3CK4AA3MES7HVDZBMNQYHER","index":"a5","type":"text","text":"Settings"}
+{"id":"01M3SAH7MX86XQE1TAR62MMCSF","parent":"01M3CK4AA3MES7HVDZBMNQYHER","index":"a5","type":"text","text":"Settings","collapsed":true}
+{"id":"01M3SAH7N2FVZA8CNB2SVMDA22","parent":"01M3CK4AA3MES7HVDZBMNQYHER","index":"a6","type":"text","text":"Deploy tutorials"}
+{"id":"01M3SAH7N3XTVVDDWSMMQ909XA","parent":"01M3SAH7N2FVZA8CNB2SVMDA22","index":"a0","type":"page","text":"GitHub Pages","icon":"github.svg","collapsed":true}
