@@ -970,3 +970,5 @@
 {"id":"01M3R0ARM68YVZ6ZDSPT9PDXS0","parent":"01M3R034TPFGR75FWYVGPAN3XG","index":"a2","type":"text","text":"`[[bullet_id]]`[[bulle_id|Text]]` ([[01M3R034TPFGR75FWYVGPAN3XG|Text]])","note":"A reference to another bullet in the document (wiki link)"}
 {"id":"01M3R0ARM68YVZ6ZDSPT9PDXS0","parent":"01M3R034TPFGR75FWYVGPAN3XG","index":"a2","type":"text","text":"`[[bullet_id]]` `[[bulle_id|Text]]` ([[01M3R034TPFGR75FWYVGPAN3XG|Text]])","note":"A reference to another bullet in the document (wiki link)"}
 {"id":"01M3R0ARM68YVZ6ZDSPT9PDXS0","parent":"01M3R034TPFGR75FWYVGPAN3XG","index":"a2","type":"text","text":"`[[bullet_id]]` or `[[bulle_id|Text]]` ([[01M3R034TPFGR75FWYVGPAN3XG|Text]])","note":"A reference to another bullet in the document (wiki link)"}
+{"id":"01M3R034TPFGR75FWYVGPAN3XG","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a3","type":"text","text":"Inline markdown formatting","note":"The text in some bullet point types supports inline markdown-like formatting","collapsed":true}
+{"id":"01M3QD8BXYMNV9Y02Q98REJVE8","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a2","type":"text","text":"Bullet types"}
