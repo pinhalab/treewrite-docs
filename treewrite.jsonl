@@ -508,3 +508,7 @@
 {"id":"01M3S50BSB48JBT50VAJPETZKH","parent":"01M3CJQZTGBY1KNX195FMMDHA5","index":"a3","type":"text","text":"You can request to delete assets that are no longer in use in your document"}
 {"id":"01M3S53ZC6W8JHTFJ1TH0YYVQ0","parent":"01M3CJQZTGBY1KNX195FMMDHA5","index":"a2V","type":"text","text":"You can see the list of existing assets in your document in the sidebar"}
 {"id":"01M3S549B98W3346PWJCQSAPAM","parent":"01M3CJQZTGBY1KNX195FMMDHA5","index":"a2l","type":"text","text":"You can rename your assets, which renames all fields in all bullet points that reference them"}
+{"id":"01M3HVS46CSA83JEM7GF3P8V69","parent":"","index":"ZxU","type":"title","text":"FAQ","level":1}
+{"id":"01M3STW2V5DBEDQJ4BCHG1D3DF","parent":"","index":"ZxUG","type":"text","text":""}
+{"id":"01M3STW2V5DBEDQJ4BCHG1D3DF","parent":"","index":"ZxUG","type":"text","text":"- Hello - World "}
+{"id":"01M3STW2V5DBEDQJ4BCHG1D3DF","deleted":true}
