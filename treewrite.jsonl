@@ -847,3 +847,105 @@
 {"id":"01M3R034TPFGR75FWYVGPAN3XG","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a3","type":"text","text":"Markdown formatting"}
 {"id":"01M3R043YV7YWYC249H1Y7YXJN","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a4","type":"text","text":""}
 {"id":"01M3R043YV7YWYC249H1Y7YXJN","parent":"01M3R034TPFGR75FWYVGPAN3XG","index":"a0","type":"text","text":""}
+{"id":"01M3R043YV7YWYC249H1Y7YXJN","parent":"01M3R034TPFGR75FWYVGPAN3XG","index":"a0","type":"text","text":"The text in some bullet point types supports markdown-like formatting. See the supported markup:"}
+{"id":"01M3R043YV7YWYC249H1Y7YXJN","parent":"01M3R034TPFGR75FWYVGPAN3XG","index":"a0","type":"text","text":"The text in some bullet point types supports markdown-like formatting. See the supported markup:"}
+{"id":"01M3R0733BZ61SGBDHAX2VKWRK","parent":"01M3R034TPFGR75FWYVGPAN3XG","index":"a1","type":"text","text":""}
+{"id":"01M3R0733BZ61SGBDHAX2VKWRK","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a0","type":"text","text":""}
+{"id":"01M3R0733BZ61SGBDHAX2VKWRK","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a0","type":"text","text":"Bold"}
+{"id":"01M3R0733BZ61SGBDHAX2VKWRK","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a0","type":"text","text":"`**"}
+{"id":"01M3R0733BZ61SGBDHAX2VKWRK","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a0","type":"text","text":"`**bold**`"}
+{"id":"01M3R0733BZ61SGBDHAX2VKWRK","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a0","type":"text","text":"`**bold**`"}
+{"id":"01M3R07BMZ99A93VDW62FCMZAZ","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a1","type":"text","text":""}
+{"id":"01M3R0733BZ61SGBDHAX2VKWRK","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a0","type":"text","text":"`**Bold**`"}
+{"id":"01M3R0733BZ61SGBDHAX2VKWRK","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a0","type":"text","text":"`**Bold**` (Bold)"}
+{"id":"01M3R07BMZ99A93VDW62FCMZAZ","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a1","type":"text","text":"`"}
+{"id":"01M3R07BMZ99A93VDW62FCMZAZ","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a1","type":"text","text":"`*Italic"}
+{"id":"01M3R07BMZ99A93VDW62FCMZAZ","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a1","type":"text","text":"`*Italic*` ("}
+{"id":"01M3R07BMZ99A93VDW62FCMZAZ","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a1","type":"text","text":"`*Italic*` (*Italic*)"}
+{"id":"01M3R0733BZ61SGBDHAX2VKWRK","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a0","type":"text","text":"`**Bold**` (**Bold**)"}
+{"id":"01M3R07BMZ99A93VDW62FCMZAZ","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a1","type":"text","text":"`*Italic*` (*Italic*)"}
+{"id":"01M3R086E0FAEM229NCTHECXXT","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a2","type":"text","text":""}
+{"id":"01M3R086E0FAEM229NCTHECXXT","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a2","type":"text","text":"`"}
+{"id":"01M3R086E0FAEM229NCTHECXXT","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a2","type":"text","text":"``code``"}
+{"id":"01M3R086E0FAEM229NCTHECXXT","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a2","type":"text","text":"``code`` "}
+{"id":"01M3R086E0FAEM229NCTHECXXT","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a2","type":"text","text":"``code` "}
+{"id":"01M3R086E0FAEM229NCTHECXXT","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a2","type":"text","text":"`\\`code` "}
+{"id":"01M3R086E0FAEM229NCTHECXXT","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a2","type":"text","text":"`\\`code\\`` "}
+{"id":"01M3R086E0FAEM229NCTHECXXT","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a2","type":"text","text":""}
+{"id":"01M3R086E0FAEM229NCTHECXXT","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a2","type":"text","text":"`"}
+{"id":"01M3R086E0FAEM229NCTHECXXT","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a2","type":"text","text":"`Code` "}
+{"id":"01M3R086E0FAEM229NCTHECXXT","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a2","type":"text","text":"`Code`"}
+{"id":"01M3R086E0FAEM229NCTHECXXT","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a2","type":"text","text":"`*Code`"}
+{"id":"01M3R086E0FAEM229NCTHECXXT","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a2","type":"text","text":"`Code`"}
+{"id":"01M3R086E0FAEM229NCTHECXXT","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a2","type":"text","text":"*`Code`"}
+{"id":"01M3R086E0FAEM229NCTHECXXT","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a2","type":"text","text":"*`Code`*"}
+{"id":"01M3R086E0FAEM229NCTHECXXT","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a2","type":"text","text":"**`Code`*"}
+{"id":"01M3R086E0FAEM229NCTHECXXT","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a2","type":"text","text":"**`Code`**"}
+{"id":"01M3R086E0FAEM229NCTHECXXT","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a2","type":"text","text":"**`Code`** (Code)"}
+{"id":"01M3R086E0FAEM229NCTHECXXT","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a2","type":"text","text":"**`Code`** (Code`)"}
+{"id":"01M3R086E0FAEM229NCTHECXXT","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a2","type":"text","text":"**`Code`** (`Code`)"}
+{"id":"01M3R086E0FAEM229NCTHECXXT","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a2","type":"text","text":"**`Code`** (`Code`)"}
+{"id":"01M3R09Y33BR6BCRVJ666N3KGZ","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a3","type":"text","text":""}
+{"id":"01M3R09Y33BR6BCRVJ666N3KGZ","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a3","type":"text","text":"L"}
+{"id":"01M3R09Y33BR6BCRVJ666N3KGZ","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a3","type":"text","text":""}
+{"id":"01M3R09Y33BR6BCRVJ666N3KGZ","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a3","type":"text","text":"`["}
+{"id":"01M3R09Y33BR6BCRVJ666N3KGZ","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a3","type":"text","text":"`[Text]("}
+{"id":"01M3R09Y33BR6BCRVJ666N3KGZ","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a3","type":"text","text":"`[Text](https://example."}
+{"id":"01M3R09Y33BR6BCRVJ666N3KGZ","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a3","type":"text","text":"`[Text](https://example.com"}
+{"id":"01M3R09Y33BR6BCRVJ666N3KGZ","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a3","type":"text","text":"`[Text](https://example.com)`"}
+{"id":"01M3R09Y33BR6BCRVJ666N3KGZ","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a3","type":"text","text":"`[Text](https://example.com)` ()"}
+{"id":"01M3R09Y33BR6BCRVJ666N3KGZ","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a3","type":"text","text":"`[Text](https://example.com)` ([Text](https://example.com))"}
+{"id":"01M3R09Y33BR6BCRVJ666N3KGZ","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a3","type":"text","text":"`[Text](https://example.com)` ([Text](https://example.com))"}
+{"id":"01M3R0ARM68YVZ6ZDSPT9PDXS0","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a4","type":"text","text":""}
+{"id":"01M3R0ARM68YVZ6ZDSPT9PDXS0","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a4","type":"text","text":"["}
+{"id":"01M3R0ARM68YVZ6ZDSPT9PDXS0","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a4","type":"text","text":"[["}
+{"id":"01M3R0ARM68YVZ6ZDSPT9PDXS0","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a4","type":"text","text":"[[File forma"}
+{"id":"01M3R0ARM68YVZ6ZDSPT9PDXS0","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a4","type":"text","text":"[[01M3CK4D608BX01BDWAWPSDR8G]]"}
+{"id":"01M3R0ARM68YVZ6ZDSPT9PDXS0","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a4","type":"text","text":""}
+{"id":"01M3R0ARM68YVZ6ZDSPT9PDXS0","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a4","type":"text","text":"[[Markdown formatting"}
+{"id":"01M3R0ARM68YVZ6ZDSPT9PDXS0","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a4","type":"text","text":"[[01M3R034TPFGR75FWYVGPAN3XG]]"}
+{"id":"01M3R0ARM68YVZ6ZDSPT9PDXS0","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a4","type":"text","text":"[[01M3R034TPFGR75FWYVGPAN3XG|W]]"}
+{"id":"01M3R0ARM68YVZ6ZDSPT9PDXS0","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a4","type":"text","text":"[[01M3R034TPFGR75FWYVGPAN3XG|Wiki link]]"}
+{"id":"01M3R0ARM68YVZ6ZDSPT9PDXS0","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a4","type":"text","text":"[[01M3R034TPFGR75FWYVGPAN3XG|Wiki link]])"}
+{"id":"01M3R0ARM68YVZ6ZDSPT9PDXS0","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a4","type":"text","text":"([[01M3R034TPFGR75FWYVGPAN3XG|Wiki link]])"}
+{"id":"01M3R0ARM68YVZ6ZDSPT9PDXS0","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a4","type":"text","text":"`` ([[01M3R034TPFGR75FWYVGPAN3XG|Wiki link]])"}
+{"id":"01M3R0ARM68YVZ6ZDSPT9PDXS0","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a4","type":"text","text":"`[[]]` ([[01M3R034TPFGR75FWYVGPAN3XG|Wiki link]])"}
+{"id":"01M3R0ARM68YVZ6ZDSPT9PDXS0","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a4","type":"text","text":"`[[bulle_id]]` ([[01M3R034TPFGR75FWYVGPAN3XG|Wiki link]])"}
+{"id":"01M3R0ARM68YVZ6ZDSPT9PDXS0","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a4","type":"text","text":"`[[bulle_id|]]` ([[01M3R034TPFGR75FWYVGPAN3XG|Wiki link]])"}
+{"id":"01M3R0ARM68YVZ6ZDSPT9PDXS0","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a4","type":"text","text":"`[[bulle_id|text]]` ([[01M3R034TPFGR75FWYVGPAN3XG|Wiki link]])"}
+{"id":"01M3R0ARM68YVZ6ZDSPT9PDXS0","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a4","type":"text","text":"`[[bulle_id|Wiki link]]` ([[01M3R034TPFGR75FWYVGPAN3XG|Wiki link]])"}
+{"id":"01M3R0ARM68YVZ6ZDSPT9PDXS0","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a4","type":"text","text":"`[[bulle_id|Text]]` ([[01M3R034TPFGR75FWYVGPAN3XG|Wiki link]])"}
+{"id":"01M3R0ARM68YVZ6ZDSPT9PDXS0","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a4","type":"text","text":"`[[bulle_id|Text]]` ([[01M3R034TPFGR75FWYVGPAN3XG|Text]])"}
+{"id":"01M3R0ARM68YVZ6ZDSPT9PDXS0","parent":"01M3R043YV7YWYC249H1Y7YXJN","index":"a4","type":"text","text":"`[[bulle_id|Text]]` ([[01M3R034TPFGR75FWYVGPAN3XG|Text]])","note":"A reference to another bullet in the document (wiki link)"}
+{"id":"01M3Q2E3J20NKRPCQFF6YJK5MC","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a0","type":"text","text":"Bullet base fields","note":"The fields that are common to all bullet types"}
+{"id":"01M3QD7MNAPKGY0P4MBBBH5CDE","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"a1","type":"text","text":"Bullet types and metadata","collapsed":true}
+{"id":"01M3QD7MNAPKGY0P4MBBBH5CDE","parent":"01M3CK4D608BX01BDWAWPSDR8G","index":"a1","type":"text","text":"Bullet types and metadata"}
+{"id":"01M3Q2E3J20NKRPCQFF6YJK5MC","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a0","type":"text","text":"Bullet base fields","note":"The fields that are common to all bullet types","collapsed":true}
+{"id":"01M3R034TPFGR75FWYVGPAN3XG","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a3","type":"text","text":"arkdown formatting"}
+{"id":"01M3R034TPFGR75FWYVGPAN3XG","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a3","type":"text","text":"Inline markdown formatting"}
+{"id":"01M3R043YV7YWYC249H1Y7YXJN","parent":"01M3R034TPFGR75FWYVGPAN3XG","index":"a0","type":"text","text":"The text in some bullet point types supports inline markdown-like formatting. See the supported markup:"}
+{"id":"01M3R043YV7YWYC249H1Y7YXJN","parent":"01M3R034TPFGR75FWYVGPAN3XG","index":"a0","type":"text","text":". See the supported markup:"}
+{"id":"01M3R043YV7YWYC249H1Y7YXJN","parent":"01M3R034TPFGR75FWYVGPAN3XG","index":"a0","type":"text","text":""}
+{"id":"01M3R0733BZ61SGBDHAX2VKWRK","parent":"01M3R034TPFGR75FWYVGPAN3XG","index":"Zz","type":"text","text":"`**Bold**` (**Bold**)"}
+{"id":"01M3R07BMZ99A93VDW62FCMZAZ","parent":"01M3R034TPFGR75FWYVGPAN3XG","index":"a1","type":"text","text":"`*Italic*` (*Italic*)"}
+{"id":"01M3R086E0FAEM229NCTHECXXT","parent":"01M3R034TPFGR75FWYVGPAN3XG","index":"a0V","type":"text","text":"**`Code`** (`Code`)"}
+{"id":"01M3R09Y33BR6BCRVJ666N3KGZ","parent":"01M3R034TPFGR75FWYVGPAN3XG","index":"a0G","type":"text","text":"`[Text](https://example.com)` ([Text](https://example.com))"}
+{"id":"01M3R0ARM68YVZ6ZDSPT9PDXS0","parent":"01M3R034TPFGR75FWYVGPAN3XG","index":"a08","type":"text","text":"`[[bulle_id|Text]]` ([[01M3R034TPFGR75FWYVGPAN3XG|Text]])","note":"A reference to another bullet in the document (wiki link)"}
+{"id":"01M3R043YV7YWYC249H1Y7YXJN","deleted":true}
+{"id":"01M3R0ARM68YVZ6ZDSPT9PDXS0","parent":"01M3R034TPFGR75FWYVGPAN3XG","index":"a2","type":"text","text":"`[[bulle_id|Text]]` ([[01M3R034TPFGR75FWYVGPAN3XG|Text]])","note":"A reference to another bullet in the document (wiki link)"}
+{"id":"01M3R07BMZ99A93VDW62FCMZAZ","parent":"01M3R034TPFGR75FWYVGPAN3XG","index":"a0","type":"text","text":"`*Italic*` (*Italic*)"}
+{"id":"01M3R086E0FAEM229NCTHECXXT","parent":"01M3R034TPFGR75FWYVGPAN3XG","index":"a08","type":"text","text":"**`Code`** (`Code`)"}
+{"id":"01M3R034TPFGR75FWYVGPAN3XG","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a3","type":"text","text":"Inline markdown formatting","note":"The text in some bullet point types supports inline markdown-like formatting"}
+{"id":"01M3R034TPFGR75FWYVGPAN3XG","parent":"01M3QD7MNAPKGY0P4MBBBH5CDE","index":"a3","type":"text","text":"Inline markdown formatting","note":"The text in some bullet point types supports inline markdown-like formatting","collapsed":true}
+{"id":"01M3QBV3H0A87XYSV11W3J78YF","parent":"01M3Q2E3J20NKRPCQFF6YJK5MC","index":"a0","type":"table","rows":[["Field","Type","Required?","Description"],["`id`","`string`","Yes","Unique identifier of the bullet, a [ULID](https://github.com/ulid/spec)"],["`parent`","`string`","Yes","`id` of the parent bullet. Empty for bullets at the root of the document"],["`index`","`string`","Yes","Position of the bullet among its siblings, as a fractional index key. Siblings are sorted by it as plain strings"],["`type`","`string`","Yes","Type of the bullet. It defines the specific fields of the bullet"],["`note`","`string`","No","Short text shown under the bullet, with. Omitted when the bullet has no note"],["`tags`","`string[]`","No","`id` of each tag of the bullet, as listed in the `tags` of the metadata. Omitted when the bullet has no tags"],["`date`","`string`","No","Day the bullet is about, as `YYYY-MM-DD`, or `YYYY-MM-DDTHH:MM` with a time of day. It has no time zone. Omitted when the bullet has no date"],["`collapsed`","`boolean`","No","Whether the children of the bullet are hidden. Omitted when `false`"]],"header":"horizontal"}
+{"id":"01M3QBV3H0A87XYSV11W3J78YF","parent":"01M3Q2E3J20NKRPCQFF6YJK5MC","index":"a0","type":"table","rows":[["Field","Type","Required?","Description"],["`id`","`string`","Yes","Unique identifier of the bullet, a [ULID](https://github.com/ulid/spec)"],["`parent`","`string`","Yes","`id` of the parent bullet. Empty for bullets at the root of the document"],["`index`","`string`","Yes","Position of the bullet among its siblings, as a fractional index key. Siblings are sorted by it as plain strings"],["`type`","`string`","Yes","Type of the bullet. It defines the specific fields of the bullet"],["`note`","`string`","No","Short text shown under the bullet, with [[inline markdown forma. Omitted when the bullet has no note"],["`tags`","`string[]`","No","`id` of each tag of the bullet, as listed in the `tags` of the metadata. Omitted when the bullet has no tags"],["`date`","`string`","No","Day the bullet is about, as `YYYY-MM-DD`, or `YYYY-MM-DDTHH:MM` with a time of day. It has no time zone. Omitted when the bullet has no date"],["`collapsed`","`boolean`","No","Whether the children of the bullet are hidden. Omitted when `false`"]],"header":"horizontal"}
+{"id":"01M3QBV3H0A87XYSV11W3J78YF","parent":"01M3Q2E3J20NKRPCQFF6YJK5MC","index":"a0","type":"table","rows":[["Field","Type","Required?","Description"],["`id`","`string`","Yes","Unique identifier of the bullet, a [ULID](https://github.com/ulid/spec)"],["`parent`","`string`","Yes","`id` of the parent bullet. Empty for bullets at the root of the document"],["`index`","`string`","Yes","Position of the bullet among its siblings, as a fractional index key. Siblings are sorted by it as plain strings"],["`type`","`string`","Yes","Type of the bullet. It defines the specific fields of the bullet"],["`note`","`string`","No","Short text shown under the bullet, with [[inline markdown formatting. Omitted when the bullet has no note"],["`tags`","`string[]`","No","`id` of each tag of the bullet, as listed in the `tags` of the metadata. Omitted when the bullet has no tags"],["`date`","`string`","No","Day the bullet is about, as `YYYY-MM-DD`, or `YYYY-MM-DDTHH:MM` with a time of day. It has no time zone. Omitted when the bullet has no date"],["`collapsed`","`boolean`","No","Whether the children of the bullet are hidden. Omitted when `false`"]],"header":"horizontal"}
+{"id":"01M3QBV3H0A87XYSV11W3J78YF","parent":"01M3Q2E3J20NKRPCQFF6YJK5MC","index":"a0","type":"table","rows":[["Field","Type","Required?","Description"],["`id`","`string`","Yes","Unique identifier of the bullet, a [ULID](https://github.com/ulid/spec)"],["`parent`","`string`","Yes","`id` of the parent bullet. Empty for bullets at the root of the document"],["`index`","`string`","Yes","Position of the bullet among its siblings, as a fractional index key. Siblings are sorted by it as plain strings"],["`type`","`string`","Yes","Type of the bullet. It defines the specific fields of the bullet"],["`note`","`string`","No","Short text shown under the bullet, with [[01M3R034TPFGR75FWYVGPAN3XG]]. Omitted when the bullet has no note"],["`tags`","`string[]`","No","`id` of each tag of the bullet, as listed in the `tags` of the metadata. Omitted when the bullet has no tags"],["`date`","`string`","No","Day the bullet is about, as `YYYY-MM-DD`, or `YYYY-MM-DDTHH:MM` with a time of day. It has no time zone. Omitted when the bullet has no date"],["`collapsed`","`boolean`","No","Whether the children of the bullet are hidden. Omitted when `false`"]],"header":"horizontal"}
+{"id":"01M3QAHYVDZR5ZH9CRR760YD0F","parent":"01M3Q2KE10D5K3MNJSMP2PWBSN","index":"a0","type":"table","rows":[["Field","Type","Required?","Description"],["`text`","`string`","Yes","Content of the bullet, with [[inline "]],"header":"horizontal"}
+{"id":"01M3QAHYVDZR5ZH9CRR760YD0F","parent":"01M3Q2KE10D5K3MNJSMP2PWBSN","index":"a0","type":"table","rows":[["Field","Type","Required?","Description"],["`text`","`string`","Yes","Content of the bullet, with [[inline markdown "]],"header":"horizontal"}
+{"id":"01M3QAHYVDZR5ZH9CRR760YD0F","parent":"01M3Q2KE10D5K3MNJSMP2PWBSN","index":"a0","type":"table","rows":[["Field","Type","Required?","Description"],["`text`","`string`","Yes","Content of the bullet, with [[01M3R034TPFGR75FWYVGPAN3XG]]"]],"header":"horizontal"}
+{"id":"01M3QAHYVKDH0N9NE3WQ6QDX9Q","parent":"01M3Q2KZY27DHTX08NT3BB7W4G","index":"a0","type":"table","rows":[["Field","Type","Required?","Description"],["`text`","`string`","Yes","Content of the heading, with [[inline mar"],["`level`","`number`","Yes","Heading size, one of `1`, `2` or `3`, where `1` is the largest. Defaults to `1`"]],"header":"horizontal"}
+{"id":"01M3QAHYVKDH0N9NE3WQ6QDX9Q","parent":"01M3Q2KZY27DHTX08NT3BB7W4G","index":"a0","type":"table","rows":[["Field","Type","Required?","Description"],["`text`","`string`","Yes","Content of the heading, with [[01M3R034TPFGR75FWYVGPAN3XG]]"],["`level`","`number`","Yes","Heading size, one of `1`, `2` or `3`, where `1` is the largest. Defaults to `1`"]],"header":"horizontal"}
+{"id":"01M3QAHYVM7XNHHXB3TR78WQ3D","parent":"01M3Q2M57PQ48DV93NG70W8J0Q","index":"a0","type":"table","rows":[["Field","Type","Required?","Description"],["`text`","`string`","Yes","Content of the list item, with . The number itself is not stored, it is counted from the numbered siblings right above"]],"header":"horizontal"}
+{"id":"01M3QAHYVM7XNHHXB3TR78WQ3D","parent":"01M3Q2M57PQ48DV93NG70W8J0Q","index":"a0","type":"table","rows":[["Field","Type","Required?","Description"],["`text`","`string`","Yes","Content of the list item, with [[inline markd. The number itself is not stored, it is counted from the numbered siblings right above"]],"header":"horizontal"}
+{"id":"01M3QAHYVM7XNHHXB3TR78WQ3D","parent":"01M3Q2M57PQ48DV93NG70W8J0Q","index":"a0","type":"table","rows":[["Field","Type","Required?","Description"],["`text`","`string`","Yes","Content of the list item, with [[01M3R034TPFGR75FWYVGPAN3XG]]. The number itself is not stored, it is counted from the numbered siblings right above"]],"header":"horizontal"}
