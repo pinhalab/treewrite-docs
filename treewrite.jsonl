@@ -1335,3 +1335,5 @@
 {"id":"01M3SBV7XR7CP9BTX8ZHMVHS2B","parent":"01M3SBV7XQNS7FCWC59E3P4EVM","index":"a0","type":"text","text":"Your document is a plain text file, so you can read it with any tool, like `jq` or a script of yours"}
 {"id":"01M3SBV7XSPY64SME2VS5RKKMH","parent":"01M3SBV7XQNS7FCWC59E3P4EVM","index":"a1","type":"text","text":"Only change the file by hand while it is closed in TreeWrite, since the app keeps appending to it while it is open"}
 {"id":"01M3SBV7XTH04TPG2VACZ683Y0","parent":"01M3SBV7XQNS7FCWC59E3P4EVM","index":"a2","type":"text","text":"Turn off the sidebar panels you don't use in *Settings › Features*. Nothing is lost: their data stays in the file"}
+{"id":"01M3SBV7XFTBXBME35BC6KKX1Z","parent":"01M3CNZ3ZP6FB4C9V4SABK4N7M","index":"a3","type":"text","text":"Navigating"}
+{"id":"01M3SBV7XFTBXBME35BC6KKX1Z","parent":"01M3CNZ3ZP6FB4C9V4SABK4N7M","index":"a3","type":"text","text":"Navigating","collapsed":true}
