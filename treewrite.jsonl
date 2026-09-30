@@ -1310,3 +1310,4 @@
 {"id":"01M3SAH7NNNXRNCGQNHWYHTCZE","parent":"01M3SAH7N2FVZA8CNB2SVMDA22","index":"a3","type":"page","text":"Your own server","icon":"server.png","collapsed":true}
 {"id":"01M3SAH7N2FVZA8CNB2SVMDA22","parent":"01M3CK4AA3MES7HVDZBMNQYHER","index":"a6","type":"text","text":"Deploy tutorials","collapsed":true}
 {"id":"01M3CK4AA3MES7HVDZBMNQYHER","parent":"","index":"Zxp","type":"page","text":"Publish","icon":"🚀","background":"#7950f2","note":"How to turn your bullets into a website like this one","collapsed":true}
+{"id":"01M3CNZ3ZP6FB4C9V4SABK4N7M","parent":"","index":"Zxr","type":"page","text":"Tips & Tricks","icon":"🧠","background":"#868e96","note":"Some tips and tricks to help you delve deeper into TreeWrite"}
