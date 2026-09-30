@@ -1147,3 +1147,17 @@
 {"id":"01M3S5KGGWVEFKCGNWEHT5C926","parent":"01M3CKKTSAKT9DVE52BA7VV5K0","index":"a2","type":"text","text":""}
 {"id":"01M3S5KGGWVEFKCGNWEHT5C926","parent":"01M3CKKTSAKT9DVE52BA7VV5K0","index":"a2","type":"text","text":"Renaming a tag does not change any of its references, as they reference the tag's ID and not its name."}
 {"id":"01M3S5KGGWVEFKCGNWEHT5C926","parent":"01M3CKKTSAKT9DVE52BA7VV5K0","index":"a2","type":"text","text":"Renaming a tag does not change any of its references, as they reference the tag's ID and not its name"}
+{"id":"01M3CKKTSAKT9DVE52BA7VV5K0","parent":"","index":"Zxm","type":"page","text":"Tags","icon":"🏷️","background":"#15aabf","note":"How to use tags to filter your bullets","collapsed":true}
+{"id":"01M3CKKYE39X7JV1VXT1H4WBCJ","parent":"","index":"ZxmV","type":"page","text":"Calendar","icon":"🗓️","background":"#fa5252","note":"How to add dates to your bullets and filter them in the calendar"}
+{"id":"01M3CKKTSAKT9DVE52BA7VV5K0","parent":"","index":"Zxm","type":"page","text":"Tags","icon":"🏷️","background":"#15aabf","note":"How to use tags to filter your bullets"}
+{"id":"01M3CKKTSAKT9DVE52BA7VV5K0","parent":"","index":"Zxm","type":"page","text":"Tags","icon":"🏷️","background":"#15aabf","note":"How to use tags to filter your bullets","collapsed":true}
+{"id":"01M3DGAE7M3Y3T2F7E3XQMP0WA","parent":"01M3CKKYE39X7JV1VXT1H4WBCJ","index":"a0","type":"text","text":"Each bullet point has the option to add a date to it."}
+{"id":"01M3DGAE7M3Y3T2F7E3XQMP0WA","parent":"01M3CKKYE39X7JV1VXT1H4WBCJ","index":"a0","type":"text","text":"Each bullet point has the option to add a date to it"}
+{"id":"01M3DGAE7M3Y3T2F7E3XQMP0WA","parent":"01M3CKKYE39X7JV1VXT1H4WBCJ","index":"a0","type":"text","text":"Each bullet has the option to add a date to it"}
+{"id":"01M3DGAE7M3Y3T2F7E3XQMP0WA","parent":"01M3CKKYE39X7JV1VXT1H4WBCJ","index":"a0","type":"text","text":"Each bullet has the option to add a date (or datetime) to it"}
+{"id":"01M3CKKTSAKT9DVE52BA7VV5K0","parent":"","index":"Zxm","type":"page","text":"Tags","icon":"🏷️","background":"#15aabf","note":"How to use tags to filter your bullets"}
+{"id":"01M3DGAE7M3Y3T2F7E3XQMP0WA","parent":"01M3CKKYE39X7JV1VXT1H4WBCJ","index":"a0","type":"text","text":"Each bullet has the option to add a date (or datetime) to it","note":"This bullet point, for example, has a date and time"}
+{"id":"01M3DGAE7M3Y3T2F7E3XQMP0WA","parent":"01M3CKKYE39X7JV1VXT1H4WBCJ","index":"a0","type":"text","text":"Each bullet has the option to add a date (or datetime) to it","note":"This bullet point, for example, has a date and time","date":"2026-11-11"}
+{"id":"01M3DGAE7M3Y3T2F7E3XQMP0WA","parent":"01M3CKKYE39X7JV1VXT1H4WBCJ","index":"a0","type":"text","text":"Each bullet has the option to add a date (or datetime) to it","note":"This bullet point, for example, has a date and time","date":"2026-11-11T11:11"}
+{"id":"01M3DGAE7M3Y3T2F7E3XQMP0WA","parent":"01M3CKKYE39X7JV1VXT1H4WBCJ","index":"a0","type":"text","text":"Each bullet has the option to add a date (or datetime) to it","note":"This bullet point, for example, has a date and time","date":"2026-11-11T11:11"}
+{"id":"01M3S5TK46P12GPS9A4XRFGAE1","parent":"01M3CKKYE39X7JV1VXT1H4WBCJ","index":"a1","type":"text","text":""}
