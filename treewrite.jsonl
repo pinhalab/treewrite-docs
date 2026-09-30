@@ -1293,3 +1293,6 @@
 {"id":"01M3SAH7NQY8MSB9RTQM89Q1NE","parent":"01M3SAH7NNNXRNCGQNHWYHTCZE","index":"a1","type":"number","text":"Use the command below"}
 {"id":"01M3SAH7NRMZZEMZ1N2F3K9V22","parent":"01M3SAH7NQY8MSB9RTQM89Q1NE","index":"a0","type":"code","text":"rsync -az --delete ./ user@example.com:/var/www/notes/","lang":"shellscript"}
 {"id":"01M3SAH7NSR6RC6KVQ23K8G000","parent":"01M3SAH7NNNXRNCGQNHWYHTCZE","index":"a2","type":"number","text":"Set the Site URL to the address your web server serves that folder at"}
+{"id":"01M3SAH7MJ75JMVCNE5QEPZK7Y","parent":"01M3CK4AA3MES7HVDZBMNQYHER","index":"a3","type":"text","text":"What is published"}
+{"id":"01M3SAH7MJ75JMVCNE5QEPZK7Y","parent":"01M3CK4AA3MES7HVDZBMNQYHER","index":"a3","type":"text","text":"What is published","collapsed":true}
+{"id":"01M3SAH7MQHKSHNPT6916KB2ZG","parent":"01M3CK4AA3MES7HVDZBMNQYHER","index":"a4","type":"text","text":"How it works"}
