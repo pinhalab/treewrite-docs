@@ -1230,3 +1230,19 @@
 {"id":"01M3S877R2YPZ8S89PK7KX9GQT","parent":"01M3CK4TT3EEMYQ55VSYQVCFZK","index":"a7","type":"text","text":"Sync status","collapsed":true}
 {"id":"01M3S877R3XKE9TPEK5GC81TK8","parent":"01M3S877R2YPZ8S89PK7KX9GQT","index":"a0","type":"text","text":"The status is shown in the header, next to the save status. Clicking it shows the last sync time and a button to sync right away"}
 {"id":"01M3S877R4QJA6YFZ5KA68XNXP","parent":"01M3S877R2YPZ8S89PK7KX9GQT","index":"a1","type":"table","rows":[["Status","Meaning"],["Synced","Everything was pushed"],["Syncing","A sync is running"],["Not synced yet","There are changes that were not pushed yet"],["Offline","The remote could not be reached. Your changes are committed and pushed once it is back"],["Sync paused","Something needs your attention, like a refused credential. Fix it and click *Retry*"]],"header":"horizontal"}
+{"id":"01M3S877QAQH7R4894Y2XBKHRW","parent":"01M3CK4TT3EEMYQ55VSYQVCFZK","index":"a3","type":"text","text":"Setup"}
+{"id":"01M3S877QAQH7R4894Y2XBKHRW","parent":"01M3CK4TT3EEMYQ55VSYQVCFZK","index":"a3","type":"text","text":"Setup","collapsed":true}
+{"id":"01M3S877QFN6WD7A4EVMWB2XQR","parent":"01M3CK4TT3EEMYQ55VSYQVCFZK","index":"a4","type":"text","text":"Modes"}
+{"id":"01M3S877QFN6WD7A4EVMWB2XQR","parent":"01M3CK4TT3EEMYQ55VSYQVCFZK","index":"a4","type":"text","text":"Modes","collapsed":true}
+{"id":"01M3S877QJ7NWNGS5PRR53G6DK","parent":"01M3CK4TT3EEMYQ55VSYQVCFZK","index":"a5","type":"text","text":"When it syncs"}
+{"id":"01M3S877QJ7NWNGS5PRR53G6DK","parent":"01M3CK4TT3EEMYQ55VSYQVCFZK","index":"a5","type":"text","text":"When it syncs","collapsed":true}
+{"id":"01M3S877QJ7NWNGS5PRR53G6DK","parent":"01M3CK4TT3EEMYQ55VSYQVCFZK","index":"a5","type":"text","text":"When it syncs"}
+{"id":"01M3S877QJ7NWNGS5PRR53G6DK","parent":"01M3CK4TT3EEMYQ55VSYQVCFZK","index":"a5","type":"text","text":"When it syncs","collapsed":true}
+{"id":"01M3S877QSHSMCTM7ZSVX46VCP","parent":"01M3CK4TT3EEMYQ55VSYQVCFZK","index":"a6","type":"text","text":"Merge conflicts"}
+{"id":"01M3S877QTJ7E1CCR8R37J6RHQ","parent":"01M3S877QSHSMCTM7ZSVX46VCP","index":"a0","type":"text","text":"Conflicts are resolved automatically. Instead of merging the lines of the [[01M3CK4D608BX01BDWAWPSDR8G|.jsonl` file]], TreeWrite merges the bullets one by one"}
+{"id":"01M3S877QTJ7E1CCR8R37J6RHQ","parent":"01M3S877QSHSMCTM7ZSVX46VCP","index":"a0","type":"text","text":"Conflicts are resolved automatically. Instead of merging the lines of the [[01M3CK4D608BX01BDWAWPSDR8G|.jsonl file]], TreeWrite merges the bullets one by one"}
+{"id":"01M3S877QSHSMCTM7ZSVX46VCP","parent":"01M3CK4TT3EEMYQ55VSYQVCFZK","index":"a6","type":"text","text":"Merge conflicts","collapsed":true}
+{"id":"01M3S877R2YPZ8S89PK7KX9GQT","parent":"01M3CK4TT3EEMYQ55VSYQVCFZK","index":"a7","type":"text","text":"Sync status"}
+{"id":"01M3S877R2YPZ8S89PK7KX9GQT","parent":"01M3CK4TT3EEMYQ55VSYQVCFZK","index":"a7","type":"text","text":"Sync status","collapsed":true}
+{"id":"01M3S877R2YPZ8S89PK7KX9GQT","parent":"01M3CK4TT3EEMYQ55VSYQVCFZK","index":"a7","type":"text","text":"Sync status"}
+{"id":"01M3S877R2YPZ8S89PK7KX9GQT","parent":"01M3CK4TT3EEMYQ55VSYQVCFZK","index":"a7","type":"text","text":"Sync status","collapsed":true}
