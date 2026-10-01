@@ -10879,23 +10879,28 @@ fieldset:disabled .m_38aeed47:where(:not([data-inverted])),
     display: none;
   }
 /* The column of the editor: as wide as the window allows, up to a limit, so a line of text never gets too long */
-._column_1n3un_2 {
+._column_1v0wc_2 {
 	width: 100%;
 	max-width: 800px;
 	margin-inline: auto;
 }
 
-._rows_1n3un_8 {
+._rows_1v0wc_8 {
 	position: relative;
 }
 
+/* The rows take the focus while bullets are picked as a whole, which shows on them already */
+._rows_1v0wc_8:focus {
+	outline: none;
+}
+
 /* See handleWheel in Editor.tsx */
-._rows_1n3un_8[data-wheeling] {
+._rows_1v0wc_8[data-wheeling] {
 	pointer-events: none;
 }
 
 /* Rows are taken out of the flow and placed by the virtualizer with a transform */
-._row_1n3un_8 {
+._row_1v0wc_8 {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -10905,7 +10910,7 @@ fieldset:disabled .m_38aeed47:where(:not([data-inverted])),
 
 
 /* The space around the editor. The background of a page takes it back to go from edge to edge */
-._content_1n3un_28 {
+._content_1v0wc_33 {
 	--editor-gutter-top: var(--mantine-spacing-sm);
 	--editor-gutter-start: calc(5px + var(--mantine-spacing-sm));
 	--editor-gutter-end: var(--mantine-spacing-xl);
@@ -10913,7 +10918,7 @@ fieldset:disabled .m_38aeed47:where(:not([data-inverted])),
 }
 
 /* Above the rows, and scrolled along with them */
-._header_1n3un_36 {
+._header_1v0wc_41 {
 	padding-top: var(--editor-gutter-top);
 	padding-bottom: var(--mantine-spacing-md);
 }
@@ -10928,17 +10933,17 @@ fieldset:disabled .m_38aeed47:where(:not([data-inverted])),
 
 /* A bullet gone to, from the sidebar or the search, is shown for a moment, in the gray the rows of the sidebar take
    under the pointer */
-._rows_1n3un_8 [data-revealed] {
+._rows_1v0wc_8 [data-revealed] {
 	--revealed-background: var(--mantine-color-gray-3);
 }
-[data-mantine-color-scheme='dark'] ._rows_1n3un_8 [data-revealed] {
+[data-mantine-color-scheme='dark'] ._rows_1v0wc_8 [data-revealed] {
 	--revealed-background: var(--mantine-color-dark-6);
 }
-._rows_1n3un_8 [data-revealed] {
-	animation: _revealed_1n3un_1 1600ms ease-out;
+._rows_1v0wc_8 [data-revealed] {
+	animation: _revealed_1v0wc_1 1600ms ease-out;
 }
 
-@keyframes _revealed_1n3un_1 {
+@keyframes _revealed_1v0wc_1 {
 	from {
 		background-color: var(--revealed-background);
 	}

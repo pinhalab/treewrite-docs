@@ -44525,12 +44525,12 @@ function useAppTheme() {
 	return context;
 }
 var OutlineList_module_default = {
-	column: "_column_1n3un_2",
-	rows: "_rows_1n3un_8",
-	row: "_row_1n3un_8",
-	content: "_content_1n3un_28",
-	header: "_header_1n3un_36",
-	revealed: "_revealed_1n3un_1"
+	column: "_column_1v0wc_2",
+	rows: "_rows_1v0wc_8",
+	row: "_row_1v0wc_8",
+	content: "_content_1v0wc_33",
+	header: "_header_1v0wc_41",
+	revealed: "_revealed_1v0wc_1"
 };
 //#endregion
 //#region src/renderer/lib/bullet.ts
@@ -46743,7 +46743,7 @@ function getLoadedCount() {
 	return loadedCount;
 }
 function getHighlighter() {
-	highlighter ??= Promise.all([__vitePreload(() => import("./core-ykIG5TpE.js"), [], import.meta.url), __vitePreload(() => import("./engine-javascript-BgMzXrAA.js"), [], import.meta.url)]).then(async ([{ createHighlighterCore }, { createJavaScriptRegexEngine }]) => {
+	highlighter ??= Promise.all([__vitePreload(() => import("./core-CvhRMn9_.js"), [], import.meta.url), __vitePreload(() => import("./engine-javascript-BgMzXrAA.js"), [], import.meta.url)]).then(async ([{ createHighlighterCore }, { createJavaScriptRegexEngine }]) => {
 		ready = await createHighlighterCore({ engine: createJavaScriptRegexEngine({ forgiving: true }) });
 		return ready;
 	});
@@ -77118,6 +77118,7 @@ function createEditorStore() {
 	const tableDrafts = /* @__PURE__ */ new Map();
 	const listeners = /* @__PURE__ */ new Set();
 	let datePicking = null;
+	let selection = null;
 	let rootId = null;
 	let ancestors = NO_ANCESTORS;
 	let version = 0;
@@ -77232,6 +77233,47 @@ function createEditorStore() {
 		version += 1;
 		rows = null;
 		rowIndexes = null;
+		selection = null;
+		notify();
+	}
+	function isRow(id) {
+		return id !== rootId && nodes.has(id);
+	}
+	function chainOf(id) {
+		const chain = [id];
+		for (let at = parentOf.get(id); at !== void 0; at = parentOf.get(at)) chain.push(at);
+		return chain;
+	}
+	function pick(anchor, head) {
+		const anchorChain = chainOf(anchor);
+		const headChain = chainOf(head);
+		const aboveAnchor = new Set(anchorChain);
+		const meet = headChain.find((id) => aboveAnchor.has(id));
+		if (meet === anchor || meet === head) return {
+			anchor,
+			head,
+			ids: [meet]
+		};
+		const siblings = childIds.get(meet) ?? NO_CHILDREN;
+		const from = siblings.indexOf(anchorChain[anchorChain.indexOf(meet) - 1]);
+		const to = siblings.indexOf(headChain[headChain.indexOf(meet) - 1]);
+		return {
+			anchor,
+			head,
+			ids: siblings.slice(Math.min(from, to), Math.max(from, to) + 1)
+		};
+	}
+	function rowAfter(id) {
+		for (let at = id; at !== rootId; at = parentOf.get(at)) {
+			const siblings = childIds.get(parentOf.get(at)) ?? NO_CHILDREN;
+			const next = siblings[siblings.indexOf(at) + 1];
+			if (next !== void 0) return next;
+		}
+	}
+	function select(anchor, head) {
+		if (!isRow(anchor) || !isRow(head)) return;
+		if (selection?.anchor === anchor && selection.head === head) return;
+		selection = pick(anchor, head);
 		notify();
 	}
 	return {
@@ -77332,6 +77374,27 @@ function createEditorStore() {
 		setDatePicking(id) {
 			if (datePicking === id) return;
 			datePicking = id;
+			notify();
+		},
+		getSelection: () => selection,
+		select,
+		extendSelection(direction) {
+			if (!selection) return;
+			const headChain = chainOf(selection.head);
+			const end = selection.ids.find((id) => headChain.includes(id)) ?? selection.ids[0];
+			let head;
+			if (direction === 1) head = rowAfter(end);
+			else {
+				const parentId = parentOf.get(end);
+				const siblings = childIds.get(parentId) ?? NO_CHILDREN;
+				const at = siblings.indexOf(end);
+				head = at > 0 ? siblings[at - 1] : parentId;
+			}
+			if (head !== void 0) select(selection.anchor, head);
+		},
+		clearSelection() {
+			if (selection === null) return;
+			selection = null;
 			notify();
 		},
 		getTree: () => tree,
